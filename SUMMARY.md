@@ -21,3 +21,5 @@
 * [7 机械臂使用场景案例](./7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.md)
 * [8 相关资料下载](./8-FilesDownload/8-FilesDownload.md)
 * [9 关于我们](9-AboutUs/9-AboutUs.md)
+  * [9.1 大象机器人](./9-AboutUs/9.1-company.md)
+  * [9.2 联系我们](./9-AboutUs/9.2-contact.md)
