@@ -4,8 +4,12 @@
 * [2 产品特性](./2-ProductFeature/2-ProductFeature.md)
 * [3 用户须知](3-UserNotes/3-UserNotes.md)
   * [3.1 安全须知](./3-UserNotes/3.1-SafetyInstruction.md)
+  * [3.2 运输和储存](./3-UserNotes/3.2-TransportandStorage.md)
   * [3.3 维护和保养](./3-UserNotes/3.3-MaintenanceandCare.md)
 * [4 首次安装使用](4-FirstInstallAndUse/4-FirstInstallAndUse.md)
+  * [4.1 产品标准清单](./4-FirstInstallAndUse/4.1-ProductStandardList.md)
+  * [4.2 产品开箱指南](./4-FirstInstallAndUse/4.2-ProductUnboxingGuide.md)
+  
 * [5 基础功能使用](5-BasicApplication/5-BasicApplication.md)
 * [6 SDK 开发指南](6-SDKDevelopment/6-SDKDevelopment.md)
   * [6.2 机器人操作系统 1 (ROS1)](11-ApplicationBaseROS/11.1-ROS1/README.md)
