@@ -1,7 +1,7 @@
 # Pro630_docs
 
 章节文件已建好，只需将gitbook-cn拉取到本地，找到自己负责的章节，往里面填充内容。图片文件统一放到resources文件夹下对应的章节文件夹,图片文件以拼音命名，避免多人操作导致图片被重命名覆盖。完成后自己新建一个分支，推送到自己新建的分支，待管理员合并
-![图片描述](./resources/temp/01.png)
+![图片描述](./resources/temp/02.png)
 
 ![图片描述](./resources/temp/04.png)
 [Pro630目录页](SUMMARY.md)
