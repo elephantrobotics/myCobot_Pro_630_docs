@@ -1,5 +1,5 @@
 # 首次安装和使用
-![630宣传图]()
+![630宣传图](../resources/4-FirstInstallAndUse/pro%20630%20cn.png)
 
 - **感谢您选择我们的产品**
   
