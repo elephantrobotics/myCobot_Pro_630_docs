@@ -1,0 +1,1089 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.1 3D无序分拣 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../2.5D/2.5D.html" />
+    
+    
+    <link rel="prev" href="../7-ExamplesRobotsUsing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1-ProductIntroduction/1-ProductIntroduction.html">
+            
+                <a href="../../1-ProductIntroduction/1-ProductIntroduction.html">
+            
+                    
+                    1 产品介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../1-ProductIntroduction/1.1-DesignPhilosophy.html">
+            
+                <a href="../../1-ProductIntroduction/1.1-DesignPhilosophy.html">
+            
+                    
+                    1.1 设计理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../1-ProductIntroduction/1.2-SuitableUsers.html">
+            
+                <a href="../../1-ProductIntroduction/1.2-SuitableUsers.html">
+            
+                    
+                    1.2 适用人群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../1-ProductIntroduction/1.3-ApplicationScenario.html">
+            
+                <a href="../../1-ProductIntroduction/1.3-ApplicationScenario.html">
+            
+                    
+                    1.3 应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.html">
+            
+                <a href="../../1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.html">
+            
+                    
+                    1.4 周边配件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2-ProductFeature/2-ProductFeature.html">
+            
+                <a href="../../2-ProductFeature/2-ProductFeature.html">
+            
+                    
+                    2 产品特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../2-ProductFeature/2.1-MachineSpecification.html">
+            
+                <a href="../../2-ProductFeature/2.1-MachineSpecification.html">
+            
+                    
+                    2.1 机器规格参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../2-ProductFeature/2.2-ControlCoreParameter.html">
+            
+                <a href="../../2-ProductFeature/2.2-ControlCoreParameter.html">
+            
+                    
+                    2.2 控制核心参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../2-ProductFeature/2.3-MechanicalStructureParameter.html">
+            
+                <a href="../../2-ProductFeature/2.3-MechanicalStructureParameter.html">
+            
+                    
+                    2.3 机械结构参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../2-ProductFeature/2.4-ElectricalCharacteristicParameter.html">
+            
+                <a href="../../2-ProductFeature/2.4-ElectricalCharacteristicParameter.html">
+            
+                    
+                    2.4 电气特性参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../2-ProductFeature/2.5-CoordinateSystem.html">
+            
+                <a href="../../2-ProductFeature/2.5-CoordinateSystem.html">
+            
+                    
+                    2.5 笛卡尔坐标系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../3-UserNotes/3-UserNotes.html">
+            
+                <a href="../../3-UserNotes/3-UserNotes.html">
+            
+                    
+                    3 用户须知
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../3-UserNotes/3.1-SafetyInstruction.html">
+            
+                <a href="../../3-UserNotes/3.1-SafetyInstruction.html">
+            
+                    
+                    3.1 安全须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../3-UserNotes/3.2-TransportandStorage.html">
+            
+                <a href="../../3-UserNotes/3.2-TransportandStorage.html">
+            
+                    
+                    3.2 运输和储存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../3-UserNotes/3.3-MaintenanceandCare.html">
+            
+                <a href="../../3-UserNotes/3.3-MaintenanceandCare.html">
+            
+                    
+                    3.3 维护和保养
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../3-UserNotes/3.4-FAQsandSolutions.html">
+            
+                <a href="../../3-UserNotes/3.4-FAQsandSolutions.html">
+            
+                    
+                    3.4 常见问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4-FirstInstallAndUse/4-FirstInstallAndUse.html">
+            
+                <a href="../../4-FirstInstallAndUse/4-FirstInstallAndUse.html">
+            
+                    
+                    4 首次安装使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4-FirstInstallAndUse/4.1-ProductStandardList.html">
+            
+                <a href="../../4-FirstInstallAndUse/4.1-ProductStandardList.html">
+            
+                    
+                    4.1 产品标准清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4-FirstInstallAndUse/4.2-ProductUnboxingGuide.html">
+            
+                <a href="../../4-FirstInstallAndUse/4.2-ProductUnboxingGuide.html">
+            
+                    
+                    4.2 产品开箱指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4-FirstInstallAndUse/4.3-Power-onTestGuide.html">
+            
+                <a href="../../4-FirstInstallAndUse/4.3-Power-onTestGuide.html">
+            
+                    
+                    4.3 开机检测指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../5-BasicApplication/5-BasicApplication.html">
+            
+                <a href="../../5-BasicApplication/5-BasicApplication.html">
+            
+                    
+                    5 基础功能使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../5-BasicApplication/5.1-SystemUsageInstructions.html">
+            
+                <a href="../../5-BasicApplication/5.1-SystemUsageInstructions.html">
+            
+                    
+                    5.1 系统使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../5-BasicApplication/5.2-ApplicationUse.html">
+            
+                <a href="../../5-BasicApplication/5.2-ApplicationUse.html">
+            
+                    
+                    5.2 软件使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../5-BasicApplication/5.3-FirmwareUse.html">
+            
+                <a href="../../5-BasicApplication/5.3-FirmwareUse.html">
+            
+                    
+                    5.3 固件功能说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../6-SDKDevelopment/6-SDKDevelopment.html">
+            
+                <a href="../../6-SDKDevelopment/6-SDKDevelopment.html">
+            
+                    
+                    6 SDK 开发指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../6-SDKDevelopment/6.1-ApplicationBasePython.html">
+            
+                <a href="../../6-SDKDevelopment/6.1-ApplicationBasePython.html">
+            
+                    
+                    6.1 基于python开发使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../11-ApplicationBaseROS/11.1-ROS1/">
+            
+                <a href="../../11-ApplicationBaseROS/11.1-ROS1/">
+            
+                    
+                    6.2 机器人操作系统 1 (ROS1)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.html">
+            
+                    
+                    1 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../../11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.html">
+            
+                    
+                    2 ROS基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../../11-ApplicationBaseROS/11.1-ROS1/11.1.3-RvizIntroduction.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.1-ROS1/11.1.3-RvizIntroduction.html">
+            
+                    
+                    3 Rviz使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../../11-ApplicationBaseROS/11.1-ROS1/11.1.4-BasicFunction.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.1-ROS1/11.1.4-BasicFunction.html">
+            
+                    
+                    4 基本功能案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../11-ApplicationBaseROS/11.2-ROS1/README.md">
+            
+                <span>
+            
+                    
+                    6.3 机器人操作系统 2 (ROS2)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../../11-ApplicationBaseROS/11.2-ROS2/11.2.1-EnvironmentBuilding.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.2-ROS2/11.2.1-EnvironmentBuilding.html">
+            
+                    
+                    1 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../../11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.html">
+            
+                    
+                    2 ROS2基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../../11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.html">
+            
+                    
+                    3 Rviz2使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../../11-ApplicationBaseROS/11.2-ROS2/11.2.4-BasicFunction.html">
+            
+                <a href="../../11-ApplicationBaseROS/11.2-ROS2/11.2.4-BasicFunction.html">
+            
+                    
+                    4 基本功能案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../6-SDKDevelopment/6.4-ApplicationBaseCPlus.html">
+            
+                <a href="../../6-SDKDevelopment/6.4-ApplicationBaseCPlus.html">
+            
+                    
+                    6.4 基于C++开发使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../6-SDKDevelopment/6.5-ApplicationBaseJS.html">
+            
+                <a href="../../6-SDKDevelopment/6.5-ApplicationBaseJS.html">
+            
+                    
+                    6.5 基于JS开发使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../6-SDKDevelopment/6.6-ApplicationBaseCsharp.html">
+            
+                <a href="../../6-SDKDevelopment/6.6-ApplicationBaseCsharp.html">
+            
+                    
+                    6.6 基于C#开发使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../6-SDKDevelopment/6.7-ApplicationBaseAPP.html">
+            
+                <a href="../../6-SDKDevelopment/6.7-ApplicationBaseAPP.html">
+            
+                    
+                    6.7 基于APP开发使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../7-ExamplesRobotsUsing.html">
+            
+                <a href="../7-ExamplesRobotsUsing.html">
+            
+                    
+                    7 机械臂使用场景案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="3D.html">
+            
+                <a href="3D.html">
+            
+                    
+                    7.1 3D无序分拣
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../2.5D/2.5D.html">
+            
+                <a href="../2.5D/2.5D.html">
+            
+                    
+                    7.2 2.5D二维码分拣
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../8-FilesDownload/8-FilesDownload.html">
+            
+                <a href="../../8-FilesDownload/8-FilesDownload.html">
+            
+                    
+                    8 相关资料下载
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../8-FilesDownload/8.1-Productinformation.html">
+            
+                <a href="../../8-FilesDownload/8.1-Productinformation.html">
+            
+                    
+                    8.1 产品资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../8-FilesDownload/8.2-ProductDrawings.html">
+            
+                <a href="../../8-FilesDownload/8.2-ProductDrawings.html">
+            
+                    
+                    8.2 产品图纸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../8-FilesDownload/8.3-SoftwareDocumentation.html">
+            
+                <a href="../../8-FilesDownload/8.3-SoftwareDocumentation.html">
+            
+                    
+                    8.3 软件资料及源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../8-FilesDownload/8.4-Systeminformation.html">
+            
+                <a href="../../8-FilesDownload/8.4-Systeminformation.html">
+            
+                    
+                    8.4 系统资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../8-FilesDownload/8.5-PublicityMaterial.html">
+            
+                <a href="../../8-FilesDownload/8.5-PublicityMaterial.html">
+            
+                    
+                    8.5 宣传资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../9-AboutUs/9-AboutUs.html">
+            
+                <a href="../../9-AboutUs/9-AboutUs.html">
+            
+                    
+                    9 关于我们
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../9-AboutUs/9.1-company.html">
+            
+                <a href="../../9-AboutUs/9.1-company.html">
+            
+                    
+                    9.1 大象机器人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../9-AboutUs/9.2-contact.html">
+            
+                <a href="../../9-AboutUs/9.2-contact.html">
+            
+                    
+                    9.2 联系我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >7.1 3D无序分拣</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3d&#x65E0;&#x5E8F;&#x6293;&#x53D6;&#x5957;&#x4EF6;">3D&#x65E0;&#x5E8F;&#x6293;&#x53D6;&#x5957;&#x4EF6;</h1>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/3D.png" width="" height=""></p>
+<h2 id="1-&#x5957;&#x4EF6;&#x786C;&#x4EF6;&#x4ECB;&#x7ECD;">1 &#x5957;&#x4EF6;&#x786C;&#x4EF6;&#x4ECB;&#x7ECD;</h2>
+<h3 id="11-mycobot-pro630&#x673A;&#x68B0;&#x81C2;">1.1 MyCobot Pro630&#x673A;&#x68B0;&#x81C2;</h3>
+<p><img src="../../resources/4-FirstInstallAndUse/pro 630 cn.png"></p>
+<h3 id="12-&#x56FE;&#x6F3E;-fs820-e1">1.2 &#x56FE;&#x6F3E; FS820-E1</h3>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/tuyang.png" width="500" height="300"></p>
+<h2 id="2-&#x56FE;&#x6F3E;-fs820-e1&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x8BF4;&#x660E;">2 &#x56FE;&#x6F3E; FS820-E1&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h2>
+<h3 id="21-&#x6444;&#x50CF;&#x5934;&#x8F6F;&#x4EF6;&#x73AF;&#x5883;&#x642D;&#x5EFA;">2.1 &#x6444;&#x50CF;&#x5934;&#x8F6F;&#x4EF6;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h3>
+<p>&#x2003;&#x2003;&#x56FE;&#x6F3E;&#x63D0;&#x4F9B;&#x4E24;&#x79CD;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F;&#xFF0C;SDK&#x548C;RVS&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F;<strong>RVS</strong>&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528;RVS&#x4E2D;&#x7684;&#x89C6;&#x89C9;&#x7B97;&#x5B50;&#x5199;&#x6210;&#x8282;&#x70B9;(Node)&#x5FEB;&#x901F;&#x642D;&#x5EFA;&#x6293;&#x53D6;&#x529F;&#x80FD;&#x3002;&#x6839;&#x636E;<a href="http://res1.percipio.xyz/rvs/RVS_Install.pdf" target="_blank">&#x5B89;&#x88C5;&#x624B;&#x518C;</a>&#x5B8C;&#x6210;RVS&#x5B89;&#x88C5;&#x3002;</p>
+<p>&#x5B98;&#x7F51;&#x63D0;&#x4F9B;&#x4E24;&#x79CD;&#x7248;&#x672C;&#xFF0C;&#x4E24;&#x79CD;&#x7248;&#x672C;&#x53EA;&#x5728;<strong>AI&#x7B97;&#x5B50;</strong>&#x4E0A;&#x6709;&#x5DEE;&#x522B;&#xFF0C;FULL&#x7248;&#x672C;&#x5C31;&#x662F;&#x4F7F;&#x7528;GPU&#x8FDB;&#x884C;AI&#x8BAD;&#x7EC3;&#xFF0C;&#x5176;&#x4ED6;&#x4E00;&#x6837;&#xFF0C;&#x5957;&#x4EF6;&#x9009;&#x62E9;FULL&#x7248;&#x672C;
+CPU &#x7248;&#x6587;&#x4EF6;&#x540D;&#x4E3A;&#xFF1A;<a href="http://res1.percipio.xyz/rvs/RobotVisionSuite-1.5-WinCPU.zip" target="_blank">RobotVisionSuite-WIN-XX-CPU.zip</a>
+FULL &#x7248;&#x6587;&#x4EF6;&#x540D;&#x4E3A;&#xFF1A;<a href="http://res1.percipio.xyz/rvs/RobotVisionSuite-1.5-WinGPU.zip" target="_blank">RobotVisionSuite-WIN-XX-GPU.zip</a></p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;</p>
+<blockquote>
+<ul>
+<li><strong>&#x5B89;&#x88C5;&#x540E;&#x9700;&#x8981;&#x590D;&#x5236;&#x673A;&#x5668;&#x7801;&#x53D1;&#x7ED9;&#x5B98;&#x7F51;&#x90AE;&#x7BB1;&#x6216;&#x8BE2;&#x95EE;&#x76F8;&#x5173;&#x4EBA;&#x5458;&#xFF0C;&#x5F97;&#x5230;&#x6FC0;&#x6D3B;&#x7801;&#x521B;&#x5EFA;license.txt&#x653E;&#x5728;license&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x8FDB;&#x884C;&#x6FC0;&#x6D3B;</strong></li>
+<li><strong>&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#x9009;&#x62E9;&#x5728;(D:\)&#x65B9;&#x4FBF;&#x7B97;&#x5B50;&#x8DEF;&#x5F84;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</strong></li>
+</ul>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/RVS.png"></p>
+</blockquote>
+<h3 id="22-&#x6444;&#x50CF;&#x5934;&#x786C;&#x4EF6;&#x8FDE;&#x63A5;">2.2 &#x6444;&#x50CF;&#x5934;&#x786C;&#x4EF6;&#x8FDE;&#x63A5;</h3>
+<p>&#x5728;&#x5B98;&#x7F51;&#x67E5;&#x627E;&#x76F8;&#x673A;&#x4F9B;&#x7535;&#x65B9;&#x5F0F;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;<a href="https://www.percipio.xyz/product-fmseries/product_fs820-e1/" target="_blank">FS820-E1&#x76F8;&#x673A;</a>&#x578B;&#x53F7;&#xFF0C;&#x4F7F;&#x7528;<strong>DC 12V~24V</strong>&#x4F9B;&#x7535;&#x3002;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;<a href="http://doc.percipio.xyz/cam/latest/getstarted/hardware-connection.html#net-connection-label" target="_blank">&#x53C2;&#x8003;&#x8FD9;&#x91CC;</a>&#x3002;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;<strong>&#x65B9;&#x5F0F;1</strong></p>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/connect.png"></p>
+<h3 id="23-&#x7B97;&#x5B50;&#x603B;&#x89C8;">2.3 &#x7B97;&#x5B50;&#x603B;&#x89C8;</h3>
+<p>&#x8BE6;&#x60C5;<a href="http://res1.percipio.xyz/rvs/RVS_Node_Introduction.pdf" target="_blank">&#x53C2;&#x8003;&#x8FD9;&#x91CC;</a></p>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/node.png"></p>
+<h3 id="24-&#x56FE;&#x6F3E;&#x76F8;&#x673A;&#x6570;&#x636E;&#x5B9E;&#x65F6;&#x91C7;&#x96C6;">2.4 &#x56FE;&#x6F3E;&#x76F8;&#x673A;&#x6570;&#x636E;&#x5B9E;&#x65F6;&#x91C7;&#x96C6;</h3>
+<p>&#x5728;&#x5DE6;&#x4E0A;&#x89D2;&#x7A97;&#x53E3;<strong>&#x8D44;&#x6E90;</strong>&#x4E2D;&#xFF0C;&#x627E;&#x5230;TyCameraResource &#x7B97;&#x5B50;&#x6DFB;&#x52A0;&#x5230;&#x7B97;&#x5B50;&#x56FE;&#x4E2D;&#x7684; ResourceGroup &#x4E2D;&#xFF0C;&#x5728;&#x7B97;&#x5B50;&#x5217;&#x8868;&#x641C;&#x7D22;<strong>TyCameraAccess</strong>,<strong>trigger</strong> &#x7B97;&#x5B50;&#x6DFB;&#x52A0;&#x5230;&#x7B97;&#x5B50;&#x56FE;&#x4E2D;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x9700;&#x8981;&#x8C03;&#x6574;&#x7B97;&#x5B50;&#x53C2;&#x6570;&#x3002;&#x7136;&#x540E;&#x70B9;&#x51FB;<strong>&#x8FD0;&#x884C;</strong>&#x548C;&#x5C5E;&#x6027;&#x9762;&#x677F;<strong>Trigger-&gt;ture</strong>&#x5373;&#x53EF;&#x67E5;&#x770B;&#x53EF;&#x89C6;&#x5316;&#x6570;&#x636E;&#x3002;&#x6CA1;&#x6709;&#x62A5;&#x9519;&#x80FD;&#x6B63;&#x5E38;&#x663E;&#x793A;&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x3002;</p>
+<blockquote>
+<p>TyCameraResource &#x7B97;&#x5B50;</p>
+<ul>
+<li>start &#x4EE5;&#x53CA; stop &#x5206;&#x522B;&#x7528;&#x4E8E;&#x5F00;&#x542F;&#x3001;&#x5173;&#x95ED;&#x8D44;&#x6E90;&#x7B97;&#x5B50;&#x7684;&#x7EBF;&#x7A0B;&#x3002;<strong>auto_start</strong> &#x4E5F;&#x662F;&#x7528;&#x4E8E;&#x5F00;&#x542F;&#x8D44;&#x6E90;&#x7B97;&#x5B50;&#xFF0C;&#x5982;&#x679C;
+&#x52FE;&#x9009;&#xFF0C;&#x5219;&#x4EC5;&#x5728;&#x6253;&#x5F00; RVS &#x8F6F;&#x4EF6;&#x540E;&#x7B2C;&#x4E00;&#x6B21;&#x8FDB;&#x5165;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x65F6;&#x81EA;&#x52A8;&#x5F00;&#x542F;&#x8D44;&#x6E90;&#x7EBF;&#x7A0B;&#x3002;</li>
+<li>reset&#xFF1A;&#x5728;&#x6253;&#x5F00;&#x8D44;&#x6E90;&#x7EBF;&#x7A0B;&#x540E;&#x5982;&#x679C;&#x9700;&#x8981;&#x66F4;&#x6539;&#x5C5E;&#x6027;&#x53C2;&#x6570;&#xFF0C;&#x9700;&#x8981;&#x9009;&#x4E2D;&#x8BE5;&#x9009;&#x9879;&#x8FDB;&#x884C;&#x91CD;&#x7F6E;&#x3002;</li>
+</ul>
+<p>TyCameraAccess &#x7B97;&#x5B50; </p>
+<ul>
+<li>&#x6253;&#x5F00;cloud&#x3001;rgb&#x3001;depth&#x53EF;&#x89C6;&#x5316;&#x5C5E;&#x6027;&#xFF0C;&#x5C06; cloud_color&#x8BBE;&#x7F6E;&#x4E3A;<strong>-2</strong>&#xFF0C;&#x4EE3;&#x8868;<strong>&#x771F;&#x5B9E;&#x989C;&#x8272;</strong>
+<img src="../../resources/7-ExamplesRobotsUsing/3D/cam.png"></li>
+</ul>
+</blockquote>
+<h2 id="3-&#x624B;&#x773C;&#x6807;&#x5B9A;">3 &#x624B;&#x773C;&#x6807;&#x5B9A;</h2>
+<p>&#x51C6;&#x5907;&#x68CB;&#x76D8;&#x683C;&#xFF0C;&#x7B97;&#x597D;&#x68CB;&#x76D8;&#x683C;&#x884C;&#x5217;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;<strong>&#x68CB;&#x76D8;&#x683C;&#x8FB9;&#x957F;(mm)</strong>
+<strong>&#x6CE8;&#x610F;</strong>&#xFF1A;
+&#x6BCF;&#x4E00;&#x6B21;&#x7684;&#x624B;&#x773C;&#x6807;&#x5B9A;&#x5F00;&#x59CB;&#x524D;&#x9700;&#x8981;&#x628A;RVS&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x7684;runtime\handeye_data
+&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x9762;&#x7684;&#x6587;&#x4EF6;&#x5168;&#x90E8;&#x6E05;&#x7A7A;</p>
+<h3 id="31&#x6570;&#x636E;&#x5F55;&#x5236;">3.1&#x6570;&#x636E;&#x5F55;&#x5236;</h3>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x70B9;&#x51FB;&#x5DE6;&#x4E0A;&#x89D2;&#x52A0;&#x8F7D;&#xFF0C;&#x6253;&#x5F00;unstacking_runtime/HandEyeCalibration/HandEyeCalibration.xml&#xFF0C;&#x6839;&#x636E;&#x4E0B;&#x56FE;&#x6807;&#x6CE8;&#x64CD;&#x4F5C;</p>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/handeye.png"></p>
+<p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x542F;&#x52A8;&#x673A;&#x68B0;&#x81C2;</p>
+<blockquote>
+<p>&#x5728;&#x7EC8;&#x7AEF;&#x8FD0;&#x884C;HandInEyeCalib.py&#x6587;&#x4EF6;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/py2.png"></p>
+</blockquote>
+<p>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x542F;&#x52A8;&#x673A;&#x68B0;&#x81C2;&#x811A;&#x672C;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x5F00;&#x59CB;&#x81EA;&#x52A8;&#x6807;&#x5B9A;</p>
+<blockquote>
+<p>&#x6807;&#x5B9A;&#x524D;&#x786E;&#x4FDD;&#x76F8;&#x673A;&#x80FD;&#x5B8C;&#x6574;&#x8BC6;&#x522B;&#x5B8C;&#x6574;&#x7684;&#x68CB;&#x76D8;&#x683C;&#xFF0C;&#x4EE5;&#x53CA;&#x6807;&#x5B9A;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x68CB;&#x76D8;&#x683C;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x53D1;&#x751F;&#x79FB;&#x52A8;&#x3002;&#x8FD0;&#x884C;&#x5B8C;&#x6210;&#x4F1A;&#x5F97;&#x5230;20&#x7EC4;&#x6570;&#x636E;&#x3002;</p>
+</blockquote>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/handeye3.png"></p>
+<h3 id="32-&#x8BA1;&#x7B97;&#x6807;&#x5B9A;&#x7ED3;&#x679C;">3.2 &#x8BA1;&#x7B97;&#x6807;&#x5B9A;&#x7ED3;&#x679C;</h3>
+<p>&#x8BA1;&#x7B97;&#x624B;&#x773C;&#x6807;&#x5B9A;&#x7ED3;&#x679C;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/04.png"></p>
+<p>&#x4F4D;&#x7F6E;&#x8BEF;&#x5DEE;&#x5728; 0.005&#xFF08;5&#x6BEB;&#x7C73;&#xFF09;&#x4EE5;&#x5185;&#xFF0C;&#x5219;&#x6BD4;&#x8F83;&#x7406;&#x60F3;&#xFF1B;&#x5982;&#x679C;&#x8BEF;&#x5DEE;&#x5F88;&#x5927;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;&#x524D;&#x8FF0;&#x6B65;&#x9AA4;&#x662F;&#x5426;&#x6B63;&#x786E;&#x6267;&#x884C;</p>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/handeye2.png"></p>
+<h2 id="4-&#x6A21;&#x578B;&#x8BAD;&#x7EC3;">4 &#x6A21;&#x578B;&#x8BAD;&#x7EC3;</h2>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;
+&#x6A21;&#x578B;&#x5DF2;&#x8BAD;&#x7EC3;&#x597D;&#xFF0C;&#x5BA2;&#x6237;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF0C;&#x65E0;&#x9700;&#x518D;&#x8BAD;&#x7EC3;&#xFF0C;&#x76F4;&#x63A5;&#x9605;&#x8BFB;&#x6848;&#x5217;&#x8FD0;&#x884C;&#x7AE0;&#x8282;&#x5373;&#x53EF;&#x3002;&#x82E5;&#x5BA2;&#x6237;&#x60F3;&#x81EA;&#x5DF1;&#x8BAD;&#x7EC3;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x628A;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x7684;runtime/MaskRCNN/train data&#x7684;&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x9762;&#x7684;&#x6587;&#x4EF6;&#x5168;&#x90E8;&#x5220;&#x9664;&#x5373;&#x53EF;,&#x6839;&#x636E;&#x4E0B;&#x9762;&#x5185;&#x5BB9;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="41-&#x91C7;&#x96C6;&#x56FE;&#x50CF;">4.1 &#x91C7;&#x96C6;&#x56FE;&#x50CF;</h3>
+<p>&#x6253;&#x5F00;RVS&#x52A0;&#x8F7D;unstacking_runtime/MaskRCNN/ty_ai_savedata.xml&#x6587;&#x4EF6;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/003.png"></p>
+<p><strong>&#x5728;&#x56FE;&#x50CF;&#x91C7;&#x96C6;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x6CE8;&#x610F;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;</strong></p>
+<ul>
+<li><p>&#x80CC;&#x666F;&#x5149;&#x7167;</p>
+<ul>
+<li>&#x5355;&#x4E00;&#x7A33;&#x5B9A;&#x5149;&#x6E90;&#xFF0C;&#x4EAE;&#x6697;&#x9002;&#x5B9C;&#x4E14;&#x6CA1;&#x6709;&#x8FC7;&#x591A;&#x53CD;&#x5149;</li>
+<li>&#x6237;&#x5916;&#x5149;&#x7167;&#x60C5;&#x51B5;&#x53D8;&#x5316;&#x8FC7;&#x5927;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;</li>
+</ul>
+</li>
+<li><p>&#x590D;&#x6742;&#x5DE5;&#x51B5;&#x8003;&#x8651;</p>
+<ul>
+<li>&#x5C3D;&#x91CF;&#x4F7F;&#x5F97;&#x91C7;&#x6837;&#x6837;&#x672C;&#x5BF9;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x7684;&#x5168;&#x5C40;&#x6837;&#x672C;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x4EE3;&#x8868;&#x6027;&#x800C;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x5168;&#x5C40;&#x6837;&#x672C;&#x7684;&#x4E00;&#x79CD;&#x7279;&#x4F8B;</li>
+</ul>
+</li>
+<li><p>&#x56FE;&#x50CF;&#x8D28;&#x91CF;</p>
+<ul>
+<li>&#x4EBA;&#x773C;&#x9700;&#x6E05;&#x6670;&#x53EF;&#x89C1;&#x76EE;&#x6807;&#x8FB9;&#x7F18;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x8DDD;&#x79BB;&#x76F8;&#x673A;&#x6700;&#x8FDC;&#x7684;&#x90A3;&#x5C42;&#x76EE;&#x6807;&#xFF0C;&#x5426;&#x5219;&#x8003;&#x8651;&#x66F4;&#x6362;&#x76F8;&#x673A;&#x5177;&#x4F53;&#x56FE;&#x50CF;&#x5F55;&#x5236;&#x53EF;&#x4EE5;&#x53C2;&#x8003;unstacking_runtime/MaskRCNN/train_data &#x4E2D;&#x7684; rgb &#x56FE;&#x50CF;</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-&#x56FE;&#x50CF;&#x6807;&#x6CE8;">4.2 &#x56FE;&#x50CF;&#x6807;&#x6CE8;</h3>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x5728;&#x9700;&#x8981;&#x6807;&#x6CE8;&#x56FE;&#x7247;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x65B0;&#x5EFA;class_name.txt(&#x6587;&#x4EF6;&#x540D;&#x4E0D;&#x80FD;&#x66F4;&#x6539;)
+<img src="../../resources/7-ExamplesRobotsUsing/3D/1.png"></p>
+<p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x6253;&#x5F00;RVS&#xFF0C;&#x5229;&#x7528;RVS&#x81EA;&#x5E26;&#x56FE;&#x50CF;&#x6807;&#x6CE8;&#x5DE5;&#x5177;&#x5BF9;&#x56FE;&#x50CF;&#x8FDB;&#x884C;&#x6807;&#x6CE8;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/biaozhu2.png"></p>
+<p>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x70B9;&#x51FB;&#x6253;&#x5F00;&#x76EE;&#x5F55;&#xFF0C;&#x9009;&#x62E9;&#x8981;&#x6807;&#x6CE8;&#x7684;&#x56FE;&#x7247;&#x7684;&#x6240;&#x5728;&#x76EE;&#x5F55;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/0.png">
+&#x7B2C;&#x56DB;&#x6B65;&#xFF1A;&#x6807;&#x6CE8;&#x56FE;&#x7247;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/02.png"></p>
+<h3 id="43-&#x6570;&#x636E;&#x8BAD;&#x7EC3;">4.3 &#x6570;&#x636E;&#x8BAD;&#x7EC3;</h3>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x52A0;&#x8F7D;unstacking_runtime/MaskRCNN/ty_ai_train.xml&#x5DE5;&#x7A0B;&#xFF0C;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x8BAD;&#x7EC3;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/train.png"></p>
+<p><img src="../../resources/7-ExamplesRobotsUsing/3D/success.png">
+&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x8BAD;&#x7EC3;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;train_output&#x6587;&#x4EF6;&#x5939;,&#x91CC;&#x9762;&#x4F1A;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x6743;&#x91CD;&#x6587;&#x4EF6;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/result.png"></p>
+<h2 id="5-&#x6848;&#x5217;&#x8FD0;&#x884C;">5 &#x6848;&#x5217;&#x8FD0;&#x884C;</h2>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x6253;&#x5F00;unstacking_runtime/demo/demo.xml&#x5DE5;&#x7A0B;&#x540E;&#xFF0C;&#x68C0;&#x67E5;&#x76F8;&#x673A;&#x6807;&#x5B9A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF0C;&#x4FDD;&#x6301;&#x9ED8;&#x8BA4;&#x5373;&#x53EF;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/demo1.png">
+&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x68C0;&#x67E5;&#x624B;&#x773C;&#x6807;&#x5B9A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF0C;&#x4FDD;&#x6301;&#x9ED8;&#x8BA4;&#x5373;&#x53EF;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/demo2.png">
+&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x6253;&#x5F00;&#x8BA1;&#x7B97;&#x6293;&#x53D6;&#x70B9;&#x7B97;&#x5B50;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/demo3.png">
+&#x7B2C;&#x56DB;&#x6B65;&#xFF1A;&#x68C0;&#x67E5;AI&#x63A8;&#x7406;&#x7B97;&#x5B50;&#x7684;&#x7C7B;&#x540D;&#x6587;&#x4EF6;&#x3001;&#x6743;&#x91CD;&#x6587;&#x4EF6;&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6B63;&#x5E38;&#xFF1B;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8C03;&#x8282;&#x5F97;&#x5206;&#x9608;&#x503C;&#xFF0C;&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#x4FDD;&#x6301;&#x9ED8;&#x8BA4;&#x5373;&#x53EF;
+<img src="../../resources/7-ExamplesRobotsUsing/3D/demo4.png"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../7-ExamplesRobotsUsing.html" class="navigation navigation-prev " aria-label="Previous page: 7 机械臂使用场景案例">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../2.5D/2.5D.html" class="navigation navigation-next " aria-label="Next page: 7.2 2.5D二维码分拣">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.1 3D无序分拣","level":"1.8.1","depth":2,"next":{"title":"7.2 2.5D二维码分拣","level":"1.8.2","depth":2,"path":"7-ExamplesRobotsUsing/2.5D/2.5D.md","ref":"./7-ExamplesRobotsUsing/2.5D/2.5D.md","articles":[]},"previous":{"title":"7 机械臂使用场景案例","level":"1.8","depth":1,"path":"7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.md","ref":"./7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.md","articles":[{"title":"7.1 3D无序分拣","level":"1.8.1","depth":2,"path":"7-ExamplesRobotsUsing/3D/3D.md","ref":"./7-ExamplesRobotsUsing/3D/3D.md","articles":[]},{"title":"7.2 2.5D二维码分拣","level":"1.8.2","depth":2,"path":"7-ExamplesRobotsUsing/2.5D/2.5D.md","ref":"./7-ExamplesRobotsUsing/2.5D/2.5D.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"7-ExamplesRobotsUsing/3D/3D.md","mtime":"2024-03-14T08:52:50.191Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-14T09:47:26.191Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

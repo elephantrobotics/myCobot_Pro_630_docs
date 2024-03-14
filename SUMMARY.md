@@ -33,7 +33,7 @@
     * [2 ROS基础知识](11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.md)
     * [3 Rviz使用](11-ApplicationBaseROS/11.1-ROS1/11.1.3-RvizIntroduction.md)
     * [4 基本功能案例](11-ApplicationBaseROS/11.1-ROS1/11.1.4-BasicFunction.md)
-  * [6.3 机器人操作系统 2 (ROS2)](11-ApplicationBaseROS/11.2-ROS1/README.md)
+  * [6.3 机器人操作系统 2 (ROS2)](11-ApplicationBaseROS/11.2-ROS2/README.md)
     * [1 环境搭建](11-ApplicationBaseROS/11.2-ROS2/11.2.1-EnvironmentBuilding.md)
     * [2 ROS2基础知识](11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.md)
     * [3 Rviz2使用](11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.md)
@@ -45,6 +45,7 @@
   
 * [7 机械臂使用场景案例](./7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.md)
   * [7.1 3D无序分拣](./7-ExamplesRobotsUsing/3D/3D.md)
+  * [7.2 2.5D二维码分拣](./7-ExamplesRobotsUsing/2.5D/2.5D.md)
 * [8 相关资料下载](./8-FilesDownload/8-FilesDownload.md)
   * [8.1 产品资料](./8-FilesDownload/8.1-Productinformation.md)
   * [8.2 产品图纸](./8-FilesDownload/8.2-ProductDrawings.md)
