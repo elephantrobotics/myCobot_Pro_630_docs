@@ -15,4 +15,4 @@
 
 
 ---
-[← 上一页](../3-UserNotes/3.4-FAQsandSolutions.md) | [下一页 →](./4.1-ProductStandardList.md)
+[← 上一页](../3-UserNotes/3.4-FAQsandSolutions/3.4.3-software.md) | [下一页 →](./4.1-ProductStandardList.md)

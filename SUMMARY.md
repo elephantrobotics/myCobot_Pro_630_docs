@@ -15,7 +15,7 @@
   * [3.1 安全须知](./3-UserNotes/3.1-SafetyInstruction.md)
   * [3.2 运输和储存](./3-UserNotes/3.2-TransportandStorage.md)
   * [3.3 维护和保养](./3-UserNotes/3.3-MaintenanceandCare.md)
-  * [3.4 常见问题解决](./3-UserNotes/3.4-FAQsandSolutions.md)
+  * [3.4 常见问题解决](./3-UserNotes/3.4-FAQsandSolutions/3.4.3-software.md)
   
 * [4 首次安装使用](4-FirstInstallAndUse/4-FirstInstallAndUse.md)
   * [4.1 产品标准清单](./4-FirstInstallAndUse/4.1-ProductStandardList.md)
@@ -33,7 +33,7 @@
     * [2 ROS基础知识](11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.md)
     * [3 Rviz使用](11-ApplicationBaseROS/11.1-ROS1/11.1.3-RvizIntroduction.md)
     * [4 基本功能案例](11-ApplicationBaseROS/11.1-ROS1/11.1.4-BasicFunction.md)
-  * [6.3 机器人操作系统 2 (ROS2)](11-ApplicationBaseROS/11.2-ROS1/README.md)
+  * [6.3 机器人操作系统 2 (ROS2)](11-ApplicationBaseROS/11.2-ROS2/README.md)
     * [1 环境搭建](11-ApplicationBaseROS/11.2-ROS2/11.2.1-EnvironmentBuilding.md)
     * [2 ROS2基础知识](11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.md)
     * [3 Rviz2使用](11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.md)
