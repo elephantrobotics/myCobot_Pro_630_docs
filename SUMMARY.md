@@ -15,7 +15,7 @@
   * [3.1 安全须知](./3-UserNotes/3.1-SafetyInstruction.md)
   * [3.2 运输和储存](./3-UserNotes/3.2-TransportandStorage.md)
   * [3.3 维护和保养](./3-UserNotes/3.3-MaintenanceandCare.md)
-  * [3.4 常见问题解决](./3-UserNotes/3.4-FAQsandSolutions.md)
+  * [3.4 常见问题解决](./3-UserNotes/3.4-FAQsandSolutions/3.4.3-software.md)
   
 * [4 首次安装使用](4-FirstInstallAndUse/4-FirstInstallAndUse.md)
   * [4.1 产品标准清单](./4-FirstInstallAndUse/4.1-ProductStandardList.md)
