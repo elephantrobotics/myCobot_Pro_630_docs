@@ -28,6 +28,7 @@
 拍照记录当前机械臂关节角度值与笛卡尔空间坐标值
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (11).png" >
 
+
 ## 3 软件环境搭建
 
 ## 3.1 Python安装
@@ -100,3 +101,4 @@
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (25).png" >
 选中原位置素材，并按下键盘【Delete】键，如图所示留下移开的素材。
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (26).png" >
+
