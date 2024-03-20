@@ -28,6 +28,7 @@
 拍照记录当前机械臂关节角度值与笛卡尔空间坐标值
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (11).png" >
 
+
 ## 3 软件环境搭建
 
 ## 3.1 Python安装
@@ -111,3 +112,4 @@
 等待弹出如下图窗口，并点击“确定”按钮
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (31).png" >
 在刚刚所选择的文件保存路径下，可以看到已经生成了.ngc文件
+
