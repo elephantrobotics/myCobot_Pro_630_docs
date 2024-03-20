@@ -101,4 +101,15 @@
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (25).png" >
 选中原位置素材，并按下键盘【Delete】键，如图所示留下移开的素材。
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (26).png" >
+再将留下的素材移动到原位置上，注意左上角对齐。如图选择标题栏的“文件”，点击“另存为”。
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (27).png" >
+在弹出的文件保存窗口中，选择文件保存路径，再选择保存类型为.ngc，并根据需求选择是否修改文件名，点击“保存”
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (28).png" >
+在弹出的窗口中，按下图参数逐项进行修改
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (29).png" >
+选择HomePosition页面，并将最初记录下的机械臂关节坐标与笛卡尔坐标值依次填写到对应位置中；修改完成后点击“OK”。
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (30).png" >
+等待弹出如下图窗口，并点击“确定”按钮
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (31).png" >
+在刚刚所选择的文件保存路径下，可以看到已经生成了.ngc文件
 
