@@ -113,3 +113,8 @@
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (31).png" >
 在刚刚所选择的文件保存路径下，可以看到已经生成了.ngc文件
 
+## 5 轨迹复现
+将生成NGC文件从电脑拷贝到U盘，将U盘插入机械臂底座的USB接口,将NGC文件拷贝到如下图的路径
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (32).png" >
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (33).png" >
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (34).png" >
