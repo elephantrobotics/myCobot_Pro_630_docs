@@ -1,5 +1,5 @@
 # 全息投影套件
-<img src="../../resources/7-ExamplesRobotsUsing/LED/LED.png" >
+<img src="../../resources/7-ExamplesRobotsUsing/LED/LED2.png" >
 
 ## 1 套件硬件介绍
 ### 1.1 MyCobot Pro630机械臂
