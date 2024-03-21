@@ -27,7 +27,7 @@
   * [5.2 软件使用说明](./5-BasicApplication/5.2-ApplicationUse.md)
   * [5.3 固件功能说明](./5-BasicApplication/5.3-FirmwareUse.md)
 * [6 SDK 开发指南](6-SDKDevelopment/6-SDKDevelopment.md)
-  * [6.1 基于python开发使用](./6-SDKDevelopment/6.1-ApplicationBasePython.md)
+  * [6.1 基于python开发使用](./6-SDKDevelopment/6.1-Python/6.1.2-ApplicationBasePython.md)
   * [6.2 机器人操作系统 1 (ROS1)](11-ApplicationBaseROS/11.1-ROS1/README.md)
     * [1 环境搭建](11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.md)
     * [2 ROS基础知识](11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.md)
