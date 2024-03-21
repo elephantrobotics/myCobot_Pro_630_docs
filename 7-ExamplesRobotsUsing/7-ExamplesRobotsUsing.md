@@ -9,5 +9,8 @@
 ## 写字画画
 <img src="../resources/7-ExamplesRobotsUsing/draw/draw.png" >
 
+## 全息投影套件
+<img src="../resources/7-ExamplesRobotsUsing/LED/LED2.png" >
+
 ---
 [← 上一页](../6-SDKDevelopment/6-SDKDevelopment.md) | [下一页 →](./3D/3D.md)
