@@ -28,3 +28,32 @@
 ### 2.3 全息投影仪与连接件安装
 用M5内六角扳手将全息投影仪与连接件拼接起来
 <img src="../../resources/7-ExamplesRobotsUsing/LED/M5.png" width="1600" height="">
+
+## 3 全息投影使用
+### 3.1 WiFi连接
+给全息投影插上24V电源适配器，利用电脑搜寻投影的wifi,wifi的密码贴在投影傍边。然后使用全息投影的软件进行连接。
+第一步：給全息投影仪上电
+<img src="../../resources/7-ExamplesRobotsUsing/LED/24V.png" width="1600" height="600">
+第二步：找到设备WIFI
+<img src="../../resources/7-ExamplesRobotsUsing/LED/wifi1.png" width="1600" height="">
+第三步：输入设备WIFI密码
+<img src="../../resources/7-ExamplesRobotsUsing/LED/WiFi.png" width="1600" height="600">
+
+### 3.2影片上传
+第一步：打开全息投影仪软件
+<img src="../../resources/7-ExamplesRobotsUsing/LED/ui1.png" width="1600" height="600">
+第二步：连接设备
+<img src="../../resources/7-ExamplesRobotsUsing/LED/conn.png" width="1600" height="500">
+第三步：默认选择设备为一般模式
+<img src="../../resources/7-ExamplesRobotsUsing/LED/conn2.png" width="1600" height="500">
+
+第四步：添加影片
+<img src="../../resources/7-ExamplesRobotsUsing/LED/tainjia.png" width="1600" height="500">
+第五步：上传要放映的影片
+<img src="../../resources/7-ExamplesRobotsUsing/LED/shipin.png" width="1600" height="500">
+
+### 3.3 影片放映
+<img src="../../resources/7-ExamplesRobotsUsing/LED/bofang.jpg" width="1600" height="500">
+
+<img src="../../resources/7-ExamplesRobotsUsing/LED/qiehuan.jpg" width="1600" height="500">
+
