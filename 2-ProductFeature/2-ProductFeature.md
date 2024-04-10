@@ -42,9 +42,9 @@ IO接口|	数字D-INPUT x6; D-OUTPUT x6
 
 DH坐标系：
 
-<div align=center><img src="../../resourse/2-serialproduct/myCobot Pro 600/Chinese/DH参数图.png"></div>
+<div align=center><img src="../resources/2-serialproduct/myCobot Pro 600/Chinese/DH参数图.png"></div>
 
 
 MDH参数表：
 
-<div align=center><img src="../../resourse/2-serialproduct/myCobot Pro 600/Chinese/MDH参数.png"></div>
+<div align=center><img src="../resources/2-serialproduct/myCobot Pro 600/Chinese/MDH参数.png"></div>
