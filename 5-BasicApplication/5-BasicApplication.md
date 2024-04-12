@@ -22,3 +22,6 @@ RoboFlow 操作系统是 大象协作型机器人 的操作系统，提供了人
 <div align=center><img src="../resources/2-serialproduct/myCobot%20Pro%20600/Chinese/Drawing 28.png" alt="img" style="zoom: 25%;" /> </div>
 
 <center>图2- 5 程序编辑流程图</center>
+
+---
+[← 上一页](../4-FirstInstallAndUse/4.3-Power-onTestGuide.md) | [下一页 → ](./5.2-ApplicationUse.md)

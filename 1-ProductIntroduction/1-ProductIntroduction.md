@@ -38,5 +38,7 @@ myCobot Pro 630的设计初衷是向大家提供一款可以重复劳动的机�
 * 展示
   - 白板写字演示
 
+---
+[← 上一页](../README.md) | [下一页 →](../2-ProductFeature/2-ProductFeature.md)
 
 

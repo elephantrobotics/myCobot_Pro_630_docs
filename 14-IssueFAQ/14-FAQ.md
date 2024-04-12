@@ -23,3 +23,6 @@
 如果列举出的问题无法帮助您解决并且您有更多售后问题想要咨询请添加售后小管家微信。
 <!-- ![](../resources/14-IssueFAQ/微信图片_20220225152258.jpg) -->
 <img width = '200' height ='200' src ="../resources/14-IssueFAQ/微信图片_20220225152533.jpg"/>
+
+---
+[← 上一页](../3-UserNotes/3.3-MaintenanceandCare.md) | [下一页 → ](./14.0-how_to_ask.md)

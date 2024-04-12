@@ -116,5 +116,19 @@
 ## 5 轨迹复现
 将生成NGC文件从电脑拷贝到U盘，将U盘插入机械臂底座的USB接口,将NGC文件拷贝到如下图的路径
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (32).png" >
+
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (33).png" >
+
 <img src="../../resources/7-ExamplesRobotsUsing/draw/image (34).png" >
+
+启动机器人的状态下，在RoboFlow编程界面中，点击标题栏的基础功能--轨迹示教
+<img src="/resources/7-ExamplesRobotsUsing/draw/image (35).png" >
+此时程序树中可见新增（轨迹示教），点击画面中的“打开”。
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (36).png" >
+
+选择加载需要运行的.ngc文件，点击“确定”.如图点击“播放”按钮，机械臂则开始执行绘画轨迹，轨迹运行完成后自动停止。中途需要停止的话，再次点击“播放”按钮即可。
+<img src="../../resources/7-ExamplesRobotsUsing/draw/image (37).png" >
+
+---
+
+[← 上一页](../2.5D/2.5D.md) | [下一节 →](../LED/LED.md)

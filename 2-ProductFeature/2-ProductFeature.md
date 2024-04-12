@@ -48,3 +48,7 @@ DH坐标系：
 MDH参数表：
 
 <div align=center><img src="../resources/2-serialproduct/myCobot Pro 600/Chinese/MDH参数.png"></div>
+
+---
+
+[← 上一页](../1-ProductIntroduction/1-ProductIntroduction.md) | [下一节 →](./2.1-MachineSpecification.md)

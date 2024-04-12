@@ -57,3 +57,12 @@
 
 <img src="../../resources/7-ExamplesRobotsUsing/LED/qiehuan.jpg" width="1600" height="500">
 
+## 4 注意事项
+&emsp;&emsp;用户可以自己设置机器人点位，**机械臂末端姿态统一调到下图的推荐姿态**。让机械臂一边运动一边播放影片。**全息投影在运行时，会高速旋转，不要随意变换机械臂末端姿态，避免机械臂本体与投影仪发生碰撞**。建议在全息投影工作时，机器人周围2米内不要站人，布置上安全围栏。
+<img src="../../resources/7-ExamplesRobotsUsing/LED/pose.png" width="1600" height="500">
+
+<img src="../../resources/7-ExamplesRobotsUsing/LED/ludian.png" width="1600" height="500">
+
+---
+
+[← 上一页](../draw/draw.md) | [下一节 →](../../8-FilesDownload/8-FilesDownload.md)
