@@ -7,7 +7,8 @@
   
 * [2 产品特性](./2-ProductFeature/2-ProductFeature.md)
   * [2.1 机械结构参数](./2-ProductFeature/2.1-MachineSpecification.md)
-  * [2.2 电气特性参数](./2-ProductFeature/2.4-ElectricalCharacteristicParameter.md)
+  * [2.2 控制核心参数](./2-ProductFeature/2.2-ControlCoreParameter.md)
+  * [2.3 电气特性参数](./2-ProductFeature/2.4-ElectricalCharacteristicParameter.md)
 
   <!-- * [2.1 机器规格参数](./2-ProductFeature/2.1-MachineSpecification.md)
   * [2.2 控制核心参数](./2-ProductFeature/2.2-ControlCoreParameter.md)
