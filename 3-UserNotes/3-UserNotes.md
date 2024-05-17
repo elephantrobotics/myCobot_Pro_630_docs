@@ -11,7 +11,7 @@
 通过仔细阅读本章节，用户将能够更好地理解如何安全、高效地使用产品，从而最大限度地提高产品性能和使用寿命。
 
 ---
-[← 上一页](../2-ProductFeature/2-ProductFeature.md) | [下一页 →](./3.1-SafetyInstruction.md)
+[← 上一页](../2-ProductFeature/2.5-CoordinateSystem.md) | [下一页 →](./3.1-SafetyInstruction.md)
 
 
 
