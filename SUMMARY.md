@@ -1,10 +1,10 @@
-# Mycobot Pro630使用手册
+# MyCobot Pro630使用手册
 * [1 产品介绍](1-ProductIntroduction/1-ProductIntroduction.md)
   * [1.1 设计理念](./1-ProductIntroduction/1.1-DesignPhilosophy.md)
   
-  <!-- * [1.2 适用人群](./1-ProductIntroduction/1.2-SuitableUsers.md)
+  * [1.2 适用人群](./1-ProductIntroduction/1.2-SuitableUsers.md)
   * [1.3 应用场景](./1-ProductIntroduction/1.3-ApplicationScenario.md)
-  * [1.4 周边配件](./1-ProductIntroduction/1.4-AccessoriesTools/1.4-AccessoriesTools.md) -->
+  * [1.4 周边配件](./1-ProductIntroduction/1.4-AccessoriesTools/README.md)
   
   
 * [2 产品特性](./2-ProductFeature/2-ProductFeature.md)
@@ -45,7 +45,7 @@
   * [5.3 固件功能说明](./5-BasicApplication/5.3-FirmwareUse.md) -->
   
 * [6 SDK 开发指南](6-SDKDevelopment/6-SDKDevelopment.md)
-  * [6.1 基于python开发使用](./6-SDKDevelopment/6.1-Python/6.1.2-ApplicationBasePython.md)
+  * [6.1 基于python开发使用](./6-SDKDevelopment/python/PyhtonAPI.md)
   * [6.2 机器人操作系统 1 (ROS1)](11-ApplicationBaseROS/11.1-ROS1/README.md)
     * [1 环境搭建](11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.md)
     * [2 ROS基础知识](11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.md)
