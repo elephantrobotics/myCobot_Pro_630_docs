@@ -72,4 +72,4 @@ move_group是一个 ROS 节点。它使用ROS参数服务器来获取三种信�
 
 ---
 
-[← 上一节](../../10-ApplicationBasePython/README.md) | [下一页 →](11.1.1-EnvironmentBuilding.md)
+[← 上一页](../../6-SDKDevelopment/python/PyhtonAPI.md) | [下一页 →](11.1.1-EnvironmentBuilding.md)
