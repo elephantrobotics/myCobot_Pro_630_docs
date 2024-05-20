@@ -1,7 +1,6 @@
 # MyCobot Pro630使用手册
 * [1 产品介绍](1-ProductIntroduction/1-ProductIntroduction.md)
   * [1.1 设计理念](./1-ProductIntroduction/1.1-DesignPhilosophy.md)
-  
   * [1.2 适用人群](./1-ProductIntroduction/1.2-SuitableUsers.md)
   * [1.3 应用场景](./1-ProductIntroduction/1.3-ApplicationScenario.md)
   * [1.4 周边配件](./1-ProductIntroduction/1.4-AccessoriesTools/README.md)
