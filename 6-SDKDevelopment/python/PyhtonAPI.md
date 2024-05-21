@@ -4,11 +4,11 @@
 ## **1 环境搭建**
 ### 1.1 安装Python
 
-> **注意：**安装之前，请先确认您的电脑是64位还是32位。右键点击`我的电脑`，选择`属性`。如下图显示是64位的操作系统，所以选择64位的Python安装包。
+<!-- > **注意：**安装之前，请先确认您的电脑是64位还是32位。右键点击`我的电脑`，选择`属性`。如下图显示是64位的操作系统，所以选择64位的Python安装包。
 >
 > <img src="../../resources/7-ApplicationBasePython/电脑位数1.jpg" style="zoom: 67%;" />
 >
-> <img src="../../resources/7-ApplicationBasePython/电脑位数2.jpg" style="zoom: 67%;" />
+> <img src="../../resources/7-ApplicationBasePython/电脑位数2.jpg" style="zoom: 67%;" /> -->
 
 
 
