@@ -13,7 +13,7 @@
 
 
 * **Python官方下载地址： https://www.python.org/downloads/**
-
+* **建议安装3.7及以上版本**
 * **点击`Downloads`选项，开始下载Python，点击`Add Python 3.10 to PATH`,点击`Install Now`，开始安装Python**
 
 <img src="../../resources/7-ApplicationBasePython/pythondownload1.jpg" style="zoom: 33%;" />
@@ -30,7 +30,7 @@
 
 
 
-### 1.2 运行Python
+<!-- ### 1.2 运行Python
 安装成功后，打开命令提示符窗口（Win+R，输入cmd回车），敲入`python`后，会出现两种情况。
 
 **情况一：**
@@ -80,13 +80,13 @@
 
 * 以上步骤完成后，打开命令提示符窗口（Win+R，再输入cmd，回车），敲入Python，出现下图中的提示表示成功：
 
-<img src="../../resources/7-ApplicationBasePython/路径添加成功.jpg" style="zoom: 50%;" />
+<img src="../../resources/7-ApplicationBasePython/路径添加成功.jpg" style="zoom: 50%;" /> -->
 
-### 1.4 pymycobot安装
+### 1.2 pymycobot安装
 * pymycobot安装。打开一个控制台终端(快捷键Win+R,输入cmd进入终端)，输入以下命令后按键盘回车键进行安装：
 
 ```python
-pip install pymycobot --upgrade --user
+pip install pymycobot --upgrade 
 ```
 
 <img src="../../resources/7-ApplicationBasePython/pymycobot安装.jpg" style="zoom: 67%;" />
@@ -280,7 +280,7 @@ elephant_client.start_client()
 - **功能**：获取一个变量的值
 - **参数**：变量名（字符串类型）
 
-<!-- ## 4 **Python API使用案例**
+## 4 **Python API使用案例**
 ### 4.1 **关节控制**
 &ensp;&ensp;使用VNC Viewer进入RoboFlow系统后，在快速移动界面下，可通过关节控制，控制机器人到达目标位置后，记录操作面板上显示的机器人6个关节的角度
 <div align=center><img src="../../resources/2-serialproduct/myCobot Pro 600/Chinese/p9.png"></div>
@@ -341,7 +341,7 @@ if __name__=='__main__':
 ```
 
 ### 4.2 **坐标控制**
-&ensp;&ensp;主要用于实现智能规划路线让机械臂从一个位置到另一个指定位置。分为[x,y,z,rx,ry,rz]，其中[x,y,z]表示的是机械臂头部在空间中的位置（该坐标系为直角坐标系），[rx,ry,rz]表示的是机械臂头部在该点的姿态(该坐标系为欧拉坐标)<br/>
+&ensp;&ensp;主要用于实现智能规划路线让机械臂从一个位置到另一个指定位置。分为[x,y,z,rx,ry,rz]，其中[x,y,z]表示的是机械臂末端在空间中的位置（该坐标系为直角坐标系），[rx,ry,rz]表示的是机械臂末端在该点的姿态(该坐标系为欧拉坐标)
 &ensp;&ensp;使用VNC Viewer进入RoboFlow系统后，在快速移动界面下，可通过笛卡尔坐标控制，控制机器人到达目标位置后，记录操作面板上显示的机器人6个坐标值
 <div align=center><img src="../../resources/2-serialproduct/myCobot Pro 600/Chinese/p10.png"></div>
 
@@ -512,10 +512,10 @@ if __name__=='__main__':
 
         "机器人关节运动到安全点"
         elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
-        elephant_client.command_wait_done() -->
+        elephant_client.command_wait_done()
 
    
-<!-- ``` -->
+```
 
 ---
 [← 上一页](../6-SDKDevelopment.md) | [下一页 → ](../../11-ApplicationBaseROS/11.1-ROS1/README.md)
