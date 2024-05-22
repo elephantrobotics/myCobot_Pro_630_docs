@@ -40,7 +40,7 @@ With myCobot, you can learn that
 	+ **Robot Suit & Industry 4.0 Applications**
 
 
-![robot1](./resourse/1-elephant/robot1.jpg)
+![robot1](./resources/1-elephant/robot1.jpg)
 
 
 ### Parts of Gitbook
