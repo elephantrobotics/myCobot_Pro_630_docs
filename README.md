@@ -18,7 +18,7 @@ With myCobot, you can learn that
 	+ **Motor and Steering Gear**
 	+ **M5Stack Basic/ Atom**
 + **Software**
-	+ **Arduino开发环境** 
+	+ **Arduino** 
 	+ **C++**
 	+ **Python**
 	+ **ROS，MoveIt**
@@ -26,7 +26,7 @@ With myCobot, you can learn that
 	+ **Virtual Machines & Linux (visual system)**
 + **Algorithm**
 	+ **Series Manipulator**
-	+ **Coordinate and Coordinate Transformation坐标与坐标转换**
+	+ **Coordinate and Coordinate Transformation**
 	+ **DH Parameters**
 	+ **Kinematics**
 	+ **Manipulator Algorithm (e.g. dynamics)**
