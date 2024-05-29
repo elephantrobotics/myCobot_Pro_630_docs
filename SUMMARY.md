@@ -66,4 +66,5 @@
    * [7 Robot arm usage scenario cases](./7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.md)
      * [7.1 3D disordered sorting](./7-ExamplesRobotsUsing/3D/3D.md)
      * [7.2 2.5D QR code sorting](./7-ExamplesRobotsUsing/2.5D/2.5D.md)
-  
+     * [7.3 Writing and drawing](./7-ExamplesRobotsUsing/draw/draw.md)
+     * [7.4 Holographic projection](./7-ExamplesRobotsUsing/LED/LED.md)
