@@ -68,3 +68,9 @@
      * [7.2 2.5D QR code sorting](./7-ExamplesRobotsUsing/2.5D/2.5D.md)
      * [7.3 Writing and drawing](./7-ExamplesRobotsUsing/draw/draw.md)
      * [7.4 Holographic projection](./7-ExamplesRobotsUsing/LED/LED.md)
+  
+   * [8 Related information download](./8-FilesDownload/8-FilesDownload.md)
+
+  * [9 About us](9-AboutUs/9-AboutUs.md)
+    * [9.1 Elephant Robot](./9-AboutUs/9.1-company.md)
+    * [9.2 Contact Us](./9-AboutUs/9.2-contact.md)
