@@ -12,4 +12,4 @@ python API是大象协作型机器人给外部设备做交互控制的接口，�
   <div align=center><img src="../resources/2-serialproduct/myCobot Pro 600/Chinese/ros.jpg"></div>
 
 ---
-[← 上一页](../5-BasicApplication/5.2-ApplicationUse.md) | [下一页 → ](./6.1-Python/6.1.2-ApplicationBasePython.md)
+[← 上一页](../5-BasicApplication/5.2-ApplicationUse.md) | [下一页 → ](./python/PyhtonAPI.md)
