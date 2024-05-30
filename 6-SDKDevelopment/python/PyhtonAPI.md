@@ -31,7 +31,7 @@
 pip install pymycobot --upgrade
 ```
 
-<img src="../../resources/7-ApplicationBasePython/pymycobot installation.jpg" style="zoom: 67%;" />
+<img src="../../resources/7-ApplicationBasePython/pymycobot安装.jpg" style="zoom: 67%;" />
 
 
 ## 2 **Enable TCP server function**

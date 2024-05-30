@@ -41,8 +41,8 @@
 
    - Electrical connections:
 
-     1. Plug the USB cable into the base USB port:
-        ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/电气连接.jpg)
+     1. Plug the USB cable into the base USB port
+        <!-- ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/电气连接.jpg) -->
 
 <!-- - Programming development:
 
