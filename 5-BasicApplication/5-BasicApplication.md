@@ -19,7 +19,7 @@ The RoboFlow operating system is the operating system of the Elephant collaborat
 
 Figure 2-5 shows the program editing flow chart.
 
-<div align=center><img src="../resources/2-serialproduct/myCobot%20Pro%20600/Chinese/Drawing 28.png" alt="img" style="zoom: 25%;" /> </div>
+<div align=center><img src="../resources/2-serialproduct/myCobot%20Pro%20600/Chinese/Drawing 28.png" alt="img" style="zoom: 100%;" /> </div>
 
 <center>Figure 2-5 Program editing flow chart</center>
 

@@ -1,4 +1,4 @@
-#holographic projection kit
+# Holographic projection kit
 <img src="../../resources/7-ExamplesRobotsUsing/LED/LED2.png" >
 
 ## 1 Kit Hardware Introduction
@@ -65,4 +65,4 @@ Step 5: Upload the video to be shown
 
 ---
 
-[← Previous page](../draw/draw.md) | [Next section →](../../8-FilesDownload/8-FilesDownload.md)
+[← Previous page](../draw/draw.md) | [Next page →](../../8-FilesDownload/8-FilesDownload.md)

@@ -1,4 +1,4 @@
-# scene case
+# Scene case
 ## 3D disordered grabbing
 <img src="../resources/7-ExamplesRobotsUsing/3D/3D.png" width="" height="" >
 
