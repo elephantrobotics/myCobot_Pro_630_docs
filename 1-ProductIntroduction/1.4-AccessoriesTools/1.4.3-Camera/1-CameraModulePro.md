@@ -41,8 +41,8 @@
 
   - 电气连接：
 
-    1. 将 USB 线插入底座 USB 接口：
-       ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/电气连接.jpg)
+    1. 将 USB 线插入底座 USB 接口
+       <!-- ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera) -->
 
 <!-- - 编程开发：
 
