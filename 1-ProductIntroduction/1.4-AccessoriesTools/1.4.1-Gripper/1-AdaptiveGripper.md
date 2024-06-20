@@ -76,88 +76,80 @@
 
 <br>
 
-<!-- - 编程开发（python）：
+## 夹爪测试
+需要先使用roboflow将机械臂使能，再运行下面的python脚本内容，测试夹爪是否正常
+```python
+from pymycobot import ElephantRobot
+import time
+if __name__=="__main__":
+    try:
+        #IP填写实际机器人的无线IP
+        elephant_client=ElephantRobot("192.168.1.159",5001)
+        elephant_client.start_client()
+        for i in range(1):
+            #关闭
+            elephant_client.set_digital_out(16,1)
+            elephant_client.set_digital_out(17,0)
+            time.sleep(2)
+            #打开
+            elephant_client.set_digital_out(16,0)
+            elephant_client.set_digital_out(17,1)
+            time.sleep(2)
+        elephant_client.set_digital_out(16,0)
+        elephant_client.set_digital_out(17,0)
 
-  > 使用 python 对夹爪进行编程开发：
-  > [python 环境下载](../../../10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
 
-  - 新建 python 文件：  
-    在想要的文件路径下右键新建 python 文件：  
-    ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用1.png)
 
-    > 文件名字可以根据需要修改
+    except KeyboardInterrupt:
+        elephant_client.stop_client()
+        print("socket end")
+    
+```
 
-    ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用2.png)
+    
 
-  - 进行功能编程：
-    ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用3.png)
+<!-- # - 保存文件并关闭，在文件夹空白处右键打开命令行终端
 
-    > 代码如下：
+#   ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用4.png)
 
-    ```python
-    from pymycobot.mycobot import MyCobot
-    from pymycobot import PI_PORT, PI_BAUD  # 当使用树莓派版本的mycobot时，可以引用这两个变量进行MyCobot初始化
-    import time
+#   输入：
 
-    # 初始化一个MyCobot对象
-    mc = MyCobot(PI_PORT, 115200)
+#   ```bash
+#   python gripper.py
+#   ```
 
-    #设置夹爪为485模式
-    mc.set_gripper_mode(0)
-    # 控制夹爪打开-关闭-打开：
-    #使用夹爪状态接口0为张开，1为关闭
-    mc.set_gripper_state(0, 80)
-    time.sleep(3)
-    mc.set_gripper_state(1, 80)
-    time.sleep(3)
-    mc.set_gripper_state(0, 80)
-    time.sleep(3)
+#   ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用5.png)
 
-    # 详细接口使用可以查看python API
-    ```
+# > 可以看到夹爪打开-关闭-打开
 
-- 保存文件并关闭，在文件夹空白处右键打开命令行终端
+# - 编程开发（myblockly）：
 
-  ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用4.png)
+#   > 使用 myblockly 对夹爪进行编程开发：
+#   > [myblockly 下载](../../../5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/2-install_uninstall.md)  
+#   > 注意使用 myblockly 开发前，需要先用 python 程序运行过`mc.set_gripper_mode(0)`，将夹爪设置为 485 模式。
 
-  输入：
+#   1. 确认结构及电气连接都完成后，启动机械臂，出现图形界面后打开 myblockly 软件  
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用1.png)
+#   2. 修改波特率为 115200  
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用2.png)
+#   3. 在左侧列表找到 `夹爪`，选择`设置夹爪值`模块  
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用3.png)
+#   4. 拖动模块连接在`初始化mycobot`模块下面，根据需要修改张开的程度和速度，这里都设置为`70`  
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用4.png)
+#   5. 在`时间`，选择`睡眠`模块  
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用5.png)
+#   6. 设置时间为 `2 秒`，目的是留出夹爪运动时间  
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用6.png)
+#   7. 重复选择一次`设置夹爪值`和`睡眠`模块，将`设置夹爪值`张开程度改为`0`  
+#      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用7.png)
+#      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用8.png)
+#   8. 在左侧列表找到 `夹爪`，选择`设置夹爪值`模块
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用9.png)
+#   9. 修改状态为`打开`，速度为`70`
+#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用10.png)
+#   10. 点击右上角的绿色运行图标，可以看到夹爪`打开-关闭-打开`的运动状态
 
-  ```bash
-  python gripper.py
-  ```
-
-  ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用5.png)
-
-> 可以看到夹爪打开-关闭-打开
-
-- 编程开发（myblockly）：
-
-  > 使用 myblockly 对夹爪进行编程开发：
-  > [myblockly 下载](../../../5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/2-install_uninstall.md)  
-  > 注意使用 myblockly 开发前，需要先用 python 程序运行过`mc.set_gripper_mode(0)`，将夹爪设置为 485 模式。
-
-  1. 确认结构及电气连接都完成后，启动机械臂，出现图形界面后打开 myblockly 软件  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用1.png)
-  2. 修改波特率为 115200  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用2.png)
-  3. 在左侧列表找到 `夹爪`，选择`设置夹爪值`模块  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用3.png)
-  4. 拖动模块连接在`初始化mycobot`模块下面，根据需要修改张开的程度和速度，这里都设置为`70`  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用4.png)
-  5. 在`时间`，选择`睡眠`模块  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用5.png)
-  6. 设置时间为 `2 秒`，目的是留出夹爪运动时间  
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用6.png)
-  7. 重复选择一次`设置夹爪值`和`睡眠`模块，将`设置夹爪值`张开程度改为`0`  
-     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用7.png)
-     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用8.png)
-  8. 在左侧列表找到 `夹爪`，选择`设置夹爪值`模块
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用9.png)
-  9. 修改状态为`打开`，速度为`70`
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用10.png)
-  10. 点击右上角的绿色运行图标，可以看到夹爪`打开-关闭-打开`的运动状态
-
-<br> -->
+# <br> --> 
 
 <!-- - 安装过程视频演示
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E" title="myCobot Pro Accessories | The new gripper for myCobot Pro 630" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
