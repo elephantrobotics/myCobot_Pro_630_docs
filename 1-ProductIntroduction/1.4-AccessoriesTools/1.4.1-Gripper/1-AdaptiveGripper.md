@@ -64,8 +64,11 @@ Purchase link:
         ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装2.png)
 
    - Electrical connections:
+  
    ![](../../../resources/3-UserNotes/jigao.png)
+
      >Please note that the robot arm must be powered off when plugging and unplugging, that is, the green light at the end is not on. If hot-plugging is performed while powered on, there is a risk of damaging the gripper.
+
      1. Align the m8 cable with the interface of the robot arm. Note that there is a gap at the interface and the connecting cable has corresponding protrusions. After confirming the direction, insert it and tighten it:
         ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/电气连接1.png)
      2. Insert the gripper control interface and pay attention to the direction of the notch:
