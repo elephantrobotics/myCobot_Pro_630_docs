@@ -64,8 +64,11 @@
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装2.png)
 
   - 电气连接：
-   ![](../../../resources/3-UserNotes/jigao.png)
-    > 注意在机械臂不上电的状态下进行，即末端绿灯不亮的情况下进行插拔，如果带电热插拔，会有损坏夹爪的风险。
+  
+    ![](../../../resources/3-UserNotes/jigao.png)
+
+    > **注意在机械臂不上电的状态下进行，即末端绿灯不亮的情况下进行插拔，如果带电热插拔，会有损坏夹爪的风险。**
+
     1. 将 m8 线对准机械臂的接口，注意接口处有缺口，连接线有对应突起，确认方向后插入，并拧紧：
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/电气连接1.png)
     2. 插入夹爪控制接口，同样注意缺口的方向：
