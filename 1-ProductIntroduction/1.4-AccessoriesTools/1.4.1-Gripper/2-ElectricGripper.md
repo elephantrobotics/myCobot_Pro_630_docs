@@ -1,6 +1,6 @@
 # **电动夹爪**
 
-> **兼容型号：** myCobot 320、myCobot Pro 630
+> **兼容型号：** myCobot 320、myCobot Pro 630、myCobot Pro 600
 
 ## 产品图片
 
@@ -14,16 +14,16 @@
 | 材料         | 金属 + 7500 尼龙                    |
 | 夹取范围     | 0-14mm                              |
 | 夹紧力       | 2-5N                                |
-| 重复性精度   | 1mm                                 |
-| 使用寿命     | 一年                                |
 | 驱动模式     | 电驱动                              |
 | 传动方式     | 齿条和小齿轮 + 交叉滚柱导轨         |
 | 尺寸         | 97×62×31mm                          |
 | 重量         | 460g                                |
 | 固定方法     | 螺丝固定                            |
 | 使用环境要求 | 常温常压                            |
-| 控制接口     | 串行端口/IO 控制                    |
-| 适用设备     | ER myCobot 320 ，ER myCobot Pro 630 |
+| 控制接口     | 串行端口                    |
+| 适用设备     | myCobot 320 系列、 myCobot Pro 630、 myCobot Pro 600 |
+<!-- | 重复性精度   | 1mm                                 |
+| 使用寿命     | 一年                                | -->
 
 ## 用于抓取物体
 
@@ -62,18 +62,61 @@
 | 保护程度     | IP40         |
 | 建议的环境   | 0-40℃        |
 
-## 购买链接
+<!-- ## 购买链接
 
 购买链接:
 
 - [淘宝](https://shop504055678.taobao.com)
-- [shopify](https://shop.elephantrobotics.com/)
+- [shopify](https://shop.elephantrobotics.com/) -->
 
-## 如何使用
+<!-- ## 如何使用
 
 1 安装夹爪: <br>
 
 - 对于电动机械手，将其插入顶部的 485 接口，如下图所示: <br>
-  <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电动夹爪4.jpg" alt="img-2" width="480" height="auto" /> <br>
+  <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电动夹爪4.jpg" alt="img-2" width="480" height="auto" /> <br> -->
+  **安装使用**
+
+- 检查配件包东西是否齐全：螺丝、内六角扳手、带连接线的夹爪、夹爪与机械臂末端固定装置
+  ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg1.jpg)
+
+- 夹爪安装：
+
+  - 结构安装：
+
+   
+       
+
+    
+
+    1. 将螺丝对准机械臂末端四个螺丝孔位并拧紧：
+       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg2.jpg)
+
+    2. 将电动夹爪插入固定装置，并在两侧装入细螺丝拧紧，共八颗：
+       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg3.jpg)
+
+     
+
+  - 电气连接：
+
+    1. 将 485 线插入机械臂控制接口：
+       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg4.jpg)<br>
+
+       <!-- ![alt text](../../../resourse/2-serialproduct/AccessoriesTools/1-Gripper/ElectricGripper/电气连接.jpg)
+       <br> -->
+
+
+**使用说明：**<br>
+
+RoboFlow 使用说明：使用前需要先启动机器人系统
+
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron2.png)
+
+
+- 点击**Define New Gripper**，填写 Gripper Name 为“**DH PGE 8**”（必须为此名称），然后点击 Save；<br>
+- Saved status 选择 open 或者 close,整体步骤如下图所示：<br>
+  ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg5.gif)<br>
+
 
 [← 上一页](./1-AdaptiveGripper.md) | [下一页 →](./3-PneumaticGripper.md)
