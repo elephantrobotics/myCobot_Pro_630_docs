@@ -64,12 +64,45 @@ Purchase link:
         ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装2.png)
 
    - Electrical connections:
-     > Be careful to perform this operation when the robot arm is powered off.
+  
+   ![](../../../resources/3-UserNotes/jigao.png)
+
+     >Please note that the robot arm must be powered off when plugging and unplugging, that is, the green light at the end is not on. If hot-plugging is performed while powered on, there is a risk of damaging the gripper.
+
      1. Align the m8 cable with the interface of the robot arm. Note that there is a gap at the interface and the connecting cable has corresponding protrusions. After confirming the direction, insert it and tighten it:
         ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/电气连接1.png)
      2. Insert the gripper control interface and pay attention to the direction of the notch:
         ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/电气连接2.png)
 
+## Gripper test
+You need to use roboflow to enable the robot arm first, then run the following python script content to test whether the gripper is normal
+```python
+from pymycobot import ElephantRobot
+import time
+if __name__=="__main__":
+    try:
+        #IP fill in the actual robot's wireless IP
+        elephant_client=ElephantRobot("192.168.1.159",5001)
+        elephant_client.start_client()
+        for i in range(1):
+            #Close
+            elephant_client.set_digital_out(16,1)
+            elephant_client.set_digital_out(17,0)
+            time.sleep(2)
+            #Open
+            elephant_client.set_digital_out(16,0)
+            elephant_client.set_digital_out(17,1)
+            time.sleep(2)
+        elephant_client.set_digital_out(16,0)
+        elephant_client.set_digital_out(17,0)
+
+
+
+    except KeyboardInterrupt:
+        elephant_client.stop_client()
+        print("socket end")
+    
+```
 
 
 
