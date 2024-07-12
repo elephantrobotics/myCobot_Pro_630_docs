@@ -14,6 +14,7 @@
        * [6 Camera Module](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
        * [7 Pen Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
        * [8 Phone Holders](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
+       * [9 PLC IO interactive control cases](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/plc.md)
   
 
 * [2 Product Features](./2-ProductFeature/2-ProductFeature.md)
