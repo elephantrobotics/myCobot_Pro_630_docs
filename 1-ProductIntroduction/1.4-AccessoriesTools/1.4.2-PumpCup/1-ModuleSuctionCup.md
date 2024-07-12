@@ -1,62 +1,117 @@
-# Suction cup module
+# Suction Cup Module
 
-> **Compatible models:** myCobot 320, myCobot Pro 630
+> **Compatible Models:** myCobot 320, myCobot Pro 600, myCobot Pro 630
 
 ## Product Image
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/吸盘模块1.jpg" alt="img-1" width="800" height=“auto” />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/吸盘模块1.jpg" alt="img-1" width="800" height="auto" />
 
-## Specification
+**Specifications**
 
-| **Name** | **Suction Cup Module** |
-| -------------------------- | ---------------------------------------------- |
+| Name | Module Suction Cup |
+| ------------ | --------------------------------------------- |
 | Model | myCobotPro_suctionPump |
 | Material | Nylon 7100 |
-| Number of suction cups | 1/2/4 |
-| Suction cup size | Outer diameter 33mm |
-| Suction weight | Maximum 1000g |
-| Power equipment | Suction and blowing integrated air compressor |
-| Service life | One year |
-| Fixing method | Screw fixing |
-| Control Interface | I/O Control |
-| Usage environment requirements | Normal temperature and pressure |
-| Applicable equipment | ER myCobot 320 series, ER myCobot Pro 630 series |
+| Number of Suction Cups | 1/2/4 |
+| Suction Cup Size | Diameter 33mm |
+| Suction Weight | Maximum 1000g |
+| Power Source Equipment | Suction and Blowing Air Compressor |
+| Fixing Method | Screw Fixing |
+| Control interface | IO control |
+| Environment requirements | Normal temperature and pressure |
+| Applicable equipment | myCobot 320, myCobot Pro 600, myCobot Pro 630 |
+<!-- | Service life | One year | -->
+**Suction cup suction pump**: Used to adsorb objects
 
-## for objects
+**Introduction**
 
-**introduction**
+- The suction cup suction pump is connected to the object to be adsorbed through the suction cup, pipe and other components, and the suction cup is vacuumed, causing the internal air pressure to change from normal pressure to negative pressure, and the pressure difference between the external atmospheric pressure and this negative pressure is used to achieve the purpose of adsorbing the object.
+- The overall structure is a multifunctional expandable suction cup, which can be installed up to 4; high-pressure resistant hose, which can be reused many times; suction and blowing integrated air compressor, which can expand other functions.
 
-- The suction cup type adsorption pump means that the suction port is connected to the adsorbed object through suction cups, suction tubes and other components, and the suction cup is evacuated to change the internal air pressure from normal pressure to negative pressure. The pressure difference between the external atmospheric pressure and this negative pressure is used to achieve the purpose of adsorbing objects.
+**Working principle**
 
-- The overall structure is a multi-functional expandable suction cup, which can install up to 4 pieces;
-   High-pressure resistant hose that can be reused many times;
-   An air compressor that integrates air suction and blowing, and can be expanded to other functions.
+- Start the vacuum equipment to suck, so that negative air pressure is generated in the suction cup, so that the object to be lifted is firmly sucked, and the object to be lifted can be transported.
+- When the object to be lifted is transported to the destination, air is steadily inflated into the vacuum cup, so that the negative pressure in the vacuum cup changes to zero pressure or slightly positive pressure, and the vacuum cup is separated from the object to be lifted, thus completing the task of lifting and transporting heavy objects.
 
-**working principle**
+**Applicable objects** Applicable to flat objects
 
-- Start the vacuum equipment to generate negative air pressure in the suction cup, thereby firmly sucking the object to be sucked and starting to move the object.
+<!-- **Appearance introduction**
 
-- When the object to be sucked is transported to the destination, inflate the vacuum suction cup so that the negative air pressure in the suction cup changes to zero air pressure or slightly positive air pressure. The vacuum suction cup is separated from the object to be sucked, thereby completing the task of lifting and transporting heavy objects.
+- Multifunctional expandable suction cup, can install up to 4 4-p
+![pi](../../resourse/2-serialproduct/IMG_8238.jpg)
 
-**Suitable :**
+- High-pressure hose, can be reused many times
 
-- Suitable for objects with flat surfaces
+![pi](../../resourse/2-serialproduct/IMG_8264.jpg)
 
-## Purchase link:
+- Suction and blowing integrated air compressor, can expand other functions
 
-- [Taobao](https://shop504055678.taobao.com)
-- [shopify](https://shop.elephantrobotics.com/)
+![pi](../../resourse/2-serialproduct/IMG_8000.jpg) -->
 
-## how to use
+**Installation and use**
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/吸盘模块2.jpg" alt="img-1" width="800" height=“auto” />
+- Need to be used with air compressor:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a1.png)
 
-For systems that include suction cups, solenoid valves, and vacuum pumps, the connections are typically as follows:
+1. Insert the black plug into the power strip;
 
-1. **Vacuum pump**: It is the source of vacuum pressure and should be connected to the air inlet of the solenoid valve.
-2. **Solenoid Valve**: It controls when and how to pump or inflate the suction cup. The vacuum pump is connected to one side of the solenoid valve and the suction cup is connected to the outlet side.
-3. **Suction cup**: This is the end effector that interacts directly with the object being manipulated and is connected to the outlet side of the solenoid valve.
+2. Insert the matching red hose into the interface on the machine:
 
-During operation, the solenoid valve opens when energized, allowing the vacuum pressure from the vacuum pump to reach the suction cup, allowing it to suck objects. When the solenoid valve is powered off, the vacuum is cut off and the air flows back to the suction cup, releasing the suction force on the object. This setup works well for automated systems that require precise control over picking and placing items.
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a2.png)
 
+3. The red button is a switch. Pull it out to turn it on, and press it back to turn it off:
+
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a3.png)
+
+- Suction cup installation:
+
+1. Connect the other end of the red hose of the air compressor to the interface of the solenoid valve:
+
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a4.png)
+
+2. Use the transparent hose that comes with the module suction cup to connect the interfaces above the solenoid valve and the module suction cup hose branch:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a5.png)
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a6.png)
+3. Fix the module suction cup to the end of the robot arm with the matching screws:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a7.png)
+4. Install the hose branch on the module suction cup:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a8.png)
+
+- Electrical connection:
+
+1. Connect the black cable to the base of the robot arm GND, red connects to any one of OUT1~OUT6, change the pin number of the subsequent program according to the selected interface, here use OUT1:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a9.png)
+
+## 3 Control by python
+
+**You need to start the robot system before use**
+
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
+
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron2.png)
+
+Confirm the IP address of the robot: Enter ifconfig in the terminal to obtain
+
+![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
+
+```python
+from pymycobot import ElephantRobot
+import time
+
+# Change the IP address to the real IP address of the P600 Raspberry Pi
+
+elephant_client = ElephantRobot("192.168.10.158", 5001)
+
+# Necessary commands to start the robot
+elephant_client.start_client()
+time.sleep(1)
+
+elephant_client.set_digital_out(0,1)#Absorb
+time.sleep(2)
+
+elephant_client.set_digital_out(0,0)#Release
+time.sleep(2)
+
+```
+---
 [← Previous page](../1.4.1-Gripper/4-FlexibleGripper.md) | [Next page →](../1.4.3-Camera/1-CameraModulePro.md)

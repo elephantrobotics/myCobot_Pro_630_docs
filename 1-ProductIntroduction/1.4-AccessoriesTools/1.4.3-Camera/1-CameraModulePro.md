@@ -1,119 +1,77 @@
-# myCobotPro Camera Module
+# myCobotPro camera module
 
-> **Compatible models:** myCobot 320, myCobot Pro 630
+> **Compatible models:** myCobot 320, myCobot Pro 630, myCobot Pro 600
 
-## Product Image
+## Product images
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/摄像头模块.jpg" alt="img-1" width="800" height="auto" />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/Camera module.jpg" alt="img-1" width="800" height="auto" />
 
-## Specification
+**Specifications:**
 
-| **Name** | **myCobotPro Camera Module** |
-| -------------------------- | ---------------------------------------------------- |
+| Name | myCobotPro camera module |
+| ---------------- | ------------------------------------------- |
 | Model | myCobot_Pro_cameraHolder_J6 |
-| Materials | Photosensitive resin |
+| Material | Photosensitive resin |
 | USB protocol | USB2.0 HS/FS |
 | Lens focal length | Standard 1.7mm |
-| Field of view | Approx. 60° |
+| Field of view | About 60° |
 | Supported systems | Win7/8/10, Linux, MAC |
-| Service life | Two years |
 | Fixing method | Screw fixing |
-| Usage environment requirements | Normal temperature and pressure |
-| Applicable device support | ER myCobot 320 Series <br> ER myCobot Pro 630 Series |
+| Operating environment requirements | Normal temperature and pressure |
+| Applicable equipment | myCobot 320, myCobot Pro 600, myCobot Pro 630 |
+<!-- | Service life | Two years | -->
+**Camera flange:** Machine vision
 
-## for objects
+**Introduction**
 
-### Introduction
+- USB high-definition camera can be used with suction pump, adaptive gripper, artificial intelligence kit, etc., to achieve precise positioning and calibration with eye in hand.
 
-- The USB HD camera can be used with suction pumps, adaptive grippers, artificial intelligence kits, etc., using both hand and eye to achieve precise positioning and calibration.
+**Installation and Use**
 
-### Install and use
-
-- Check whether the accessories package is complete: screws and hexagonal wrenches, camera module with USB cable
-   ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/物料.jpg)
-
+- Check if the accessories package is complete: screws and hex wrench, camera module with USB cable
+![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/a1.png)
 - Camera installation:
 
-   - Structural installation:
+- Structural installation:
 
-     1. Align the camera module to the end of the robotic arm in the desired direction, and tighten the screws with an Allen wrench.
-        ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/安装.jpg)
+1. Align the camera module with the end of the robot arm according to the required direction, and tighten the screws with the hex wrench
+![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/a2.png)
 
-   - Electrical connections:
+- Electrical connection:
 
-     1. Plug the USB cable into the base USB port
-        <!-- ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/电气连接.jpg) -->
+1. Plug the USB cable into the USB port of the base:
+![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/a3.png)
 
-<!-- - Programming development:
+## Python programming control
+Enter the robot system, open the terminal and enter the following command to install opencv
+```bash
+sudo apt-get install -y libopencv-dev python3-opencv
+```
 
-   > Use python to program and develop camera modules
-   > [python environment download](../../../10-ApplicationBasePython/10.1_320_PI-ApplicationPython/1_download.md)
+![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/a4.png)
 
-   - Create a new python file:
-      Right-click on the desired file path to create a new python file:
-      ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python use 1.png)
+Create a new python file and fill in the following code
+```python
+#encoding=utf-8
+import cv2
+import numpy as np
 
-     > The file name can be modified as needed
+cap = cv2.VideoCapture(0)
 
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python use 2.png)
+while(True):
+    ret, frame = cap.read()
 
-   - Perform functional programming:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python use 3.png)
+    cv2.imshow('frame', frame)
+# Press 'q' to exit
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
 
-     > The code is as follows:
-
-     ```python
-     import cv2
-     import numpy as np
-
-     cap = cv2.VideoCapture(0) # "0", determined based on the queried camera equipment number
-
-     while(True):
-         ret, frame = cap.read()
-
-         # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
-         cv2.imshow('frame', frame)
-         # Press 'q' to exit
-         if cv2.waitKey(1) & 0xFF == ord('q'):
-             break
-
-     cap.release()
-     cv2.destroyAllWindows()
-     ```
-
-   - Save the file and close it, right-click on a blank space in the folder to open the command line terminal
-
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python use 4.png)
-
-     enter:
-
-     ```bash
-     pythoncamera.py
-     ```
-
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python use 5.png)
-
-     > You can see the picture captured by the camera
-
-     operation result:
-     ![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python use 6.png)
-
-- How to check the camera device number
-
-   ```bash
-   ls /dev/video* -l
-   ```
-
-   > You can confirm by using commands by plugging and unplugging devices and observing the new device number.
-
-   Example results:
-   ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/python uses 7-query device number.png) -->
-
-### Purchase link:
-
-- [Taobao](https://shop504055678.taobao.com)
-- [shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobotpro-cameraflange?_x_tr_sl=auto&_x_tr_tl=zh-CN)
+cap.release()
+cv2.destroyAllWindows()
+```
+Then use python3 in the terminal Run the newly created python file
+![](../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/a5.png)
+        
 
 ---
 
