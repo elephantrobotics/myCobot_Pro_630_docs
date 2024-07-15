@@ -4,7 +4,7 @@
 
 ## Product images
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/Camera module.jpg" alt="img-1" width="800" height="auto" />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.3-Camera/摄像头模块.jpg" alt="img-1" width="800" height="auto" />
 
 **Specifications:**
 

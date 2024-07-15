@@ -6,10 +6,10 @@ PLC is Siemens 1200, the output type of PLC is PNP, and the input type of robot 
 
 First connect 24V to the PLC output
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/1.jpg)
-Then connect the normally open contact of the relay to the common terminal and Q0.0 of the PLC
+Then connect the relay coil to the common terminal and Q0.0 of the PLC
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/3.jpg)
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/4.jpg)
-Then connect the wire of the relay coil to the terminal
+Then connect the normally open contact wire of the relay to the terminal
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/5.jpg)
 Then connect the terminal to the input of the robot
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/6.jpg)

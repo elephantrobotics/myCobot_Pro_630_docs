@@ -47,9 +47,9 @@
 
 ## Product parameters
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/Electric Gripper2.png" alt="img-2" width="800" height="auto" />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电动夹爪2.png" alt="img-2" width="800" height="auto" />
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/Electric Gripper3.png" alt="img-2" width="800" height="auto" />
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/电动夹爪3.png" alt="img-2" width="800" height="auto" />
 
 **Operating environment**
 

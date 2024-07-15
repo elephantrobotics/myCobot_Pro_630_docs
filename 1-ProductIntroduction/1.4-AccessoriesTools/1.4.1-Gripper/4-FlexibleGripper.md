@@ -4,7 +4,7 @@
 
 ## Product Image
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/Flexible Gripper1.jpg" alt="img-1" width="800" height="auto" /> <br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪1.jpg" alt="img-1" width="800" height="auto" /> <br>
 
 **Specifications:**
 
