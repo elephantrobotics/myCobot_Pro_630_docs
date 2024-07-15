@@ -6,10 +6,10 @@ PLC为西门子1200，PLC的输出类型是PNP，机械臂的输入类型是NPN�
 
 先给PLC输出接入24V
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/1.jpg)
-再给将继电器的常开触点接入到PLC的公共端和Q0.0上
+再给将继电器的线圈接入到PLC的公共端和Q0.0上
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/3.jpg)
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/4.jpg)
-再将继电器线圈的线接到端子上
+再将继电器常开触点的线接到端子上
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/5.jpg)
 再将端子接入机器人的输入上
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/6.jpg)
