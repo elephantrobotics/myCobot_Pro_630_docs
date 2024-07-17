@@ -1,83 +1,127 @@
-# Flexible Grabber Professional Edition
+# Flexible Gripper Professional Edition
 
 > **Compatible models:** myCobot 320, myCobot Pro 630
 
 ## Product Image
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪1.jpg" alt="img-1" width="800 " height="auto" /> <br>
+<img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪1.jpg" alt="img-1" width="800" height="auto" /> <br>
 
-## Specification
+**Specifications:**
 
-**Clamp**
-
-| **Picture** | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪2.jpg" alt="img -2" width="200" height="auto" /> |
-| :----------- | :-----------------------------------|
-| Materials | Metal |
-| Clamping range | 36-136mm |
-| Clamping force | Vertical 600g Packaged 1080g |
-| Repeatability Accuracy | 0.5 mm |
-| Service life | 1 year |
-| Drive Mode | Pneumatic |
-| Gearbox Mode | Deformation |
-| Size | 170x128x195mm |
+| Name name | myCobotPro Flexible Gripper |
+| ---------------------- | ---------------------------------------- |
+| Material | Metal |
+| Clamping range clamp size | 36-136 mm |
+| Maximum clamp force clamp force | Vertical 600 g Package 1080 g |
+| Drive drive | Pneumatic |
+| Transmission | Deformation |
+| Size size | 170x128x195mm |
 | Weight | 365 grams |
-| Fixing method | Screw fixing |
-| Usage environment requirements | Normal temperature and pressure |
-| Control interface | SAC40A pneumatic controller |
-| Applicable equipment | ER myCobot 320 series, ER myCobot Pro 630 |
+| Fixing method fixed | Screw fixing |
+| Environment requirements | Normal temperature and pressure |
+| Control interface control | IO control |
+| Applicable equipment |myCobot 320, myCobot Pro 600, myCobot Pro 630 |
+<!-- | Repeatability precision | 0.5 mm |
+| Lifetime lifetime | 1 year | -->
+**Flexible gripper:** Used to grip objects
 
-**Controller**
+**Introduction**
 
-| **Picture** | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/气动控制器1.jpg" alt="img -2" width="200" height="auto"/> |
-| :---------- | :---------------------------------- -------------------------------------------------- -------------------------------------------------- ---------- |
-| Power supply | 24V 1.5A |
-| Control mode | IO |
-| Air source pressure | > 0.4 MPA |
-| Flow rate | > 40 L/MIN |
-| IO | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/气动控制器2.jpg" alt="img-3" width ="100" height="auto" /> <br> |
-| Value State | IN1: HIGH & IN2: LOW = Close the gripper<br> IN1: LOW & IN2: HIGH = Open the gripper<br> Note⚠️: When using IO control, make sure the above three-position toggle switch is set to centre position.              |
-| Boat type switch | Three-position toggle switch |
-| Positive pressure | Clamp jaws closed |
-| Negative pressure | Clamp open |
+- Traditional industrial suction cups need to suck the flat surface of the material. In more and more working conditions, the suction surface is easy to damage the panel or components. The soft-touch gripper grabs the edge and easily moves the panel without marks or damage, ensuring that the product surface is flawless and improving the yield rate.
+- The modular design of the soft-touch gripper is light in weight and can be freely arranged and combined according to the panel size.
+- The clamping force of traditional cylinders is generally large and difficult to control. The edge of the clamping panel is easy to be clamped and warped. The single-finger clamping force of the flexible gripper is precisely controllable and will not clamp fragile workpieces.
 
-## Used to grab objects
+**Working Principle**
 
-**introduction**
+- The flexible gripper is an innovative bionic flexible gripper developed by researchers imitating the shape of the starfish's arms and legs. The "fingers" of the soft gripper are made of polymer silicone flexible material. They are bent and deformed by inflation. They can adaptively cover the target object like a starfish, and can complete the flexible and non-destructive grasping of special-shaped and fragile objects.
 
-- Traditional industrial suction cups need to suck the flat surface of the material. Under increasing operating conditions, the suction cup surface can easily damage panels or components. The soft-touch gripper pinches the edges to easily grasp the panel without leaving marks or damaging the panel, ensuring that the product surface is not damaged. Improve yield.
+**Applicable objects**
 
-- The flexible clamping jaw adopts a modular design, is light in weight, and can be freely arranged and combined according to the panel size.
+- Any object of any shape within a reasonable size
 
-- The clamping force of traditional oil cylinders is generally large and the force is difficult to control. The edges of the clamped panels are susceptible to pinching and warping. The single-finger clamping force of the elastic jaws is precisely controllable and will not clamp fragile workpieces.
+**Installation and use**
 
-**working principle**
+- Need to be used with an air compressor:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a1.png)
 
-- Soft Claw is an innovative bionic soft claw developed by researchers that mimics the shape of a starfish's arms and legs. The "fingers" of the soft claw are made of flexible polymer silicone material and can be bent and deformed by inflation. It can adaptively cover target objects like a starfish, and can complete flexible and non-destructive grasping of special shapes and fragile objects.
+1. Insert the black plug into the power strip;
 
-**Suitable**
+2. Insert the matching red hose into the interface on the machine:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a2.png)
+3. The red button is a switch. Pull it out to turn it on, and press it back to turn it off:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a3.png)
 
-- Objects of any shape within a reasonable size range
+- Gripper installation:
 
-## Purchase link:
+1. Connect the other end of the red hose of the air compressor to the interface of the pneumatic controller:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a4.png)
+2. Use the blue hose that comes with the flexible gripper to connect the interfaces of the gripper and the pneumatic controller respectively:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a5.png)
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a6.png)
+3. Fix the flexible gripper to the end of the robot arm with the matching screws:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a7.png)
 
-- [Taobao](https://shop504055678.taobao.com)
-- [shopify](https://shop.elephantrobotics.com/)
+- Electrical connection:
 
-## how to use
+1. Two connecting wires are provided, one for power supply and one for control.
 
-1 Installation: <br>
+- At the base of the robot arm, the red wire for power supply is connected to the 24V interface and the black wire is connected to the GND interface. For the control wire, red is connected to OUT1 and black is connected to OUT2:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a8.png)
+- On the pneumatic controller side, the red power supply wire is connected to the pneumatic controller 24V, and the black is connected to the pneumatic controller's GND. The red control wire is connected to IN1 and the black is connected to IN2:
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a9.png)
+> Note that it is connected to the "positive pressure" side. If the power supply is successful, the display will light up.
+> You can manually test whether the connection is normal. Turn on the air compressor and press the button of the pneumatic controller. Pressing to the left (positive pressure) will shrink the gripper, and pressing to the right (negative pressure) will open the gripper. When using IO control, make sure the three-position toggle switch is set to the middle position.
 
-- Pneumatic circuit connection and pressure adjustment: Before connecting to the soft mechanical handle, adjust the positive pressure first (the outlet can be temporarily blocked with your fingertips to ensure that the positive pressure is strictly less than 100KPA to avoid finger injuries).
+## 3 Control via Python
 
-- For connecting and adjusting pneumatic circuits: First, set the positive pressure before connecting the soft mechanical handle. Temporarily block the air outlet with your fingertips to prevent air from escaping, and ensure that the positive pressure is strictly controlled below 100KPA to avoid finger injuries.
+** Start the robot system before use**
 
-- **Connect air source**: Connect the air source to port 6 (inlet), make sure the pressure is higher than 0.4MPA and the flow rate is more than 40 L/min.
-- **Connect Soft Mechanical Handle**: Connect the soft mechanical handle to port 4 (outlet).
-- **Power On**: Powers connection 5.
-- **Adjust Positive Pressure**: Use the toggle switch to select positive pressure. Adjust the regulator according to the pressure gauge until the desired pressure is reached.
-- **Switch to Negative Pressure**: When adjusting negative pressure, pull up the regulator cover, rotate it to the set value, and then press down to lock.
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
 
-Special reminder ⚠️: Regarding pressure maintenance, both positive and negative pressure can be maintained 0.5 seconds after startup, allowing the mechanical gripper to maintain its preset pressure. This method is very energy efficient, especially since maintaining negative pressure continuously consumes more air. In addition, it prevents loss of grip on objects in the event of an unexpected power or gas outage, ensuring operational reliability.
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron2.png)
+
+Confirm the IP address of the robot: Enter ifconfig in the terminal to obtain
+
+![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
+
+```python
+from pymycobot import ElephantRobot
+import time
+
+# Change the IP address to the real IP address of the P600 Raspberry Pi
+
+elephant_client = ElephantRobot("192.168.10.158", 5001)
+
+# Necessary instructions to start the robot
+
+elephant_client.start_client()
+time.sleep(1)
+
+elephant_client.set_digital_out(0,0)#Reset IO
+time.sleep(2)
+
+elephant_client.set_digital_out(1,0)#Reset IO
+time.sleep(2)
+
+elephant_client.set_digital_out(0,1)#Close
+time.sleep(2)
+
+elephant_client.set_digital_out(1,0)#Reset IO
+time.sleep(2)
+
+elephant_client.set_digital_out(0,0)#Reset IO
+time.sleep(2)
+
+elephant_client.set_digital_out(1,1)#Open
+time.sleep(2)
+
+elephant_client.set_digital_out(0,0)#Reset IO
+time.sleep(2)
+
+elephant_client.set_digital_out(1,0)#Reset IO
+time.sleep(2)
+
+```
 
 ---
 
