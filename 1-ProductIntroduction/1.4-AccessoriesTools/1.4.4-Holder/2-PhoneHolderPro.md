@@ -1,46 +1,35 @@
 # myCobot Pro Mobile 手机支架
 
-> **兼容型号:** myCobot 320, myCobot Pro 630
+> **兼容型号:** myCobot 600, myCobot Pro 630
 
 ## 产品图片
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Holder/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-4.jpg" alt="img-1" width="800" height=“auto” /> <br>
 
-<!-- <img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Holder/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-2.jpg" alt="img-2" width="400" height="auto" />
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Holder/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-3.jpg" alt="img-2" width="400" height="auto" /> -->
 
-## 规格
 
-| **名称**     | **myCobotPro Mobile 手机支架**        |
-| ------------ | ------------------------------------- |
-| 模型         | myCobot_Pro_PhoneHolder_J6            |
-| 材料         | 光敏树脂                              |
-| 夹紧重量     | 200g                                  |
-| 使用寿命     | 两年                                  |
-| 固定方式     | 螺丝固定                              |
-| 使用环境要求 | 常温常压                              |
-| 适用设备     | ER myCobot 320 series, ER myCobot 600 |
+**规格说明：**
 
-## 用于物体
+| 名称         | myCobotPro手机夹持器                |
+| ------------ | ----------------------------------- |
+| 型号         | myCobot_Pro_PhoneHolder_J6          |
+| 材料         | 光敏树脂                            |
+| 夹持重量     | 200g                                |
+| 固定方式     | 螺丝固定                            |
+| 使用环境要求 | 常温常压                            |
+| 适用设备     | myCobot 600、myCobot 630 |
+<!-- | 使用寿命     | 两年                                | -->
+**myCobotPro手机夹持器：** 夹取物体使用
 
-**引言**
+**简介**
+- 适用于拍摄等需要物理夹持的设备，可夹持多种手机，结构简单，易于安装拆卸。
 
-- 适用于拍摄和其他需要物理夹紧的设备。可夹持各种手机，结构简单，易于安装和拆卸。
+**适用物体**
+- 拍摄设备
 
-**适用对象**
-
-- 射击器材
-
-## 购买链接:
-
-- [淘宝](https://shop504055678.taobao.com)
-- [shopify](https://shop-elephantrobotics-com.translate.goog/collections/mycobot-pro-600/products/mycobot-pro-adaptive-gripper-black-white-for-mycobot-320-mycobot-pro-600-%E7%9A%84%E5%89%AF%E6%9C%AC?_x_tr_sl=auto&_x_tr_tl=zh-CN)
-
-## 如何使用
-
-1 安装 : <br>
-
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.4-Holder/2-PhoneHoldPro/myCobot_Pro_PhoneHolder_J6-1.jpg" alt="img-1" width="800" height=“auto” /> <br>
+## 安装
+将手机夹持器固定在机械臂末端法兰即可
+![pi](../../../resources/1-ProductIntroduction/1.4/1.4.4-Holder/2-PhoneHoldPro/p.png)
 
 ---
 

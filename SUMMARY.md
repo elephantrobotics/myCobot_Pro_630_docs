@@ -12,6 +12,7 @@
       * [6 摄像头模块](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
       * [7 笔夹持器](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
       * [8 手机夹持器](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
+      * [9 PLC IO交互控制案例](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/PLC.md)
       
   
   

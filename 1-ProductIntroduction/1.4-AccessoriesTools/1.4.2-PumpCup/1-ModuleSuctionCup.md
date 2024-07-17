@@ -1,62 +1,119 @@
 # 吸盘模块
 
-> **兼容型号:** myCobot 320, myCobot Pro 630
+> **兼容型号:** myCobot 320、myCobot Pro 600、myCobot Pro 630
+
 
 ## 产品图片
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/吸盘模块1.jpg" alt="img-1" width="800" height=“auto” />
 
-## 规格
 
-| **名称**     | **吸盘模块**                                     |
-| ------------ | ------------------------------------------------ |
-| 模型         | myCobotPro_suctionPump                           |
-| 材料         | 尼龙 7100                                        |
-| 吸盘数量     | 1/2/4                                            |
-| 吸盘尺寸     | 外径 33mm                                        |
-| 吸重         | 最大 1000g                                       |
-| 电源设备     | 吸吹一体式空气压缩机                             |
-| 使用寿命     | 一年                                             |
-| 固定方式     | 螺丝固定                                         |
-| 控制界面     | I/O 控制                                         |
-| 使用环境要求 | 常温常压                                         |
-| 适用设备     | ER myCobot 320 series, ER myCobot Pro 630 series |
 
-## 用于物体
+**规格说明**
 
-**引言**
+| 名称         | 模块吸盘                                      |
+| ------------ | --------------------------------------------- |
+| 型号         | myCobotPro_suctionPump                        |
+| 材料         | 尼龙 7100                                     |
+| 吸盘数量     | 1/2/4                                         |
+| 吸盘尺寸     | 直径 33mm                                     |
+| 吸取重量     | 最大 1000g                                    |
+| 动力源设备   | 吸吹一体空压机                                |
+| 固定方式     | 螺丝固定                                      |
+| 控制接口     | IO 控制                                       |
+| 使用环境要求 | 常温常压                                      |
+| 适用设备     | myCobot 320、myCobot Pro 600、myCobot Pro 630 |
+<!-- | 使用寿命     | 一年                                          | -->
+**吸盘吸泵** :吸附物体使用
 
-- 吸盘式吸附泵是指吸入口通过吸盘、吸管等部件与被吸附物体相连，对吸盘进行抽真空，使内部气压由常压变为负压。利用外部大气压和这个负压之间的压力差，达到吸附物体的目的。
+**简介**
 
-- 整体结构为多功能可扩展吸盘，最多可安装 4 个；
-  耐高压软管，可多次重复使用；
-  集吸气和吹气于一体的空气压缩机，可扩展其他功能。
+- 吸盘吸泵是抽气口通过吸盘、管子等元件与待吸附物体连接，对吸盘抽真空，造成内部气压由常压变为负压，利用外界大气压和这个负压之间的压差作用，达到吸附住物体的目的。
+- 整体结构是多功能可扩展吸盘，最多可安装 4 个；耐高压软管，可多次重复使用；吸吹一体空压机，可扩展其他功能。
 
 **工作原理**
 
-- 启动真空设备，使吸盘内产生负气压，从而牢牢吸住被吸取物体，开始搬运物体。
+- 起动真空设备抽吸，使吸盘内产生负气压，从而将待提升物吸牢，即可开始搬送待提升物。
+- 当待提升物搬送到目的地时，平稳地充气进真空吸盘内，使真空吸盘内由负气压变成零气压或稍为正的气压，真空吸盘就脱离待提升物,从而完成了提升搬送重物的任务。
 
-- 当被吸取物体运送到目的地时，向真空吸盘中充气，使吸盘中的负气压变为零气压或微正气压，真空吸盘与被吸取物体分离，从而完成重物的提升和输送任务。
+**适用物体** 适用于带有平面物体
 
-**适用对象 :**
+<!-- **外观介绍**
 
-- 适用于表面平坦的物体
+- 多功能可扩展吸盘，可最多安装 4 个 4-p
+  ![pi](../../resourse/2-serialproduct/IMG_8238.jpg)
 
-## 购买链接：
+- 耐高压软管，可多次重复使用
 
-- [淘宝](https://shop504055678.taobao.com)
-- [shopify](https://shop.elephantrobotics.com/)
+  ![pi](../../resourse/2-serialproduct/IMG_8264.jpg)
 
-## 如何使用
+- 吸吹一体空压机，可扩展其他功能
 
-<img src="../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/吸盘模块2.jpg" alt="img-1" width="800" height=“auto” />
+  ![pi](../../resourse/2-serialproduct/IMG_8000.jpg) -->
 
-对于包含吸盘、电磁阀和真空泵的系统，连接方式通常如下：
+**安装使用**
 
-1. **真空泵**：是真空压力的来源，应连接到电磁阀的进气口。
-2. **电磁阀**：起控制作用，调节何时以及如何向吸盘抽气或充气。真空泵连接到电磁阀的一侧，吸盘连接到出口侧。
-3. **吸盘**：这是直接与被操控物体相互作用的末端执行器，连接到电磁阀的出口侧。
+- 需要配合空压机使用：
+  ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a1.png)
 
-在操作过程中，电磁阀通电后会打开，允许真空泵的真空压力到达吸盘，使其能够吸住物体。电磁阀断电后，真空被切断，空气流回吸盘，释放对物体的吸力。对于需要精确控制拾取和放置物品的自动化系统来说，这种设置非常有效。
+  1. 将黑色插头插入排插；
+
+  2. 将搭配的红色软管插入机器上的接口：  
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a2.png)
+  3. 红色按钮为开关，往外拔即打开，按回去则关闭机器：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a3.png)
+
+- 吸盘安装：
+
+ 
+
+  1. 将空压机红色软管的另一端接上电磁阀的接口：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a4.png)
+  2. 用模块吸盘配套的透明软管分别接上电磁阀上方和模块吸盘软管分支的接口：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a5.png)
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a6.png)
+  3. 用配套螺丝将模块吸盘固定在机械臂末端：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a7.png)
+  4. 将软管分支安装在模块吸盘上：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a8.png)
+
+- 电气连接：
+
+  1. 连接线黑色接机械臂底座 GND，红色接 OUT1~OUT6 任意一个，根据选择的接口更改后续程序的引脚号，这里使用 OUT1：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.2-PumpCup/a9.png)
+
+
+## 3 通过 python 控制
+
+**使用前需要先启动机器人系统**
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron2.png)
+
+确认机械臂的IP地址：终端输入 ifconfig 获取
+![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
+
+```python
+from pymycobot import ElephantRobot
+import time
+
+# 将ip更改成P600树莓派的实时ip
+
+elephant_client = ElephantRobot("192.168.10.158", 5001)
+
+# 启动机器人必要指令
+elephant_client.start_client()
+time.sleep(1)
+
+elephant_client.set_digital_out(0,1)#吸取
+time.sleep(2)
+
+elephant_client.set_digital_out(0,0)#放开
+time.sleep(2)
+
+
+
+
+```
+
 
 [← 上一页](../1.4.1-Gripper/4-FlexibleGripper.md) | [下一页 →](../1.4.3-Camera/1-CameraModulePro.md)

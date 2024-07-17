@@ -1,6 +1,6 @@
 # **myCobotPro 自适应夹爪**
 
-> **兼容型号：** myCobot 320、myCobot Pro 630
+> **兼容型号：** myCobot 320、myCobot Pro 630、myCobot Pro 600
 
 ## 产品图片
 
@@ -15,8 +15,6 @@
 | 工艺技术     | 3D 打印                                 |
 | 夹取范围     | 0-90 mm                                 |
 | 夹紧力       | 1000 grams                              |
-| 重复性精度   | 0.5 mm                                  |
-| 使用寿命     | 1 年                                    |
 | 驱动模式     | 电驱动                                  |
 | 变速箱模式   | 齿轮+连接杆                             |
 | 尺寸         | 158x105x55mm                            |
@@ -24,8 +22,9 @@
 | 固定方法     | 螺丝固定                                |
 | 使用环境要求 | 常温常压                                |
 | 控制接口     | 串行端口/IO 控制                        |
-| 适用设备     | ER myCobot 320 系列、ER myCobot Pro 630 |
-
+| 适用设备     |  myCobot 320 系列、 myCobot Pro 630、 myCobot Pro 600 |
+<!-- | 重复性精度   | 0.5 mm                                  |
+| 使用寿命     | 1 年                                    | -->
 ## 用于抓取物体
 
 ### 引言
@@ -46,10 +45,10 @@
 
 - 长条物体
 
-购买链接:
+<!-- 购买链接:
 
 - [淘宝](https://shop504055678.taobao.com)
-- [shopify](https://shop.elephantrobotics.com/)
+- [shopify](https://shop.elephantrobotics.com/) -->
 
 ### 安装使用
 
@@ -58,10 +57,12 @@
   - 结构安装：
 
     1. 将垫片对准机械臂末端孔位，配合螺丝拧紧：
-       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装1.png)
+       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/j3.jpg)
 
     2. 将夹爪的螺丝孔对准垫片四周的孔位，配合细螺丝拧紧：
-       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/安装2.png)
+       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/j2.jpg)
+
+       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/j1.jpg)
 
   - 电气连接：
   
@@ -76,15 +77,22 @@
 
 <br>
 
-## 夹爪测试
+## python编程控制
 需要先使用roboflow将机械臂使能，再运行下面的python脚本内容，测试夹爪是否正常
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron2.png)
+
+确认机械臂的IP地址：终端输入 ifconfig 获取
+![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
+
+
 ```python
 from pymycobot import ElephantRobot
 import time
 if __name__=="__main__":
     try:
         #IP填写实际机器人的无线IP
-        elephant_client=ElephantRobot("192.168.1.159",5001)
+        elephant_client=ElephantRobot("192.168.10.158",5001)
         elephant_client.start_client()
         for i in range(1):
             #关闭

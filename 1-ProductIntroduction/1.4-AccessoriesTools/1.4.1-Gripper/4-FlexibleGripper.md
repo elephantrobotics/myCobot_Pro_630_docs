@@ -6,77 +6,119 @@
 
 <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪1.jpg" alt="img-1" width="800" height="auto" /> <br>
 
-## 规格
+**规格说明：**
 
-**夹具**
+| 名称 name              | myCobotPro 柔性夹爪                      |
+| ---------------------- | ---------------------------------------- |
+| 材料                   | 金属                                     |
+| 夹持范围 clamp size    | 36-136 毫米                              |
+| 最大夹持力 clamp force | 垂直 600 克 包裹 1080 克                 |
+| 驱动方式 drive         | 气动                                     |
+| 传动方式 transmission  | 形变                                     |
+| 尺寸 size              | 170x128x195mm                            |
+| 重量 weight            | 365 克                                   |
+| 固定方式 fixed         | 螺丝固定                                 |
+| 使用环境要求           | 常温常压                                 |
+| 控制接口 control       | IO 控制                                  |
+| 适用设备               |myCobot 320、myCobot Pro 600、myCobot Pro 630 |
+<!-- | 重复精度 precision     | 0.5 毫米                                 |
+| 使用寿命 lifetime      | 1 年                                     | -->
+**柔性夹爪:** 夹取物体使用
 
-| **图片**     | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/柔性夹爪2.jpg" alt="img-2" width="200" height="auto" /> |
-| :----------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| 材料         | 金属                                                                                                                                           |
-| 夹取范围     | 36-136mm                                                                                                                                       |
-| 夹紧力       | 垂直 600g 包裹 1080g                                                                                                                           |
-| 重复性精度   | 0.5 mm                                                                                                                                         |
-| 使用寿命     | 1 year                                                                                                                                         |
-| 驱动模式     | 气动                                                                                                                                           |
-| 变速箱模式   | 形变                                                                                                                                           |
-| 尺寸         | 170x128x195mm                                                                                                                                  |
-| 重量         | 365 grams                                                                                                                                      |
-| 固定方法     | 螺丝固定                                                                                                                                       |
-| 使用环境要求 | 常温常压                                                                                                                                       |
-| 控制接口     | SAC40A 气动控制器                                                                                                                              |
-| 适用设备     | ER myCobot 320 series, ER myCobot Pro 630                                                                                                      |
+**简介**
 
-**控制器**
-
-| **图片**    | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/气动控制器1.jpg" alt="img-2" width="200" height="auto"/>       |
-| :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 电源        | 24V 1.5A                                                                                                                                              |
-| 控制方式    | IO                                                                                                                                                    |
-| 气源压力    | > 0.4 MPA                                                                                                                                             |
-| 流量        | > 40 L/MIN                                                                                                                                            |
-| IO          | <img src="../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/气动控制器2.jpg" alt="img-3" width="100" height="auto" /> <br> |
-| Value State | IN1: HIGH & IN2: LOW = 关闭夹爪 <br> IN1: LOW & IN2: HIGH = 开启夹爪 <br> 注意 ⚠️：使用 IO 控制时，确保将上述三档拨动开关设置在中间位置。             |
-| 船型开关    | 三档拨动开关                                                                                                                                          |
-| 正压        | 夹爪关闭                                                                                                                                              |
-| 负压        | 夹爪打开                                                                                                                                              |
-
-## 用于抓取物体
-
-**引言**
-
-- 传统的工业吸盘需要吸住材料的平面。在越来越多的工作条件下，吸盘表面很容易损坏面板或部件。触感柔软的抓手可捏住边缘，轻松抓住面板，不留痕迹，也不会损坏面板，确保产品表面不受破坏。提高成品率。
-
-- 柔性夹爪采用模块化设计，重量轻，可根据面板尺寸自由排列组合。
-
-- 传统油缸的夹紧力一般较大，且力难以控制。夹持面板的边缘容易受到挤压和翘曲。弹性夹爪的单指夹紧力精确可控，不会夹住易碎工件。
+- 传统工业吸盘需要吸取物料的平整表面，在越来越多的工况中，吸取表面容易损伤面板或元器件，柔触夹爪捏边抓取，轻松无痕无损搬运面板，确保产品表面无瑕疵，提升良品率。
+- 柔触夹爪的模块化设计，自重轻，可以按照面板尺寸自由排列组合。
+- 传统气缸的夹持力普遍较大，且力度难以控制，夹持面板的边缘容易夹伤夹翘，柔性夹爪的单指夹持力精准可控，不会夹伤脆弱工件。
 
 **工作原理**
 
-- 软爪是一种创新的仿生软爪，由研究人员模仿海星的胳膊和腿的形状研制而成。软爪的 "手指 "由柔性高分子硅胶材料制成，可以通过充气弯曲变形。它能像海星一样自适应地覆盖目标物体，并能完成对特殊形状和易碎物体的柔性无损抓取。
+- 柔性夹爪是研究人员模仿海星腕足的形态，研发出的一种创新型仿生柔性夹具。软爪的“手指”是由高分子硅胶柔性材料制作而成，通过充气实现弯曲形变，能够像海星一样，自适应地包覆住目标物体，可完成对异形、易损物品的柔性、无损抓取 。
 
-**适用对象**
+**适用物体**
 
-- 合理大小范围内的任何形状的物体
+- 合理大小内的任意形状物体
 
-## 购买链接:
 
-- [淘宝](https://shop504055678.taobao.com)
-- [shopify](https://shop.elephantrobotics.com/)
+**安装使用**
 
-## 如何使用
+- 需要配合空压机使用：
+  ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a1.png)
 
-1 安装: <br>
+  1. 将黑色插头插入排插；
 
-- 气动回路连接和压力调整：在连接到软机械手柄之前，先调节正压（出口可暂时用指尖堵住，确保正压严格小于 100KPA，以免手指受伤）。
+  2. 将搭配的红色软管插入机器上的接口：  
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a2.png)
+  3. 红色按钮为开关，往外拔即打开，按回去则关闭机器：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a3.png)
 
-- 用于连接和调节气动回路：首先，在连接软质机械手柄之前设定正压。用指尖暂时堵住出气口，防止空气溢出，确保正压严格控制在 100KPA 以下，以免手指受伤。
+- 夹爪安装：
 
-- **连接气源**：将气源连接至端口 6（入口），确保压力高于 0.4MPA 且流量超过 40 L/min。
-- **连接软机械手柄**：将软机械手柄连接到端口 4（出口）。
-- **通电**：为连接 5 供电。
-- **调整正压**：使用切换开关选择正压。根据压力表调节调节器，直至达到所需压力。
-- **切换至负压**：负压调节时，拉起调节器盖，旋转至设定值，然后向下按以锁定。
+ 
 
-特别提醒 ⚠️：关于压力保持，正压和负压都可以在启动 0.5 秒后保持，使机械抓手保持其预设压力。这种方法非常节能，特别是因为持续保持负压会消耗更多空气。此外，它还能防止在意外断电或断气的情况下失去对物体的抓力，确保操作的可靠性。
+  1. 将空压机红色软管的另一端接上气动控制器的接口：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a4.png)
+  2. 用柔性夹爪配套的蓝色软管分别接上夹爪和气动控制器的接口：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a5.png)
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a6.png)
+  3. 用配套螺丝将柔性夹爪固定在机械臂末端：
+     ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a7.png)
+
+- 电气连接：
+
+  1. 配发两根连接线，一根用于供电，一根用于控制。
+
+  - 在机械臂底座端，用于供电的线，红色接 24V 接口，黑色接 GND 接口。对于用于控制的线，红色接 OUT1，黑色接 OUT2：
+    ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a8.png)
+  - 气动控制器端，供电线红色接气动控制器 24V，黑色接气动控制器的 GND。控制线红色接 IN1，黑色接 IN2：
+    ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/4-FlexibleGripper/a9.png)
+    > 注意接在“正压”一侧，若供电成功显示屏会亮起。
+    > 可以手动测试连接是否正常，将空压机打开，按下气动控制器的按钮，向左（正压）按下则夹爪收缩，向右（负压）则夹爪打开。使用 IO 控制时，确保将上述三档拨动开关设置在中间位置。
+
+## 3 通过 python 控制
+
+**使用前需要先启动机器人系统**
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron2.png)
+
+确认机械臂的IP地址：终端输入 ifconfig 获取
+![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
+
+
+```python
+     from pymycobot import ElephantRobot
+     import time
+    
+    # 将ip更改成P600树莓派的实时ip
+    
+     elephant_client = ElephantRobot("192.168.10.158", 5001)
+    
+    # 启动机器人必要指令
+     elephant_client.start_client()
+     time.sleep(1)
+
+     elephant_client.set_digital_out(0,0)#复位IO
+     time.sleep(2) 
+     elephant_client.set_digital_out(1,0)#复位IO
+     time.sleep(2)
+    
+     elephant_client.set_digital_out(0,1)#闭合
+     time.sleep(2)
+     elephant_client.set_digital_out(1,0)#复位IO
+     time.sleep(2)
+
+     elephant_client.set_digital_out(0,0)#复位IO
+     time.sleep(2)    
+     elephant_client.set_digital_out(1,1)#张开
+     time.sleep(2)
+
+     elephant_client.set_digital_out(0,0)#复位IO
+     time.sleep(2)
+    
+     elephant_client.set_digital_out(1,0)#复位IO
+     time.sleep(2)
+     
+ ```
+
 
 [← 上一页](./3-PneumaticGripper.md) | [下一页 →](../1.4.2-PumpCup/1-ModuleSuctionCup.md)
