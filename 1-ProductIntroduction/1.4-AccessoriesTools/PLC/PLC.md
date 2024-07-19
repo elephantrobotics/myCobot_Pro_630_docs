@@ -62,7 +62,7 @@ time.sleep(1)
 while True:
     
     if elephant_client.get_digital_in(0)=='1':
-        elephant_client.write_angle([0,0,0,0,0,0],1500)
+        elephant_client.write_angles([0,-90,0,0,-90,0],1500)
         elephant_client.command_wait_done()
         break
     else:
