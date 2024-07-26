@@ -72,4 +72,4 @@ while True:
 ![](../../../resources/1-ProductIntroduction/1.4/PLC/plc1.png)
 
 ## 5 效果展示
-![](../../../resources/1-ProductIntroduction/1.4/PLC/video.gif)
+![](../../../resources/1-ProductIntroduction/1.4/PLC/video1.gif)
