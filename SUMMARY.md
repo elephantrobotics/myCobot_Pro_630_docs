@@ -14,7 +14,7 @@
        * [6 Camera Module](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
        * [7 Pen Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
        * [8 Phone Holders](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
-       * [9 PLC IO interactive control cases](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/plc.md)
+       
   
 
 * [2 Product Features](./2-ProductFeature/2-ProductFeature.md)
@@ -66,6 +66,7 @@
      * [7.2 2.5D QR code sorting](./7-ExamplesRobotsUsing/2.5D/2.5D.md)
      * [7.3 Writing and drawing](./7-ExamplesRobotsUsing/draw/draw.md)
      * [7.4 Holographic projection](./7-ExamplesRobotsUsing/LED/LED.md)
+     * [7.5 PLC IO interactive control cases](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/plc.md)
   
    * [8 Related information download](./8-FilesDownload/8-FilesDownload.md)
 
