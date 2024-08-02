@@ -106,7 +106,7 @@ elephant_client = ElephantRobot("192.168.10.158", 5001)
 # Necessary commands to start the robot
 elephant_client.start_client()
 time.sleep(1)
-elephant_client.set_cag_gripper_mode(1)
+elephant_client.set_gripper_mode(1)
 time.sleep(1)
 #elephant_client.power_off()#When changing the IO mode from gripper to gripper, you need to shut down the machine and restart the robot. If you only use gripper to gripper mode, you do not need to shut down the robot
 elephant_client.power_off()
@@ -154,7 +154,7 @@ elephant_client = ElephantRobot("192.168.10.158", 5001)
 # Necessary commands to start the robot
 elephant_client.start_client()
 time.sleep(1)
-elephant_client.set_cag_gripper_mode(0)
+elephant_client.set_gripper_mode(0)
 time.sleep(1)
 # elephant_client.power_off()#When changing the IO mode of the gripper through transmission, you need to shut down the machine and restart the robot once. If you only use the gripper through transmission mode, you do not need to shut down the robot
 elephant_client.state_off()
@@ -167,9 +167,9 @@ time.sleep(3)
 #Transparent transmission mode
 
 for i in range(3):
-    elephant_client.set_cag_gripper_value(26,20)
+    elephant_client.set_gripper_value(26,20)
     time.sleep(1)
-    elephant_client.set_cag_gripper_value(86,20)
+    elephant_client.set_gripper_value(86,20)
     time.sleep(1)
     
 ```
@@ -197,7 +197,7 @@ elephant_client = ElephantRobot("192.168.10.158", 5001)
 # Necessary commands to start the robot
 elephant_client.start_client()
 time.sleep(1)
-elephant_client.set_cag_gripper_mode(0)
+elephant_client.set_gripper_mode(0)
 time.sleep(1)
 elephant_client.set_gripper_calibrate()
 time.sleep(1)
