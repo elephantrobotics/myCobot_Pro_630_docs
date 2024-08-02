@@ -80,8 +80,8 @@
 
 ## Python programming control
 You need to use roboflow to enable the robot first, then run the following python script to test whether the gripper is normal
-![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
-![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron2.png)
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/on.png)
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/state.png)
 
 Confirm the IP address of the robot: Enter ifconfig in the terminal to obtain
 ![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
