@@ -86,121 +86,29 @@ You need to use roboflow to enable the robot first, then run the following pytho
 Confirm the IP address of the robot: Enter ifconfig in the terminal to obtain
 ![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
 
-## Python programming control
-You need to use roboflow to enable the robot first, then run the following python script to test whether the gripper is normal
-![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/on.png)
-![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/state.png)
-
-Confirm the IP address of the robot: Enter ifconfig in the terminal to obtain
-![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
-
-### IO control mode
 ```python
 from pymycobot import ElephantRobot
 import time
-
-# Change the ip to the real-time ip of the P600 Raspberry Pi
-
-elephant_client = ElephantRobot("192.168.10.158", 5001)
-
-# Necessary commands to start the robot
+if __name__=="__main__":
+try:
+#IP fill in the actual robot's wireless IP
+elephant_client=ElephantRobot("192.168.10.158",5001)
 elephant_client.start_client()
-time.sleep(1)
-elephant_client.set_cag_gripper_mode(1)
-time.sleep(1)
-#elephant_client.power_off()#When changing the IO mode from gripper to gripper, you need to shut down the machine and restart the robot. If you only use gripper to gripper mode, you do not need to shut down the robot
-elephant_client.power_off()
-time.sleep(3)
-elephant_client.state_off()
-time.sleep(3)
-elephant_client.power_on()
-time.sleep(3)
-elephant_client.state_on()
-time.sleep(3)
-elephant_client.set_digital_out(16, 0) # IO restores low level
-time.sleep(1)
-elephant_client.set_digital_out(17, 0) # IO restores low level
-time.sleep(1)
+for i in range(1):
+#Close
+elephant_client.set_digital_out(16,1)
+elephant_client.set_digital_out(17,0)
+time.sleep(2)
+#Open
+elephant_client.set_digital_out(16,0)
+elephant_client.set_digital_out(17,1)
+time.sleep(2)
+elephant_client.set_digital_out(16,0)
+elephant_client.set_digital_out(17,0)
 
-# IO mode
-# Gripper full open and full closed control code. Note that when the gripper is transparently switched to IO mode, you need to shut down the machine and restart the robot once before switching back to the gripper IO mode
-for i in range(3):
-
-    elephant_client.set_digital_out(16, 1) # Close the gripper
-    time.sleep(1)
-    elephant_client.set_digital_out(17, 0) # IO restores low level
-    time.sleep(1)
-    elephant_client.set_digital_out(16, 0) #IO restores low level
-    time.sleep(1)
-    elephant_client.set_digital_out(17, 1) # Open the gripper
-    time.sleep(1)
-    
-    elephant_client.set_digital_out(16, 0) # IO restores low level
-    time.sleep(1)
-    elephant_client.set_digital_out(17, 0) # IO returns to low level
-    time.sleep(1)
-
-```
-
-### Transparent transmission mode
-```python
-from pymycobot import ElephantRobot
-import time
-
-# Change the IP address to the real IP address of the P600 Raspberry Pi
-
-elephant_client = ElephantRobot("192.168.10.158", 5001)
-
-# Necessary commands to start the robot
-elephant_client.start_client()
-time.sleep(1)
-elephant_client.set_cag_gripper_mode(0)
-time.sleep(1)
-# elephant_client.power_off()#When changing the IO mode of the gripper through transmission, you need to shut down the machine and restart the robot once. If you only use the gripper through transmission mode, you do not need to shut down the robot
-elephant_client.state_off()
-time.sleep(3)
-elephant_client.power_on()
-time.sleep(3)
-elephant_client.state_on()
-time.sleep(3)
-
-#Transparent transmission mode
-
-for i in range(3):
-    elephant_client.set_cag_gripper_value(26,20)
-    time.sleep(1)
-    elephant_client.set_cag_gripper_value(86,20)
-    time.sleep(1)
-    
-```
-## Gripper zero position calibration
-**The gripper has been zero-calibrated before leaving the factory. If the gripper's stroke is incorrect, you can calibrate it according to the following steps**
-
-First turn off the robot in roboflow, and manually open the gripper to the maximum
-![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/off.png)
-
-![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/zero.jpg)
-
-Then start the robot
-![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/on.png)
-
-Then execute the following script
-
-```python
-from pymycobot import ElephantRobot
-import time
-
-# Change the IP address to the real IP address of the P600 Raspberry Pi
-
-elephant_client = ElephantRobot("192.168.10.158", 5001)
-
-# Necessary commands to start the robot
-elephant_client.start_client()
-time.sleep(1)
-elephant_client.set_cag_gripper_mode(0)
-time.sleep(1)
-elephant_client.set_gripper_calibrate()
-time.sleep(1)
+except KeyboardInterrupt:
+elephant_client.stop_client()
+print("socket end")
 
 ```
 
