@@ -48,6 +48,7 @@
   
 * [6 SDK Development Guide](6-SDKDevelopment/6-SDKDevelopment.md)
    * [6.1 Based on python development and use](./6-SDKDevelopment/python/PyhtonAPI.md)
+      * [Python Use Cases](./6-SDKDevelopment/python/python_demo.md)
    * [6.2 Robot Operating System 1 (ROS1)](11-ApplicationBaseROS/11.1-ROS1/README.md)
      * [1 Environment Building](11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.md)
      * [2 ROS basic knowledge](11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.md)
