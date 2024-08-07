@@ -131,7 +131,7 @@ elephant_client = ElephantRobot("192.168.137.182", 5001)
 "开始TCP通信"
 elephant_client.start_client()
 ```
-**使用Python API必须先将ElephantRobot类实例后才可调用mycobot pro600的功能函数**
+**使用Python API必须先将ElephantRobot类实例后才可调用mycobot pro630的功能函数**
 - **必填参数**：
 &ensp;&ensp;  **参数1**：机器人实际IP地址
 &ensp;&ensp;  **参数2**：机器人端口（**API函数端口固定为5001**）
@@ -206,11 +206,11 @@ elephant_client.start_client()
 
 **def write_angles(angles,speed)**:
 - **功能**：发送所有角度给机械臂所有关节
-- **参数**：关节角度(列表类型)，机械臂运动的速度:[0-1999]
+- **参数**：关节角度(列表类型)，机械臂运动的速度:[0-5999]
   
 **def write_angle(joint, value, speed)**:
 - **功能**：发送指定的单个关节运动至指定的角度
-- **参数**：指定关节[0代表j1,1代表j2,2代表j3,3代表j4,4代表j5,5代表j6],关节角度,机械臂运动的速度:[0-1999]
+- **参数**：指定关节[0代表j1,1代表j2,2代表j3,3代表j4,4代表j5,5代表j6],关节角度,机械臂运动的速度:[0-5999]
 
 **def set_speed(percentage)**:
 - **功能**：设置速度
@@ -246,15 +246,15 @@ elephant_client.start_client()
   
 **def get_digital_in(pin_number)**:
 - **功能**：获取输入引脚信号
-- **参数**：引脚序号
+- **参数**：引脚序号[0 ~ 5 对应底座电气接口 OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2]
 
 **def get_digital_out(pin_number)**:
 - **功能**：获取输出引脚信号
-- **参数**：引脚序号
+- **参数**：引脚序号[0 ~ 5 对应底座电气接口 OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2]
 
 **def set_digital_out(pin_number, pin_signal)**:
 - **功能**：设置输出引脚信号
-- **参数**：引脚序号，引脚状态[0=低电平，1=高电平]
+- **参数**：引脚序号[0 ~ 5 对应底座电气接口 OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2]，引脚状态[0=低电平，1=高电平]
   
 **def get_acceleration()**:
 - **功能**：获取机器人的加速度
@@ -265,7 +265,7 @@ elephant_client.start_client()
 - **参数**：加速度
 
 **def command_wait_done()**:
-- **功能**：等待到上一个运动命令完成为止(**此API函数必须添加到所有运动API函数后面**)
+- **功能**：等待到上一个运动命令完成为止
 - **参数**：无
 
 **def wait(seconds)**:
@@ -280,7 +280,31 @@ elephant_client.start_client()
 - **功能**：获取一个变量的值
 - **参数**：变量名（字符串类型）
 
+**def jog_relative(joint_id, angle, speed, mode)**:
+- **功能**：以当前位置往某个坐标轴方向进行相对运动，或是以当前关节角度往某个关节的角度进行相对运动
+- **参数**：相对运动的方向或角度['J1'——'J6', 'X', 'Y', 'Z', 'RX', 'RY', 'RZ'],相对移动的距离或角度,移动速度,运动模式[0 或 1 ]
+
+**def set_gripper_mode(mode)**:
+- **功能**：设置自适应夹爪控制模式
+- **参数**：0或1，0代表透传模式，1代表IO控制模式
+
+**def set_gripper_calibrate()**:
+- **功能**：校准自适应夹爪舵机电位值
+- **参数**：无
+
+**def set_gripper_state(state, speed)**:
+- **功能**：设置自适应夹爪完全张开或闭合
+- **参数**：0或1[0代表完全张开，1代表完全闭合],速度[1-100]
+
+**def set_gripper_value(self, value, speed)**:
+- **功能**：设置自适应夹爪张开行程
+- **参数**：行程[0-100],速度[1-100]
+
+<!-- **def get_variable(var_name)**:
+- **功能**：获取一个变量的值
+- **参数**：变量名（字符串类型） -->
+
 
 
 ---
-[← 上一页](../6-SDKDevelopment.md) | [下一页 → ](../../11-ApplicationBaseROS/11.1-ROS1/README.md)
+[← 上一页](../6-SDKDevelopment.md) | [下一页 → ](./python_demo.md)

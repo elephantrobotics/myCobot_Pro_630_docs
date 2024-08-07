@@ -120,7 +120,7 @@ if __name__=='__main__':
     "启动机器人必要指令"
     elephant_client.start_client()
 
-    "在列表内填入记录下的6个关节角度，最后一个参数为运动速度"
+    "在列表内填入记录下的6个关节角度，最后一个参数为运动速度,需更改为自己设定的关节角度"
     elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
 
     "等待机器人运动到目标位置再执行后续指令"
@@ -170,6 +170,8 @@ if __name__=='__main__':
 &ensp;&ensp;使用VNC Viewer进入RoboFlow系统后，在快速移动界面下，可通过笛卡尔坐标控制，控制机器人到达目标位置后，记录操作面板上显示的机器人6个坐标值
 <div align=center><img src="../../resources/2-serialproduct/myCobot Pro 600/Chinese/p10.png"></div>
 
+使用坐标控制需要先用关节运动将机械臂调整至下图姿态，避免奇异点导致机械臂无法执行动作
+![](../../resources/14-IssueFAQ/move.png)
 
 ### 3.1 单参数坐标控制
 ```python
@@ -191,6 +193,7 @@ if __name__=='__main__':
 ```
 
 ### 3.2 多参数坐标控制
+
 ```python
 from pymycobot import ElephantRobot
 
@@ -201,7 +204,7 @@ if __name__=='__main__':
     "启动机器人必要指令"
     elephant_client.start_client()
 
-    "在列表内填入记录下的6个坐标值，最后一个参数为运动速度"
+    "在列表内填入记录下的6个坐标值，最后一个参数为运动速度,,需更改为自己设定的位姿"
     elephant_client.write_coords([-130.824,256.262,321.533,176.891,-0.774,-128.700], 3000)
 
     "等待机器人运动到目标位置再执行后续指令"
@@ -239,6 +242,7 @@ if __name__=='__main__':
     "启动机器人必要指令"
     elephant_client.start_client()
 
+    "引脚序号0 ~ 5对应底座电气接口OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2"
     "控制机器人OUT1输出为高电平"
     elephant_client.set_digital_out(0,1)
 
@@ -262,7 +266,8 @@ if __name__=='__main__':
 
     "启动机器人必要指令"
     elephant_client.start_client()
-
+    
+    "引脚序号0 ~ 5对应底座电气接口OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2"
     "获取机器人OUT1输出状态"
     elephant_client.get_digital_out(0)
 
@@ -280,8 +285,9 @@ if __name__=='__main__':
 
     "启动机器人必要指令"
     elephant_client.start_client()
-
-    "获取机器人IN1输入状态"
+    
+    "引脚序号0 ~ 5对应底座电气接口OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2"
+    "获取机器人IN1输入状态,低电平有效,即GND与输入端导通时反馈1，其余状态反馈0"
     elephant_client.get_digital_in(0)
 
     "机器人延时0.5秒后再执行后面程序"
@@ -366,12 +372,12 @@ if __name__=='__main__':
     time.sleep(1)
 
     for i in range (1):
-        "机器人关节运动到安全点"
+        "机器人关节运动到安全点,需更改为自己设定的关节角度"
         elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
         "等待机器人运动到目标位置再执行后续指令"
         elephant_client.command_wait_done()
         
-        "机器人笛卡尔运动到码垛抓取过渡点"
+        "机器人笛卡尔运动到码垛抓取过渡点,需更改为自己设定的位姿"
         elephant_client.write_coords([-130.824,256.262,321.533,176.891,-0.774,-128.700], 3000)
         elephant_client.command_wait_done()
 
@@ -410,3 +416,6 @@ if __name__=='__main__':
         elephant_client.command_wait_done()
 
 ```
+
+---
+[← 上一页](./python_demo.md) | [下一页 → ](../../11-ApplicationBaseROS/11.1-ROS1/README.md)
