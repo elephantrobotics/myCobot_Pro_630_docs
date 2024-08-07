@@ -134,7 +134,7 @@ if __name__=='__main__':
     
     elephant_client.start_client()
     
-    "Fill in the 6 recorded joint angles in the list, and the last parameter is the movement speed"
+    "Fill in the 6 recorded joint angles in the list, and the last parameter is the movement speed,Need to change to the joint angle you set"
     elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
     
     "Wait for the robot to move to the target position before executing subsequent instructions"
@@ -189,6 +189,9 @@ if __name__=='__main__':
 &ensp;&ensp;After using VNC Viewer to enter the RoboFlow system, in the fast movement interface, you can control the robot to the target position through Cartesian coordinates, and record the 6 coordinate values ​​of the robot displayed on the operation panel
 <div align=center><img src="../../resources/2-serialproduct/myCobot Pro 600/Chinese/p10.png"></div>
 
+To use coordinate control, you need to first use joint motion to adjust the robot arm to the posture shown in the figure below to avoid singularity points that cause the robot arm to be unable to perform actions
+![](../../resources/14-IssueFAQ/move.png)
+
 ### 3.1 Single parameter coordinate control
 ```python
 from pymycobot import ElephantRobot
@@ -224,7 +227,7 @@ if __name__=='__main__':
     "Start the robot necessary instructions"
     elephant_client.start_client()
     
-    "Fill in the 6 recorded coordinate values ​​in the list, the last parameter is the movement speed"
+    "Fill in the 6 recorded coordinate values ​​in the list, the last parameter is the movement speed,need to change to the posture you set"
     elephant_client.write_coords([-130.824,256.262,321.533,176.891,-0.774,-128.700], 3000)
     
     "Wait for the robot to move to the target position before executing subsequent instructions"
@@ -266,7 +269,8 @@ if __name__=='__main__':
     "Necessary instructions for starting the robot"
     
     elephant_client.start_client()
-    
+
+    "Pin numbers 0 to 5 correspond to the base electrical interface OUT 1 to 6; 16 to 17 correspond to the end of the robot electrical interface OUT 1 to 2"
     "Control the robot OUT1 output to high level"
     
     elephant_client.set_digital_out(0,1)
@@ -295,8 +299,9 @@ if __name__=='__main__':
     
     elephant_client.start_client()
     
+    "Pin numbers 0 to 5 correspond to the base electrical interface OUT 1 to 6; 16 to 17 correspond to the end of the robot electrical interface OUT 1 to 2"
+
     "Get the robot OUT1 output status"
-    
     elephant_client.get_digital_out(0)
     
     "The robot will delay for 0.5 seconds before executing the following program"
@@ -317,8 +322,9 @@ if __name__=='__main__':
     
     elephant_client.start_client()
     
-    "Get the robot IN1 input status"
-    
+    "Pin numbers 0 to 5 correspond to the base electrical interface OUT 1 to 6; 16 to 17 correspond to the end of the robot electrical interface OUT 1 to 2"
+
+    "Get the robot IN1 input status,low level is valid,That is, when GND is connected to the input terminal, feedback is 1, and in other states, feedback is 0"
     elephant_client.get_digital_in(0)
     
     "The robot will delay for 0.5 seconds before executing the following program"
@@ -420,12 +426,12 @@ if __name__=='__main__':
     time.sleep(1)
     
     for i in range (1):
-        "The robot joint moves to a safe point"
+        "The robot joint moves to a safe point,, need to change to the joint angle you set"
         elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
         "Wait for the robot to move to the target position before executing subsequent instructions"
         elephant_client.command_wait_done()
         
-        "The robot Cartesian moves to the transition point of palletizing and grabbing"
+        "The robot Cartesian moves to the transition point of palletizing and grabbing,need to change to the posture you set"
         elephant_client.write_coords([-130.824,256.262,321.533,176.891,-0.774,-128.700], 3000)
         elephant_client.command_wait_done()
         
@@ -463,3 +469,5 @@ if __name__=='__main__':
         elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000) 
         elephant_client.command_wait_done() 
 ```
+---
+[← Previous page](./python_demo.md) | [Next page →](../../11-ApplicationBaseROS/11.1-ROS1/README.md)
