@@ -131,7 +131,7 @@ elephant_client = ElephantRobot("192.168.137.182", 5001)
 "开始TCP通信"
 elephant_client.start_client()
 ```
-**使用Python API必须先将ElephantRobot类实例后才可调用mycobot pro600的功能函数**
+**使用Python API必须先将ElephantRobot类实例后才可调用mycobot pro630的功能函数**
 - **必填参数**：
 &ensp;&ensp;  **参数1**：机器人实际IP地址
 &ensp;&ensp;  **参数2**：机器人端口（**API函数端口固定为5001**）
@@ -206,11 +206,11 @@ elephant_client.start_client()
 
 **def write_angles(angles,speed)**:
 - **功能**：发送所有角度给机械臂所有关节
-- **参数**：关节角度(列表类型)，机械臂运动的速度:[0-1999]
+- **参数**：关节角度(列表类型)，机械臂运动的速度:[0-5999]
   
 **def write_angle(joint, value, speed)**:
 - **功能**：发送指定的单个关节运动至指定的角度
-- **参数**：指定关节[0代表j1,1代表j2,2代表j3,3代表j4,4代表j5,5代表j6],关节角度,机械臂运动的速度:[0-1999]
+- **参数**：指定关节[0代表j1,1代表j2,2代表j3,3代表j4,4代表j5,5代表j6],关节角度,机械臂运动的速度:[0-5999]
 
 **def set_speed(percentage)**:
 - **功能**：设置速度
@@ -246,15 +246,15 @@ elephant_client.start_client()
   
 **def get_digital_in(pin_number)**:
 - **功能**：获取输入引脚信号
-- **参数**：引脚序号
+- **参数**：引脚序号[0 ~ 5 对应底座电气接口 OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2]
 
 **def get_digital_out(pin_number)**:
 - **功能**：获取输出引脚信号
-- **参数**：引脚序号
+- **参数**：引脚序号[0 ~ 5 对应底座电气接口 OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2]
 
 **def set_digital_out(pin_number, pin_signal)**:
 - **功能**：设置输出引脚信号
-- **参数**：引脚序号，引脚状态[0=低电平，1=高电平]
+- **参数**：引脚序号[0 ~ 5 对应底座电气接口 OUT 1 ~ 6 ; 16 ~ 17 对应机械臂末端电气接口 OUT 1 ~ 2]，引脚状态[0=低电平，1=高电平]
   
 **def get_acceleration()**:
 - **功能**：获取机器人的加速度
@@ -265,7 +265,7 @@ elephant_client.start_client()
 - **参数**：加速度
 
 **def command_wait_done()**:
-- **功能**：等待到上一个运动命令完成为止(**此API函数必须添加到所有运动API函数后面**)
+- **功能**：等待到上一个运动命令完成为止
 - **参数**：无
 
 **def wait(seconds)**:
@@ -280,242 +280,31 @@ elephant_client.start_client()
 - **功能**：获取一个变量的值
 - **参数**：变量名（字符串类型）
 
-## 4 **Python API使用案例**
-### 4.1 **关节控制**
-&ensp;&ensp;使用VNC Viewer进入RoboFlow系统后，在快速移动界面下，可通过关节控制，控制机器人到达目标位置后，记录操作面板上显示的机器人6个关节的角度
-<div align=center><img src="../../resources/2-serialproduct/myCobot Pro 600/Chinese/p9.png"></div>
+**def jog_relative(joint_id, angle, speed, mode)**:
+- **功能**：以当前位置往某个坐标轴方向进行相对运动，或是以当前关节角度往某个关节的角度进行相对运动
+- **参数**：相对运动的方向或角度['J1'——'J6', 'X', 'Y', 'Z', 'RX', 'RY', 'RZ'],相对移动的距离或角度,移动速度,运动模式[0 或 1 ]
 
-#### 4.1.1 **多关节控制**
-```
-from pymycobot import ElephantRobot
+**def set_gripper_mode(mode)**:
+- **功能**：设置自适应夹爪控制模式
+- **参数**：0或1，0代表透传模式，1代表IO控制模式
 
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
+**def set_gripper_calibrate()**:
+- **功能**：校准自适应夹爪舵机电位值
+- **参数**：无
 
-    "开启TCP通信"
-    elephant_client.start_client()
+**def set_gripper_state(state, speed)**:
+- **功能**：设置自适应夹爪完全张开或闭合
+- **参数**：0或1[0代表完全张开，1代表完全闭合],速度[1-100]
 
-    "在列表内填入记录下的6个关节角度，最后一个参数为运动速度"
-    elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
+**def set_gripper_value(self, value, speed)**:
+- **功能**：设置自适应夹爪张开行程
+- **参数**：行程[0-100],速度[1-100]
 
-    "等待机器人运动到目标位置再执行后续指令"
-    elephant_client.command_wait_done()     
+<!-- **def get_variable(var_name)**:
+- **功能**：获取一个变量的值
+- **参数**：变量名（字符串类型） -->
 
-```
-#### 4.1.2 **单关节控制**
-```
-from pymycobot import ElephantRobot
 
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "填入要控制的单个关节的角度，第1个参数0为第一轴，以此类推；第2个参数表示关节角度；第三个参数表示运动速度"
-    elephant_client.write_angle(0,94.828,1000)
-
-    "等待机器人运动到目标位置再执行后续指令"
-    elephant_client.command_wait_done()     
-
-```
-#### 4.1.3 **关节角度获取**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "打印机器人当前6个关节角度信息"   
-    elephant_client.get_angles()
-
-    "等待机器人运动到目标位置再执行后续指令"
-    elephant_client.command_wait_done()     
-
-```
-
-### 4.2 **坐标控制**
-&ensp;&ensp;主要用于实现智能规划路线让机械臂从一个位置到另一个指定位置。分为[x,y,z,rx,ry,rz]，其中[x,y,z]表示的是机械臂末端在空间中的位置（该坐标系为直角坐标系），[rx,ry,rz]表示的是机械臂末端在该点的姿态(该坐标系为欧拉坐标)
-&ensp;&ensp;使用VNC Viewer进入RoboFlow系统后，在快速移动界面下，可通过笛卡尔坐标控制，控制机器人到达目标位置后，记录操作面板上显示的机器人6个坐标值
-<div align=center><img src="../../resources/2-serialproduct/myCobot Pro 600/Chinese/p10.png"></div>
-
-#### 4.2.1 **多参数坐标控制**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "在列表内填入记录下的6个坐标值，最后一个参数为运动速度"
-    elephant_client.write_coords([-130.824,256.262,321.533,176.891,-0.774,-128.700], 3000)
-
-    "等待机器人运动到目标位置再执行后续指令"
-    elephant_client.command_wait_done()     
-
-```
-#### 4.2.2 **单参数坐标控制**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "填入参数，第1个参数的2代表Z轴方向，以此类推；第2个参数表示关坐标值；第三个参数表示运动速度"
-    elephant_client.write_coord(2,94.828,3000)
-
-    "等待机器人运动到目标位置再执行后续指令"
-    elephant_client.command_wait_done()     
-
-```
-#### 4.2.3 **笛卡尔空间坐标获取**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "打印输出机器人当前笛卡尔空间坐标信息"
-    elephant_client.get_coords()
-
-    "等待机器人运动到目标位置再执行后续指令"
-    elephant_client.command_wait_done()     
-
-```
-### 4.3 **IO控制**
-
-#### 4.3.1 **设置IO引脚输出状态**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "控制机器人OUT1输出为高电平"
-    elephant_client.set_digital_out(0,1)
-
-    "机器人延时3秒后再执行后面程序"
-    elephant_client.wait(3)
-
-    "控制机器人OUT1输出为低电平"
-    elephant_client.set_digital_out(0,0)
-
-    "机器人延时3秒后再执行后面程序"
-    elephant_client.wait(3)    
-
-```
-#### 4.3.1 **获取IO引脚输出状态**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "获取机器人OUT1输出状态"
-    elephant_client.get_digital_out(0)
-
-    "机器人延时0.5秒后再执行后面程序"
-    elephant_client.wait(0.5)  
-
-```
-#### 4.3.1 **获取IO引脚输入状态**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-
-    "开启TCP通信"
-    elephant_client.start_client()
-
-    "获取机器人IN1输入状态"
-    elephant_client.get_digital_in(0)
-
-    "机器人延时0.5秒后再执行后面程序"
-    elephant_client.wait(0.5)  
-
-```
-## 5 **Python API应用场景案例**
-### 5.1 **搬运码垛**
-```
-from pymycobot import ElephantRobot
-
-if __name__=='__main__':
-    "连接机器人服务器"
-    elephant_client = ElephantRobot("192.168.137.182", 5001)
-    "开启TCP通信"
-    elephant_client.start_client()     
-    for i in range (1):
-        "机器人关节运动到安全点"
-        elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
-        "等待机器人运动到目标位置再执行后续指令"
-        elephant_client.command_wait_done()
-        
-        "机器人笛卡尔运动到码垛抓取过渡点"
-        elephant_client.write_coords([-130.824,256.262,321.533,176.891,-0.774,-128.700], 3000)
-        elephant_client.command_wait_done()
-
-        "控制机器人朝Z轴方向笛卡尔运动到码垛抓取点"
-        elephant_client.write_coord(2,241.533,3000)
-        elephant_client.command_wait_done()
-        
-        "控制机器人OUT1输出为高电平"
-        elephant_client.set_digital_out(0,1)
-        "控制机器人等待1秒后再动作"
-        elephant_client.wait(1)
-
-        "控制机器人朝Z轴方向笛卡尔运动到码垛抓取过渡点"
-        elephant_client.write_coord(2,321.533,3000)
-        elephant_client.command_wait_done()
-
-        "控制机器人运动到放置过渡点"
-        elephant_client.write_coords([86.687,255.542,320.867,177.065,-1.333,-128.721], 3000)
-        elephant_client.command_wait_done()
-
-        "控制机器人朝Z轴方向笛卡尔运动到码垛放置点"
-        elephant_client.write_coord(2,241.533,3000)
-        elephant_client.command_wait_done()
-        
-        "控制机器人OUT1输出为低电平"
-        elephant_client.set_digital_out(0,0)
-        elephant_client.wait(1)
-
-        "控制机器人朝Z轴方向笛卡尔运动到码垛放置过渡点"
-        elephant_client.write_coord(2,321.533,3000)
-        elephant_client.command_wait_done()
-
-        "机器人关节运动到安全点"
-        elephant_client.write_angles([94.828,-143.513,135.283,-82.969,-87.257,-44.033],1000)
-        elephant_client.command_wait_done()
-
-   
-```
 
 ---
-[← 上一页](../6-SDKDevelopment.md) | [下一页 → ](../../11-ApplicationBaseROS/11.1-ROS1/README.md)
+[← 上一页](../6-SDKDevelopment.md) | [下一页 → ](./python_demo.md)
