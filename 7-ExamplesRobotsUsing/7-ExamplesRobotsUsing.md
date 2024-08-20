@@ -1,9 +1,9 @@
 # Scene case
-## 3D disordered grabbing
+<!-- ## 3D disordered grabbing
 <img src="../resources/7-ExamplesRobotsUsing/3D/3D.png" width="" height="" >
 
 ## 2.5D QR code sorting
-<img src="../resources/7-ExamplesRobotsUsing/2.5D/taojian.png" width="" height="" >
+<img src="../resources/7-ExamplesRobotsUsing/2.5D/taojian.png" width="" height="" > -->
 
 
 ## Write and draw
