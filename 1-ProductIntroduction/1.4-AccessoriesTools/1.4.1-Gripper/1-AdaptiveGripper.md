@@ -86,84 +86,122 @@
 ![](../../../resources/1-ProductIntroduction/1.4/poweron/ip.png)
 
 
+###  IO控制模式
+```python
+
+from pymycobot import ElephantRobot
+import time
+
+# 将ip更改成P600树莓派的实时ip
+
+elephant_client = ElephantRobot("192.168.10.158", 5001)
+
+# 启动机器人必要指令
+elephant_client.start_client()
+time.sleep(1)
+elephant_client.set_gripper_mode(1)
+time.sleep(1)
+elephant_client.power_off()#夹爪透传换IO模式时需要先关闭机器再重启机器人一次，仅使用夹爪透传模式不必关闭机器人
+elephant_client.power_off()
+time.sleep(3)
+elephant_client.state_off()
+time.sleep(3)
+elephant_client.power_on()
+time.sleep(3)
+elephant_client.state_on()
+time.sleep(3)
+elephant_client.set_digital_out(16, 0)  # IO恢复低电平
+time.sleep(1)
+elephant_client.set_digital_out(17, 0)  # IO恢复低电平
+time.sleep(1)
+
+
+# IO模式
+#夹爪全开全闭合控制代码，注意在夹爪透传切换IO模式时需要先关闭机器再重启机器人一次，才能切换回夹爪IO模式
+for i in range(3):
+   
+    elephant_client.set_digital_out(16, 1)  # 闭合夹爪
+    time.sleep(1)
+    elephant_client.set_digital_out(17, 0)  # IO恢复低电平
+    time.sleep(1)
+    elephant_client.set_digital_out(16, 0)  #IO恢复低电平
+    time.sleep(1)
+    elephant_client.set_digital_out(17, 1)  # 打开夹爪
+    time.sleep(1)
+
+elephant_client.set_digital_out(16, 0)  # IO恢复低电平
+time.sleep(1)
+elephant_client.set_digital_out(17, 0)  # IO恢复低电平
+time.sleep(1) 
+
+
+```
+
+### 透传模式
 ```python
 from pymycobot import ElephantRobot
 import time
-if __name__=="__main__":
-    try:
-        #IP填写实际机器人的无线IP
-        elephant_client=ElephantRobot("192.168.10.158",5001)
-        elephant_client.start_client()
-        for i in range(1):
-            #关闭
-            elephant_client.set_digital_out(16,1)
-            elephant_client.set_digital_out(17,0)
-            time.sleep(2)
-            #打开
-            elephant_client.set_digital_out(16,0)
-            elephant_client.set_digital_out(17,1)
-            time.sleep(2)
-        elephant_client.set_digital_out(16,0)
-        elephant_client.set_digital_out(17,0)
+
+# 将ip更改成P600树莓派的实时ip
+
+elephant_client = ElephantRobot("192.168.10.158", 5001)
+
+# 启动机器人必要指令
+elephant_client.start_client()
+time.sleep(1)
+elephant_client.set_gripper_mode(0)
+time.sleep(1)
+# elephant_client.power_off()#夹爪透传换IO模式时需要先关闭机器再重启机器人一次，仅使用夹爪透传模式不必关闭机器人
+elephant_client.state_off()
+time.sleep(3)
+elephant_client.power_on()
+time.sleep(3)
+elephant_client.state_on()
+time.sleep(3)
+
+#透传模式
+
+for i in range(3):
+    elephant_client.set_gripper_value(26,20)
+    time.sleep(1)
+    elephant_client.set_gripper_value(86,20)
+    time.sleep(1)
 
 
 
-    except KeyboardInterrupt:
-        elephant_client.stop_client()
-        print("socket end")
-    
+```
+## 夹爪零位校准
+**夹爪出厂时已做过零位校准，若夹爪的行程不对，可以按照下面操作进行校准**
+
+在roboflow先关闭机器人，手动将夹爪张开到最大
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/off.png)
+
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/zero.jpg)
+
+然后再启动机器人
+![](../../../resources/1-ProductIntroduction/1.4/poweron/poweron.png)
+
+然后再执行下面脚本
+
+```python
+from pymycobot import ElephantRobot
+import time
+
+# 将ip更改成P600树莓派的实时ip
+
+elephant_client = ElephantRobot("192.168.10.158", 5001)
+
+# 启动机器人必要指令
+elephant_client.start_client()
+time.sleep(1)
+elephant_client.set_gripper_mode(0)
+time.sleep(1)
+elephant_client.set_gripper_calibrate()
+time.sleep(1)
+
+
 ```
 
-    
-
-<!-- # - 保存文件并关闭，在文件夹空白处右键打开命令行终端
-
-#   ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用4.png)
-
-#   输入：
-
-#   ```bash
-#   python gripper.py
-#   ```
-
-#   ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/python使用5.png)
-
-# > 可以看到夹爪打开-关闭-打开
-
-# - 编程开发（myblockly）：
-
-#   > 使用 myblockly 对夹爪进行编程开发：
-#   > [myblockly 下载](../../../5-BasicApplication/5.2-ApplicationUse/myblockly/320pi/2-install_uninstall.md)  
-#   > 注意使用 myblockly 开发前，需要先用 python 程序运行过`mc.set_gripper_mode(0)`，将夹爪设置为 485 模式。
-
-#   1. 确认结构及电气连接都完成后，启动机械臂，出现图形界面后打开 myblockly 软件  
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用1.png)
-#   2. 修改波特率为 115200  
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用2.png)
-#   3. 在左侧列表找到 `夹爪`，选择`设置夹爪值`模块  
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用3.png)
-#   4. 拖动模块连接在`初始化mycobot`模块下面，根据需要修改张开的程度和速度，这里都设置为`70`  
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用4.png)
-#   5. 在`时间`，选择`睡眠`模块  
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用5.png)
-#   6. 设置时间为 `2 秒`，目的是留出夹爪运动时间  
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用6.png)
-#   7. 重复选择一次`设置夹爪值`和`睡眠`模块，将`设置夹爪值`张开程度改为`0`  
-#      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用7.png)
-#      ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用8.png)
-#   8. 在左侧列表找到 `夹爪`，选择`设置夹爪值`模块
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用9.png)
-#   9. 修改状态为`打开`，速度为`70`
-#      ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/1-AdaptiveGripper/myblockly使用10.png)
-#   10. 点击右上角的绿色运行图标，可以看到夹爪`打开-关闭-打开`的运动状态
-
-# <br> --> 
-
-<!-- - 安装过程视频演示
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RPKjV0IuP5E" title="myCobot Pro Accessories | The new gripper for myCobot Pro 630" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-如果视频无法加载，请点击下面的链接观看视频。  
-[安装视频](https://www.youtube.com/watch?v=RPKjV0IuP5E) -->
 
 ---
 
