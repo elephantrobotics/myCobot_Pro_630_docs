@@ -89,17 +89,17 @@
 
     
 
-    1. 将螺丝对准机械臂末端四个螺丝孔位并拧紧：
+    将螺丝对准机械臂末端四个螺丝孔位并拧紧：
        ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg2.jpg)
 
-    2. 将电动夹爪插入固定装置，并在两侧装入细螺丝拧紧，共八颗：
+    将电动夹爪插入固定装置，并在两侧装入细螺丝拧紧，共八颗：
        ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg3.jpg)
 
      
 
   - 电气连接：
 
-    1. 将 485 线插入机械臂控制接口：
+    将 485 线插入机械臂控制接口：
        ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg4.jpg)<br>
 
        <!-- ![alt text](../../../resourse/2-serialproduct/AccessoriesTools/1-Gripper/ElectricGripper/电气连接.jpg)
