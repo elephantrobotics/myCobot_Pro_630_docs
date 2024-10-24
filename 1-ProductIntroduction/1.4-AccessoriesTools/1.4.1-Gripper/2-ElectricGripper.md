@@ -111,7 +111,7 @@ RoboFlow Instructions for use: Before use, you need to start the robot system
 
 - Click **Define New Gripper**, fill in the Gripper Name as "**DH PGE 8**" (must be this name), and then click Save;<br>
 - Select open or close for Saved status. The overall steps are as shown in the figure below:<br>
-![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg5.gif)<br>
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/DH.gif)<br>
 
 ---
 [← Previous page](./1-AdaptiveGripper.md) | [Next page →](./3-PneumaticGripper.md)
