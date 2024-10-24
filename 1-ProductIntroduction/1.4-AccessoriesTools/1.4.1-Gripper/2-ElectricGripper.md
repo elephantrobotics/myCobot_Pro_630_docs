@@ -79,31 +79,21 @@
 
 - 检查配件包东西是否齐全：螺丝、内六角扳手、带连接线的夹爪、夹爪与机械臂末端固定装置
   ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg1.jpg)
+  
+**结构安装**：
+将螺丝对准机械臂末端四个螺丝孔位并拧紧：
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg2.jpg)
 
-- 夹爪安装：
-
-  - 结构安装：
-
-   
-       
-
-    
-
-    将螺丝对准机械臂末端四个螺丝孔位并拧紧：
-       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg2.jpg)
-
-    将电动夹爪插入固定装置，并在两侧装入细螺丝拧紧，共八颗：
-       ![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg3.jpg)
+将电动夹爪插入固定装置，并在两侧装入细螺丝拧紧，共八颗：
+![alt text](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg3.jpg)
 
      
 
-  - 电气连接：
+**电气连接**：
 
-    将 485 线插入机械臂控制接口：
-       ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg4.jpg)<br>
+将 485 线插入机械臂控制接口：
+![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg4.jpg)
 
-       <!-- ![alt text](../../../resourse/2-serialproduct/AccessoriesTools/1-Gripper/ElectricGripper/电气连接.jpg)
-       <br> -->
 
 
 **使用说明：**<br>
