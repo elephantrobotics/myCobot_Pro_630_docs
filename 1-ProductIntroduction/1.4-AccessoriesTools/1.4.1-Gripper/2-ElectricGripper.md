@@ -106,7 +106,7 @@ RoboFlow 使用说明：使用前需要先启动机器人系统
 
 - 点击**Define New Gripper**，填写 Gripper Name 为“**DH PGE 8**”（必须为此名称），然后点击 Save；<br>
 - Saved status 选择 open 或者 close,整体步骤如下图所示：<br>
-  ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/eg5.gif)<br>
+  ![](../../../resources/1-ProductIntroduction/1.4/1.4.1-Gripper/2-ElectricGripper/DH.gif)<br>
 
 
 [← 上一页](./1-AdaptiveGripper.md) | [下一页 →](./3-PneumaticGripper.md)
