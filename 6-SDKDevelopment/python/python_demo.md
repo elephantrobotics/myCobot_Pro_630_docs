@@ -29,8 +29,8 @@ if __name__=='__main__':
     elephant_client.power_on()
     time.sleep(3)
     
-    "Power on the robot"
-    elephant_client.power_on()
+    "Turn on the robot"
+    elephant_client.state_on()
     time.sleep(3)
 ```
 
