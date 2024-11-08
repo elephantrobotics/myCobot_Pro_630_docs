@@ -66,6 +66,8 @@
     * [2 ROS2基础知识](11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.md)
     * [3 Rviz2使用](11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.md)
     * [4 基本功能案例](11-ApplicationBaseROS/11.2-ROS2/11.2.4-BasicFunction.md)
+  * [6.4 基于Phoenix API开发使用](./6-SDKDevelopment/python/PyhtonAPI.md)
+    * [Phoenix API使用案例](./6-SDKDevelopment/python/python_demo.md)
 
     
   <!-- * [6.4 基于C++开发使用](./6-SDKDevelopment/6.4-ApplicationBaseCPlus.md)
