@@ -547,8 +547,8 @@
 
 - **功能:** 设置夹爪角度
 - **参数:** 
-    - `value:`夹爪角度
-    - `speed:`夹爪速度
+    - `value:`夹爪角度 0-100
+    - `speed:`夹爪速度 1-100
 - **返回:** 无
 
 ### tool_set_gripper_state(state, speed)
@@ -558,7 +558,7 @@
     - `state:`夹爪状态
         - `0`: 全开
         - `1`: 全关
-    - `speed:`夹爪速度
+    - `speed:`夹爪速度 1-100
 - **返回:** 无
 
 ### clear_all_errors()
