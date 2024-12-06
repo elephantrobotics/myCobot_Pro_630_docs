@@ -338,13 +338,13 @@ if __name__=='__main__':
     time.sleep(1)
     
     "机器人以当前坐标位置往Z方向正方向整体运动50mm"
-    elephant_client.jog_relative("Z",50,1500,1)
+    elephant_client.jog_relative("Z",50,1500,0)
     
     "等待机器人运动到目标位置再执行后续指令"
     elephant_client.command_wait_done() 
     
     "机器人以当前J6关节角度增加10度"
-    elephant_client.jog_relative("J6",10,1500,0)
+    elephant_client.jog_relative("J6",10,1500,1)
     
     "等待机器人运动到目标位置再执行后续指令"
     elephant_client.command_wait_done()  
