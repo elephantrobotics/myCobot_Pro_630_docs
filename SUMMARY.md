@@ -60,9 +60,8 @@
      * [2 ROS2 basic knowledge](11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.md)
      * [3 Rviz2 uses](11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.md)
      * [4 Basic function cases](11-ApplicationBaseROS/11.2-ROS2/11.2.4-BasicFunction.md)
-   <!--* [6.4 Development and use based on Phoenix API](./6-SDKDevelopment/python/phoenix_en.md)
-      * [Phoenix API usage examples](./6-SDKDevelopment/python/phoenix_demo_en.md)-->
-
+   * [6.4 socket API](./6-SDKDevelopment/python/Socket_API_EN.md)
+     
 
    * [7 Robot arm usage scenario cases](./7-ExamplesRobotsUsing/7-ExamplesRobotsUsing.md)
      <!-- * [7.1 3D disordered sorting](./7-ExamplesRobotsUsing/3D/3D.md)
