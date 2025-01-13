@@ -66,7 +66,7 @@
     * [2 ROS2基础知识](11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.md)
     * [3 Rviz2使用](11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.md)
     * [4 基本功能案例](11-ApplicationBaseROS/11.2-ROS2/11.2.4-BasicFunction.md)
-  * [6.4 socket API](./6-SDKDevelopment/python/Socket_API.md)
+  * [6.4 socket API](./6-SDKDevelopment/python/Socket_API .md)
   
 
     
