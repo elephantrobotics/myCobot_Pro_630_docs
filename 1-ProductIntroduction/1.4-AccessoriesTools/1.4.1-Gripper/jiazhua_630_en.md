@@ -35,14 +35,17 @@ Material handling: In simulated production lines or warehouses, materials of var
 ## 5 Installation method
 
 Use screws and washers to install the gripper connector to the end flange of the robot arm
+
 <img src="./img/1.png" width="50%" >
 
 Then use screws to install the gripper on the connector
+
 <img src="./img/2.png" width="50%" >
 
 <img src="./img/3.png" width="50%" >
 
 Finally, use M8 aviation wire to connect the gripper and the robot arm
+
 <img src="./img/4.jpg" width="50%" >
 
 ## 6 Python control method
