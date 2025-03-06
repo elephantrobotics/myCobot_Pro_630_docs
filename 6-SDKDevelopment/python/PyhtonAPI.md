@@ -296,9 +296,13 @@ elephant_client.start_client()
 - **功能**：设置自适应夹爪完全张开或闭合
 - **参数**：0或1[0代表完全张开，1代表完全闭合],速度[1-100]
 
-**def set_gripper_value(self, value, speed)**:
+**def set_gripper_value(value, speed)**:
 - **功能**：设置自适应夹爪张开行程
 - **参数**：行程[0-100],速度[1-100]
+
+**def get_joint_current(joint)**:
+- **功能**：获取各个关节的电流
+- **参数**：关节[0-5]
 
 <!-- **def get_variable(var_name)**:
 - **功能**：获取一个变量的值
