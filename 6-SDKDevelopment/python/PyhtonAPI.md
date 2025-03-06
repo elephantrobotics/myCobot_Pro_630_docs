@@ -238,9 +238,13 @@ elephant_client.start_client()
 - **Function**: set the adaptive gripper to be fully open or closed
 - **Parameter**: 0 or 1 [0 for fully open, 1 for fully closed], speed [1-100]
 
-**def set_gripper_value(self, value, speed)**:
+**def set_gripper_value(value, speed)**:
 - **Function**: Set the adaptive gripper opening stroke
 - **Parameter**: Stroke [0-100], speed [1-100]
+
+**def get_joint_current(joint)**:
+- **Function**: Get the current of each joint
+- **Parameter**: Joint [0-5]
 
 ---
 [← Previous page](../6-SDKDevelopment.md) | [Next page →](./python_demo.md)
