@@ -87,11 +87,11 @@ if __name__=="__main__":
 
 Connect the 24V, GND, 485_A (T/R+, 485+), 485_B (T/R-, 485-) wires at the end of the gripper, a total of 4 wires, the power supply is a 24V DC regulated power supply or the 24V of the IO at the bottom of the 630, insert the USB port of the module into the USB port of the computer
 
-<img src="./img/485.png" width="50%" >
+<img src="./img/new485.jpg" width="50%" >
 
-485A connects to the 485 to USB module T/R+;
+485A connects to the 485 to USB module A+;
 
-485B connects to the 485 to USB module T/R-;
+485B connects to the 485 to USB module B-;
 
 24V connects to 24V DC regulated power supply positive pole/24V of IO at the bottom of 630;
 
