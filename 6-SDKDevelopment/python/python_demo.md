@@ -17,20 +17,9 @@ if __name__=='__main__':
     "Necessary instructions to start the robot"
     
     elephant_client.start_client()
-    
-    "Turn off the robot enable first"
-    
-    elephant_client.state_off()
-    
-    time.sleep(3)
-    
-    "Power on the robot"
-    
-    elephant_client.power_on()
-    time.sleep(3)
-    
+
     "Turn on the robot"
-    elephant_client.state_on()
+    elephant_client.start_robot()
     time.sleep(3)
 ```
 
@@ -47,7 +36,7 @@ if __name__=='__main__':
     elephant_client.start_client()
     
     "Turn off the robot"
-    elephant_client.state_off()
+    elephant_client._state_off()
     time.sleep(3)
 
 ```
@@ -67,7 +56,7 @@ if __name__=='__main__':
     
     "Power on the robot"
     
-    elephant_client.power_on()
+    elephant_client._power_on()
     
     time.sleep(3)
 
@@ -91,7 +80,7 @@ if __name__=='__main__':
     
     "Power off the robot"
     
-    elephant_client.power_off()
+    elephant_client._power_off()
     time.sleep(3)
     
 ```
