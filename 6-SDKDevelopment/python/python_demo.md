@@ -17,16 +17,8 @@ if __name__=='__main__':
     "启动机器人必要指令"
     elephant_client.start_client()
 
-    "先关闭机器人使能"   
-    elephant_client.state_off()
-    time.sleep(3)
-
-    "给机器人上电"   
-    elephant_client.power_on()
-    time.sleep(3)
-
     "给机器人使能"   
-    elephant_client.state_on()
+    elephant_client.start_robot()
     time.sleep(3)
 ```
 
@@ -43,7 +35,7 @@ if __name__=='__main__':
     elephant_client.start_client()
 
     "关闭机器人使能"   
-    elephant_client.state_off()
+    elephant_client._state_off()
     time.sleep(3)
 
 ```
@@ -60,7 +52,7 @@ if __name__=='__main__':
     elephant_client.start_client()
 
     "机器人上电"   
-    elephant_client.power_on()
+    elephant_client._power_on()
     time.sleep(3)
 
 ```
@@ -78,7 +70,7 @@ if __name__=='__main__':
     elephant_client.start_client()
 
     "机器人下电"   
-    elephant_client.power_off()
+    elephant_client._power_off()
     time.sleep(3)
 
 ```
