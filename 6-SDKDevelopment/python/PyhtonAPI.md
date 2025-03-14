@@ -118,11 +118,11 @@ elephant_client.start_client()
 - **Function**: Request the robot movement rate from the server
 - **Parameters**: None
 
-**def power_on()**:
+**def _power_on()**:
 - **Function**: Power on the robot
 - **Parameters**: None
 
-**def power_off()**:
+**def _power_off()**:
 - **Function**: Power off the robot
 - **Parameters**: None
 
@@ -166,12 +166,12 @@ elephant_client.start_client()
 - **FEATURE**: Set the robot's payload
 - **Parameter**: Range 0.0 ~ 2.0
 
-**def state_on()**:
-- **Function**: Start the system
+**def start_robot()**:
+- **Function**: Turn on the robot enable
 - **Parameters**: None
 
-**def state_off()**:
-- **Function**: Shut down the system
+**def _state_off()**:
+- **Function**: Disable Enable
 - **Parameters**: None
 
 **def task_stop()**:
