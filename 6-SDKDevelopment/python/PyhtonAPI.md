@@ -176,11 +176,11 @@ elephant_client.start_client()
 - **功能**：向服务器请求机器人运动速率
 - **参数**：无
 
-**def power_on()**:
+**def _power_on()**:
 - **功能**：机器人上电
 - **参数**：无
 
-**def power_off()**:
+**def _power_off()**:
 - **功能**：机器人下电
 - **参数**：无
 
@@ -224,12 +224,12 @@ elephant_client.start_client()
 - **功能**：设置机器人的有效负载
 - **参数**：范围 0.0 ~ 2.0
 
-**def state_on()**:
-- **功能**：启动系统
+**def start_robot()**:
+- **功能**：打开使能
 - **参数**：无
 
-**def state_off()**:
-- **功能**：关闭系统
+**def _state_off()**:
+- **功能**：关闭使能
 - **参数**：无
 
 **def task_stop()**:
