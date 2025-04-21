@@ -434,15 +434,15 @@ if __name__=='__main__':
         elephant_client.wait(1)
         
         "The robot moves 100mm in the positive direction of the Z axis at the current coordinate position and reaches the transition point for grabbing the wood block"
-        elephant_client.jog_relative("Z",100,1500,1)
+        elephant_client.jog_relative("Z",100,1500,0)
         elephant_client.command_wait_done()
         
         "The robot moves 300mm in the positive direction of the Y axis at the current coordinate position and reaches the transition point for placing the wood block"
-        elephant_client.jog_relative("Y",300,1500,1)
+        elephant_client.jog_relative("Y",300,1500,0)
         elephant_client.command_wait_done()
         
         "The robot moves 100mm in the negative direction of the Z axis at the current coordinate position and reaches the wooden block placement position"
-        elephant_client.jog_relative("Z",-100,1500,1)
+        elephant_client.jog_relative("Z",-100,1500,0)
         elephant_client.command_wait_done()
         
         "Control the gripper to fully open"
