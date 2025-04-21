@@ -383,15 +383,15 @@ if __name__=='__main__':
         elephant_client.wait(1)
 
         "机器人以当前坐标位置往Z轴正方向整体运动100mm,到达木块抓取过渡点"
-        elephant_client.jog_relative("Z",100,1500,1)
+        elephant_client.jog_relative("Z",100,1500,0)
         elephant_client.command_wait_done()
 
         "机器人以当前坐标位置往Y轴正方向整体运动300mm,到达木块放置过渡点"
-        elephant_client.jog_relative("Y",300,1500,1)
+        elephant_client.jog_relative("Y",300,1500,0)
         elephant_client.command_wait_done()
 
         "机器人以当前坐标位置往Z轴负方向整体运动100mm,到达木块放置位置"
-        elephant_client.jog_relative("Z",-100,1500,1)
+        elephant_client.jog_relative("Z",-100,1500,0)
         elephant_client.command_wait_done()
         
         "控制夹爪完全张开"
