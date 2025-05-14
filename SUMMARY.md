@@ -89,6 +89,10 @@
   * [8.3 软件资料及源码](./8-FilesDownload/8.3-SoftwareDocumentation.md)
   * [8.4 系统资料](./8-FilesDownload/8.4-Systeminformation.md)
   * [8.5 宣传资料](./8-FilesDownload/8.5-PublicityMaterial.md) -->
-* [9 关于我们](9-AboutUs/9-AboutUs.md)
-  * [9.1 大象机器人](./9-AboutUs/9.1-company.md)
-  * [9.2 联系我们](./9-AboutUs/9.2-contact.md)
+* [9 镜像烧录与系统使用]()
+  * [9.1 什么是镜像](./9-mirroring/9.1-what-is-mirroring.md)
+  * [9.2 如何烧录](./9-mirroring/9.2-mirroring-burning.md)
+  * [9.3 何时烧录](./9-mirroring/9.3-when-to-burn.md)
+* [10 关于我们](9-AboutUs/9-AboutUs.md)
+  * [10.1 大象机器人](./9-AboutUs/9.1-company.md)
+  * [10.2 联系我们](./9-AboutUs/9.2-contact.md)
