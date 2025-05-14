@@ -73,7 +73,11 @@
      * [7.3 PLC IO interactive control cases](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/plc.md)
   
    * [8 Related information download](./8-FilesDownload/8-FilesDownload.md)
+   * [9 Image burning and system usage]()
+     * [9.1 What is mirroring](./9-mirroring/9.1-what-is-mirroring.md)
+     * [9.2 How to burn](./9-mirroring/9.2-mirroring-burning.md)
+     * [9.3 When to burn](./9-mirroring/9.3-when-to-burn.md)
 
-   * [9 About us](9-AboutUs/9-AboutUs.md)
-     * [9.1 Elephant Robot](./9-AboutUs/9.1-company.md)
-     * [9.2 Contact Us](./9-AboutUs/9.2-contact.md)
+   * [10 About us](9-AboutUs/9-AboutUs.md)
+     * [10.1 Elephant Robot](./9-AboutUs/9.1-company.md)
+     * [10.2 Contact Us](./9-AboutUs/9.2-contact.md)
