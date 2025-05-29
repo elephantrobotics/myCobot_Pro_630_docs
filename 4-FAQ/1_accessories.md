@@ -71,17 +71,3 @@ A：可以参考此案例：https://blog.csdn.net/qq_29225913/article/details/10
 **Q：关于夹持物体与机械臂运动之间有什么需要注意的吗？**
 
 当负载 > 500g时，速度需要低于 50%。
-
-**Q：请问有320与气缸和模块化吸盘的使用视频吗？**
-
-参考链接：https://drive.google.com/file/d/1Ei0JRjXn_YWDyYPPZeBVrAW_VzPUlx6e/view?usp=sharing 
-
-**Q：请问有320与气动夹爪的使用视频吗？**
-
-参考链接：https://drive.google.com/file/d/1nL4mgUf0OYOyCJPf4d5GNkWmbkuWBoup/view?usp=sharing 
-
-**Q：请问有320与pro自适应夹爪的使用视频吗？**
-
-参考链接：https://drive.google.com/file/d/1nL4mgUf0OYOyCJPf4d5GNkWmbkuWBoup/view?usp=sharing 
-
-

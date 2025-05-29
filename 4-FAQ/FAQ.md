@@ -3,13 +3,13 @@
 
 本部分列出了一些常见问题，涵盖硬件、软件、配件这几个方面。
 
-[2 软件问题](../4-FAQ/2_software.md)
+[1 软件问题](../4-FAQ/2_software.md)
 
-[3 硬件问题](../4-FAQ/3_hardware.md)
+[2 硬件问题](../4-FAQ/3_hardware.md)
 
-[4 配件问题](../4-FAQ/1_accessories.md)
+[3 配件问题](../4-FAQ/1_accessories.md)
 
-[5 其他](../4-FAQ/0_other.md)
+[4 其他](../4-FAQ/0_other.md)
 
 如果您有购买意向或者任何参数疑问请添加售前小管家微信。
 
