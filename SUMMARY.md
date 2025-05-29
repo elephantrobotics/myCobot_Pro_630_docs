@@ -33,11 +33,11 @@
   * [3.1 安全须知](./3-UserNotes/3.1-SafetyInstruction.md)
   * [3.2 运输和储存](./3-UserNotes/3.2-TransportandStorage.md)
   * [3.3 维护和保养](./3-UserNotes/3.3-MaintenanceandCare.md)
-  * [3.4 常见问题解决](./14-IssueFAQ/14-FAQ.md)
-    * [1 如何优雅提问](./14-IssueFAQ/14.0-how_to_ask.md)
-    * [2 驱动相关](./14-IssueFAQ/14.1-driver.md)
-    * [3 软件](./14-IssueFAQ/14.2-software.md)
-    * [4 硬件](./14-IssueFAQ/14.3-hardware.md)
+  * [3.4 常见问题解决](./4-FAQ/FAQ.md)
+    * [1 软件](./4-FAQ/2_software.md)
+    * [2 硬件](./4-FAQ/3_hardware.md)
+    * [3 配件](./4-FAQ/1_accessories.md)
+    * [4 其他](./4-FAQ/0_other.md)
   <!-- * [3.4 常见问题解决](./3-UserNotes/3.4-FAQsandSolutions/3.4.3-software.md) -->
   
   
