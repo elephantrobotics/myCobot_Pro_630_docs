@@ -30,11 +30,11 @@
    * [3.1 Safety Instructions](./3-UserNotes/3.1-SafetyInstruction.md)
    * [3.2 Transport and Storage](./3-UserNotes/3.2-TransportandStorage.md)
    * [3.3 Maintenance and Care](./3-UserNotes/3.3-MaintenanceandCare.md)
-   * [3.4 Frequently Asked Questions](./14-IssueFAQ/14-FAQ.md)
-     * [1 How to ask questions gracefully](./14-IssueFAQ/14.0-how_to_ask.md)
-     * [2 Driver related](./14-IssueFAQ/14.1-driver.md)
-     * [3 Software](./14-IssueFAQ/14.2-software.md)
-     * [4 Hardware](./14-IssueFAQ/14.3-hardware.md)
+   * [3.4 Frequently Asked Questions](./14-IssueFAQ/FAQ.md)
+     * [1 Software](./14-IssueFAQ/2_software.md)
+     * [2 Hardware](./14-IssueFAQ/3_hardware.md)
+     * [3 Accessories](./14-IssueFAQ/1_accessories.md)
+     * [4 Others](./14-IssueFAQ/0_other.md)
   
   
   
@@ -71,6 +71,7 @@
      * [7.1 Writing and drawing](./7-ExamplesRobotsUsing/draw/draw.md)
      * [7.2 Holographic projection](./7-ExamplesRobotsUsing/LED/LED.md)
      * [7.3 PLC IO interactive control cases](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/plc.md)
+     * [7.4 Composite Robot Case](./7-ExamplesRobotsUsing/RobotCase/Composite_Robot_Case.md)
   
    * [8 Related information download](./8-FilesDownload/8-FilesDownload.md)
    * [9 Image burning and system usage]()
