@@ -34,11 +34,11 @@
   * [3.1 安全须知](./3-UserNotes/3.1-SafetyInstruction.md)
   * [3.2 运输和储存](./3-UserNotes/3.2-TransportandStorage.md)
   * [3.3 维护和保养](./3-UserNotes/3.3-MaintenanceandCare.md)
-  * [3.4 常见问题解决](./14-IssueFAQ/14-FAQ.md)
-    * [1 如何优雅提问](./14-IssueFAQ/14.0-how_to_ask.md)
-    * [2 驱动相关](./14-IssueFAQ/14.1-driver.md)
-    * [3 软件](./14-IssueFAQ/14.2-software.md)
-    * [4 硬件](./14-IssueFAQ/14.3-hardware.md)
+  * [3.4 常见问题解决](./4-FAQ/FAQ.md)
+    * [1 软件](./4-FAQ/2_software.md)
+    * [2 硬件](./4-FAQ/3_hardware.md)
+    * [3 配件](./4-FAQ/1_accessories.md)
+    * [4 其他](./4-FAQ/0_other.md)
   <!-- * [3.4 常见问题解决](./3-UserNotes/3.4-FAQsandSolutions/3.4.3-software.md) -->
   
   
@@ -83,6 +83,7 @@
   * [7.1 写字画画](./7-ExamplesRobotsUsing/draw/draw.md)
   * [7.2 全息投影](./7-ExamplesRobotsUsing/LED/LED.md)
   * [7.3 PLC IO交互控制案例](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/PLC.md)
+  * [7.4 机器人复合案例](./7-ExamplesRobotsUsing/RobotCase/Composite_Robot_Case.md)
 * [8 相关资料下载](./8-FilesDownload/8-FilesDownload.md)
   <!-- * [8.1 产品资料](./8-FilesDownload/8.1-Productinformation.md)
   * [8.2 产品图纸](./8-FilesDownload/8.2-ProductDrawings.md)
