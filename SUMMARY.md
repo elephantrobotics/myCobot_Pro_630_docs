@@ -69,6 +69,7 @@
      * [7.1 Writing and drawing](./7-ExamplesRobotsUsing/draw/draw.md)
      * [7.2 Holographic projection](./7-ExamplesRobotsUsing/LED/LED.md)
      * [7.3 PLC IO interactive control cases](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/plc.md)
+     * [7.4 Composite Robot Case](./7-ExamplesRobotsUsing/RobotCase/Composite_Robot_Case.md)
   
    * [8 Related information download](./8-FilesDownload/8-FilesDownload.md)
 
