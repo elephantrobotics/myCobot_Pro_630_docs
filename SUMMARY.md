@@ -80,6 +80,7 @@
   * [7.1 写字画画](./7-ExamplesRobotsUsing/draw/draw.md)
   * [7.2 全息投影](./7-ExamplesRobotsUsing/LED/LED.md)
   * [7.3 PLC IO交互控制案例](./1-ProductIntroduction/1.4-AccessoriesTools/PLC/PLC.md)
+  * [7.4 机器人复合案例](./7-ExamplesRobotsUsing/RobotCase/Composite_Robot_Case.md)
 * [8 相关资料下载](./8-FilesDownload/8-FilesDownload.md)
   <!-- * [8.1 产品资料](./8-FilesDownload/8.1-Productinformation.md)
   * [8.2 产品图纸](./8-FilesDownload/8.2-ProductDrawings.md)
