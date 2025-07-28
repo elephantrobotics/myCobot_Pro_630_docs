@@ -299,6 +299,11 @@ Socket string format：`assign_variable("variable_name",value)`
 - **Function：** Assign values to defined variables
 - **Example：** **assign_variable("A",10)** ，**assign_variable("A",10.20202)** or **assign_variable("B",”ABC”)** or **assign_variable("C",True)**，**assign_variable("C",False)**
 
+
+
+
+
+
 Variable names are quoted in double quotation marks (""); If the value is an integer or floating point type, you can write the value directly without using the serial number. If the value is a Boolean type, you can write 0/1 directly using True/False, and the variable is changed to an integer type
 
 The return string is formatted as a key-value pair, where the key is the function name and the value is the value received from the robot，If the call was successful and will receive **assign_variable:[ok]**。If any error occurs,  will receive **assign_variable:[wrong request format]**。
