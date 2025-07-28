@@ -450,7 +450,12 @@ Socket string format: ` Hand_SetJointAngle (ID, joint, value)`
 - **Parameter Description:**
   - ID range [1-254] default 14
   - joint [1-6] joint ID
-  - Value [0-100] Angle value
+    - Joint 1: Range 0~60°
+    - Joint 2: Range 0~100°
+    - Joint 3: Range 0~100°
+    - Joint 4: Range 0~100°
+    - Joint 5: Range 0~37°
+    - Joint 6: Range 0~37°
 - **Example:** **Hand_SetJointAngle (14,1,100)**, if successfully called, will receive: **Hand_SetJointAngle: "1"**
 
 ### **4.7 Obtaining Joint Movement**
