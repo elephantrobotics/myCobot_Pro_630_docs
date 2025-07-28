@@ -297,6 +297,246 @@ Socket字符串格式：`assign_variable("variable_name",value)`
 - **功能：** 给定义好的变量赋值
 - **示例：** **assign_variable("A",10)** ，**assign_variable("A",10.20202)** 或**assign_variable("B",”ABC”)** 或 **assign_variable("C",True)**，**assign_variable("C",False)**
 
+## **3 Socket字符串控制力控夹爪**
+### **3.1 获取版本**
+Socket字符串格式：`force_GetFirmware("ID")`
+
+- **功能：** 读取力控夹爪版本号
+- **示例：** **force_GetFirmware(14)**，如果成功调用，将会收到：**force_GetFirmware:"版本号"**
+
+### **3.2 获取更新版本**
+Socket字符串格式：`force_GetModified(ID)`
+
+- **功能：** 获取力控夹爪更新版本号
+- **示例：** **force_GetModified(14)**，如果成功调用，将会收到：**force_GetModified:"更新版本号"**
+
+### **3.2 设置id**
+Socket字符串格式：`force_SetGripperId(ID, value)`
+
+- **功能：** 设置力控夹爪的ID
+- **示例：** **force_SetGripperId(14,1)**，如果成功调用，将会收到：**force_SetGripperId:1**
+
+### **3.3 获取id**
+Socket字符串格式：`force_GetGripperId(ID)`
+
+- **功能：** 获取力控夹爪的ID
+- **示例：** **force_GetGripperId(14)**，如果成功调用，将会收到：**force_GetGripperId:"ID值"**
+
+### **3.4 夹爪使能**
+Socket字符串格式：`force_SetGripperEnabled(ID, value)`
+
+- **功能：** 设置夹爪上使能和不上使能
+- **示例：** **force_SetGripperEnabled(14)**，如果成功调用，将会收到：**force_SetGripperEnabled:"1"**
+
+### **3.5 设置角度**
+Socket字符串格式：`force_SetAngle(ID, value)`
+
+- **功能：** 设置夹爪开合角度
+- **示例：** **force_SetAngle(14,100)**，如果成功调用，将会收到：**force_SetAngle:"1"**
+
+### **3.6 获取角度**
+Socket字符串格式：`force_GetGripperAngle(ID)`
+
+- **功能：** 获取夹爪当前位置角度
+- **示例：** **force_GetGripperAngle(14)**，如果成功调用，将会收到：**force_GetGripperAngle:"当前角度值"**
+
+### **3.7 夹爪初始化**
+Socket字符串格式：`force_SetGripperCalibrate(ID)`
+
+- **功能：** 力控夹爪零位校准
+- **示例：** **force_SetGripperCalibrate(14)**，如果成功调用，将会收到：**force_SetGripperCalibrate:"1"**
+
+### **3.8 获取状态**
+Socket字符串格式：`force_GetGripper(ID)`
+
+- **功能：** 获取夹爪运动状态
+- **示例：** **force_GetGripper(14)**，如果成功调用，将会收到：**force_GetGripper:"1"**，0-运动中，1-运动到位，2-夹爪物体，3夹住物体掉落
+
+### **3.9 置设扭矩**
+Socket字符串格式：`force_SetGripperTorque(ID, value)`
+
+- **功能：** 设置夹爪扭矩
+- **示例：** **force_SetGripperTorque(14,100)**，如果成功调用，将会收到：**force_SetGripperTorque:"1"**
+
+### **3.10 获取扭矩**
+Socket字符串格式：`force_GetGripperTorque(ID)`
+
+- **功能：** 获取夹爪扭矩
+- **示例：** **force_GetGripperTorque(14)**，如果成功调用，将会收到：**force_GetGripperTorque:"扭矩值"**
+
+### **3.11 设置IO张开角度**
+Socket字符串格式：`force_SetOpen(ID,value)`
+
+- **功能：** 设置夹爪IO控制的张开角度
+- **示例：** **force_SetOpen(14,100)**，如果成功调用，将会收到：**force_SetOpen:"1"**
+
+
+### **3.12 设置IO闭合角度**
+Socket字符串格式：`force_SetClose(ID,value)`
+
+- **功能：** 设置夹爪IO控制的闭合角度
+- **示例：** **force_SetClose(14,0)**，如果成功调用，将会收到：**force_SetClose:"1"**
+
+### **3.13 设置速度**
+Socket字符串格式：`force_SetSpeed(ID,value)`
+
+- **功能：** 设置夹爪运动速度
+- **示例：** **force_SetSpeed(14,50)**，如果成功调用，将会收到：**force_SetSpeed:"1"**
+
+### **3.14 获取速度**
+Socket字符串格式：`force_GetSpeed(ID)`
+
+- **功能：** 获取夹爪运动速度
+- **示例：** **force_GetSpeed(14)**，如果成功调用，将会收到：**force_SetSpeed:"速度值"**
+
+### **3.15 获取IO设置张开角度**
+Socket字符串格式：`force_GetOpen(ID)`
+
+- **功能：** 获取夹爪IO设置的张开角度
+- **示例：** **force_GetOpen(14)**，如果成功调用，将会收到：**force_GetOpen:"角度值"**
+
+### **3.16 获取IO设置闭合角度**
+Socket字符串格式：`force_GetClose(ID)`
+
+- **功能：** 获取夹爪IO设置的闭合角度
+- **示例：** **force_GetClose(14)**，如果成功调用，将会收到：**force_GetClose:"角度值"**
+
+### **3.17 设置绝对角度**
+Socket字符串格式：`force_SetAbsAngle(ID, value)`
+
+- **功能：** 设置夹爪绝对角度，运动到位后才返回成功
+- **示例：** **force_SetAbsAngle(14,100)**，如果成功调用，将会收到：**force_SetAbsAngle:"1"**
+
+## **4 Socket字符串控制三指灵巧手**
+
+### **4.1 获取版本号**
+Socket字符串格式：`Hand_GetFirmware(ID)`
+
+- **功能：** 获取三指版本号
+- **示例：** **Hand_GetFirmware(14)**，如果成功调用，将会收到：**Hand_GetFirmware:"版本号"**
+
+### **4.2 获取更新版本号**
+Socket字符串格式：`hand_get_modified(ID)`
+
+- **功能：** 获取三指版本号
+- **示例：** **hand_get_modified(14)**，如果成功调用，将会收到：**hand_get_modified:"更新版本号"**
+
+### **4.3 设置ID**
+Socket字符串格式：`Hand_SetId(ID,value)`
+
+- **功能：** 设置三指ID
+- **示例：** **Hand_SetId(14，1)**，如果成功调用，将会收到：**Hand_SetId:"1"**
+
+### **4.4 获取ID**
+Socket字符串格式：`Hand_GetId(ID)`
+
+- **功能：** 获取三指ID
+- **示例：** **Hand_GetId(14)**，如果成功调用，将会收到：**Hand_GetId:"ID值"**
+
+### **4.5 设置使能**
+Socket字符串格式：`Hand_SetEnabled(ID, value)`
+
+- **功能：** 设置三指使能状态
+- **示例：** **Hand_SetEnabled(14,1)**，如果成功调用，将会收到：**Hand_SetEnabled:"1"**
+
+### **4.6 设置关节运动**
+Socket字符串格式：`Hand_SetJointAngle(ID,jiont, value)`
+
+- **功能：** 设置三指单个关节运动
+- **示例：** **Hand_SetJointAngle(14,1,100)**，如果成功调用，将会收到：**Hand_SetJointAngle:"1"**
+
+### **4.7 获取关节运动**
+Socket字符串格式：`Hand_GetJointAngle(ID,jiont)`
+
+- **功能：** 获取三指单个关节运动
+- **示例：** **Hand_GetJointAngle(14,1)**，如果成功调用，将会收到：**Hand_GetJointAngle:"关节角度"**
+
+### **4.8 初始化三指**
+Socket字符串格式：`Hand_SetJointCalibrate(ID,jiont)`
+
+- **功能：** 校准三指零位
+- **示例：** **Hand_SetJointCalibrate(14,1)**，如果成功调用，将会收到：**Hand_SetJointCalibrate:"1"**
+
+### **4.9 获取三指状态**
+Socket字符串格式：`Hand_GetHand(ID)`
+
+- **功能：** 校准三指零位
+- **示例：** **Hand_GetHand(14)**，如果成功调用，将会收到：**Hand_GetHand:"1"**，0-运动中，1-运动到位，2-夹爪物体，3夹住物体掉落
+
+### **4.10 设置三指扭矩**
+Socket字符串格式：`Hand_SetTorque(ID,jiont,value)`
+
+- **功能：** 设置三指关节扭矩
+- **示例：** **Hand_SetTorque(14,1,100)**，如果成功调用，将会收到：**Hand_SetTorque:"1"**
+
+### **4.11 读取三指扭矩**
+Socket字符串格式：`Hand_GetTorque(ID,jiont)`
+
+- **功能：** 读取三指关节扭矩
+- **示例：** **Hand_GetTorque(14,1)**，如果成功调用，将会收到：**Hand_GetTorque:"扭矩值"**
+
+### **4.12 设置三指速度**
+Socket字符串格式：`Hand_SetSpeed(ID,jiont,value)`
+
+- **功能：** 设置三指关节运动速度
+- **示例：** **Hand_SetSpeed(14,1,100)**，如果成功调用，将会收到：**Hand_SetSpeed:"1"**
+
+### **4.12 获取三指速度**
+Socket字符串格式：`Hand_SetSpeed(ID,jiont)`
+
+- **功能：** 获取三指关节运动速度
+- **示例：** **Hand_GetSpeed(14,1)**，如果成功调用，将会收到：**Hand_GetSpeed:"速度值"**
+
+### **4.13 设置三指全关节**
+Socket字符串格式：`Hand_SetFullAngles(ID,value,speed)`
+
+- **功能：** 设置三指全关节角度运动
+- **示例：** **Hand_SetFullAngles(14,0,0,0,0,0,0,100)**，如果成功调用，将会收到：**Hand_SetFullAngles:"1"**
+
+### **4.13 获取三指全关节**
+Socket字符串格式：`Hand_GetFullAngles(ID)`
+
+- **功能：** 设置三指全关节角度运动
+- **示例：** **Hand_GetFullAngles(14)**，如果成功调用，将会收到：**Hand_GetFullAngles:"各个关节角度值"**
+
+### **4.14 手势力动作**
+Socket字符串格式：`Hand_SetCatch(ID,pose,value,num)`
+
+- **功能：** 设置三指手势动作
+- **示例：** **Hand_SetCatch(14,1,3,0)**，如果成功调用，将会收到：**Hand_SetCatch:"1"**
+
+### **4.15 获取类型**
+Socket字符串格式：`hand_get_model(ID)`
+
+- **功能：** 反馈三指左手或者右手
+- **示例：** **Hand_SetCatch(14)**，如果成功调用，将会收到：**Hand_SetCatch:"1"**,0-左手，1-右手
+
+## **5 Socket字符串控制ATOM末端**
+### **5.1 获取版本**
+Socket字符串格式：`GetFirmwareEnd()`
+
+- **功能：** 获取机器ATOM末端版本号
+- **示例：** **GetFirmwareEnd()**，如果成功调用，将会收到：**GetFirmwareEnd:"版本号"**
+
+### **5.2 获取更新版本**
+Socket字符串格式：`GetModifyEnd()`
+
+- **功能：** 获取机器ATOM末端更新版本号
+- **示例：** **GetModifyEnd()**，如果成功调用，将会收到：**GetModifyEnd:"更新版本号"**
+
+### **5.3 设置颜色**
+Socket字符串格式：`SetLedColor(red,green,blue)`
+
+- **功能：** 获取机器ATOM末端按钮颜色
+- **示例：** **SetLedColor(255,0,0)**，如果成功调用，将会收到：**SetLedColor:"1"**
+
+### **5.4 获取按键状态**
+Socket字符串格式：`SetEndBtStatus()`
+
+- **功能：** 获取机器ATOM末端按钮状态
+- **示例：** **SetEndBtStatus()**，如果成功调用，将会收到：**SetEndBtStatus:"1"**，0-松开，1-按下
+
+
 变量名需要使用双引号（""）进行引用；值是字符串，使用双引号（“”）引用，值是整数型或者浮点型时，不需要用序号，直接写数职即可，值为布尔型时，用True/False，直接写0/1，变量会被改为整数型
 
 返回字符串被格式化为键值对，键是函数名，值是接收自机器人的值，如果成功调用，将会收到：**assign_variable:[ok]**。如果发生错误，将会收到：**assign_variable:[wrong request format]**。
