@@ -299,6 +299,274 @@ Socket string format：`assign_variable("variable_name",value)`
 - **Function：** Assign values to defined variables
 - **Example：** **assign_variable("A",10)** ，**assign_variable("A",10.20202)** or **assign_variable("B",”ABC”)** or **assign_variable("C",True)**，**assign_variable("C",False)**
 
+
+## **3 Socket string control force control gripper**
+
+### **3.1 Get Version**
+Socket string format: ` force_getFirmware ("ID")`
+- **Function:** Read the version number of the force control gripper
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_CetFirmware (14)**, if successfully called, will receive: **force_CetFirmware: "Version number"**
+
+### **3.2 Obtain updated versions**
+Socket string format: ` force_CetModified (ID) '`
+- **Function:** Obtain the updated version number of the force control gripper
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_CetModified (14)**, if successfully called, will receive: **force_CetModified: "Update version number"**
+
+### **3.2 Setting ID**
+Socket string format: ` force_SetGripperId (ID, value)`
+- **Function:** Set the ID of the force control gripper
+- **Parameter Description:** ID Range [1-254] Default 14, Value [1-254] After modification, the parameter ID needs to be replaced with the modified ID
+- **Example:** **force_SetGripperId (14,1)** , if successfully called, will receive: **force_SetGripperId: 1**
+
+###  **3.3 Obtaining ID**
+Socket string format: ` force_GetGripperId (ID) '`
+- **Function:** Obtain the ID of the force control gripper
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_CetGripperId (14)**, if successfully called, will receive: **force_CetGripperId: "ID value"**
+
+### **3.4 Claw Enable**
+Socket string format: ` force_SetGripperEnabled (ID, value)`
+- **Function:** Set the enable and disable settings on the gripper
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_SetGripperEnabled (14)**, if successfully called, will receive:**force_SetGripperEnabled: "1"**
+
+
+### **3.5 Setting Angle**
+Socket string format: ` force_SetAngle (ID, value)`
+- **Function:** Set the opening and closing angle of the gripper
+- **Parameter description:** ID range [1-254] default 14, value [0-100] set angle
+- **Example:** **force_SetAngle (14100)**, if successfully called, will receive: **force_SetAngle: "1"**
+
+### **3.6 Obtaining angles**
+Socket string format: ` force_GetGripperAngle (ID) '`
+- **Function:** Obtain the current position and angle of the gripper
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_GetGripperAngle (14)** , if successfully called, will receive: **force_GetGripperAngle: "Current angle value"**
+
+### **3.7 Claw initialization**
+Socket string format: ` force_SetGripperCalibration (ID) '`
+- **Function:** Force Control Claw Zero Position Calibration
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_SetGripperCalibration (14)**, if successfully called, will receive: **force_SetGripperCalibration: "1"**
+
+### **3.8 Get Status**
+Socket string format: ` force_CetGripper (ID)`
+- **Function:** Obtain the motion status of the gripper
+- **Parameter Description: * * ID Range [1-254] Default 14
+- **Example:** **force_CetGripper (14)**, if successfully called, will receive: **force_CetGripper: "1"**, 0-in motion, 1-in place, 2-gripping object, 3 gripping object falling off
+
+### **3.9 Setting torque**
+Socket string format: ` force_SetGripperTorque (ID, value)`
+- **Function:** Set Claw Torque
+- **Parameter Description:** ID Range [1-254] Default 14, Value [1-100] The torque value that needs to be set
+- **Example:** **force_SetGripperTorque (14100)**, if successfully called, will receive: **force_SetGripperTorque: "1"**
+
+### **3.10 Obtaining torque**
+Socket string format: ` force_CetGripperTorque (ID) '`
+- **Function:** Obtain Claw Torque
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **Force_GetGripperTorque (14)**, if successfully called, will receive: **Force_GetGripperTorque: "Torque Value"**
+
+### **3.11 Set IO opening angle**
+Socket string format: ` force_SetOpen (ID, value)`
+- **Function:** Set the opening angle of the gripper IO control
+- **Parameter Description:** ID Range [1-254] Default 14, value[0-100], After setting the angle, when using IO to open it, it will open to the angle set
+- **Example:** **force_SetOpen (14100)**, if successfully called, will receive: **force_SetOpen: "1"**
+
+### **3.12 Set IO closing angle**
+Socket string format: ` force_SetClose (ID, value)`
+- **Function:** Set the closing angle of the gripper IO control
+- **Parameter Description:** ID Range [1-254] Default 14, value[0-100], After setting this angle, it will close to the set angle when using IO closure
+- **Example:** **force_SetClose (14,0)**, if successfully called, will receive: **force_SetClose: "1"**
+
+### **3.13 Set speed**
+Socket string format: ` force_SetSpeed (ID, value)`
+- **Function:** Set gripper movement speed
+- **Parameter Description:** ID Range [1-254] Default 14, Value [1-100] Speed Value
+- **Example:** **force_SetSpeed (14,50)**, if successfully called, will receive: **force_SetSpeed: "1"**
+
+### **3.14 Get Speed**
+Socket string format: ` force_GetSpeed (ID) '`
+- **Function:** Get gripper movement speed
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_SetSpeed (14)**, if successfully called, will receive: **force_SetSpeed: "Speed value"**
+
+### **3.15 Obtain IO setting opening angle**
+Socket string format: ` force_CetOpen (ID)`
+- **Function:** Obtain the opening angle of the gripper IO setting
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_CetOpen (14)**, if successfully called, will receive: **force_CetOpen: "Angle Value"**
+
+### **3.16 Obtain IO setting closure angle**
+Socket string format: ` force_CetClose (ID)`
+- **Function:** Obtain the closing angle set by the gripper IO
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **force_CetClose (14)**, if successfully called, will receive: **force_CetClose: "Angle value"**
+
+### **3.17 Set Absolute Angle**
+Socket string format: ` force_SetAbsAngle (ID, value)`
+- **Function:** Set the absolute angle of the gripper, and only return successfully after the movement is in place
+- **Parameter Description:** ID Range [1-254] Default 14, Value [0-100] Angle Value
+- **Example:** **force_SetAbsAngle (14100)**, if successfully called, will receive: **force_SetAbsAngle: "1"**
+
+## **4 Socket string controls three finger dexterous hand**
+### **4.1 Obtain version number**
+Socket string format: Hand_CetFirmware (ID)`
+- **Function:** Obtain three finger version numbers
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example: Hand_CetFirmware (14)** , if successfully called, will receive: **Hand_CetFirmware: "Version Number"**
+
+### **4.2 Obtain updated version number**
+Socket string format: ` hand_get-modified (ID)`
+- **Function:** Obtain three finger version numbers
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **Hand_get-modified (14)**, if successfully called, will receive: **Hand_get-modified: "Update version number"**
+
+### **4.3 Setting ID**
+Socket string format: ` Hand_SetId (ID, value)`
+- **Function:** Set Three Finger ID
+- **Parameter description:** ID range [1-254] default 14, value [1-254] set ID value
+- **Example:** **Hand_SetId (14,1)**, if successfully called, will receive: **Hand_SetId: "1"**
+
+### **4.4 Obtain ID**
+Socket string format: Hand_CetId (ID)`
+- **Function:** Obtain three finger ID
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **Hand_CetId (14)**, if successfully called, will receive: **Hand_CetId: "ID value"**
+
+### **4.5 Enable Settings**
+Socket string format: ` Hand_SetEnabled (ID, value)`
+- **Function:** Set three command enable states
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - value[0/1], 0- No upper enable, 1- Upper enable
+- **Example:** Hand_SetEnabled (14,1), if successfully called, will receive: **Hand_SetEnabled: "1"**
+
+### **4.6 Setting Joint Motion**
+Socket string format: ` Hand_SetJointAngle (ID, joint, value)`
+- **Function:** Set three finger single joint movement
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - joint [1-6] joint ID
+  - Value [0-100] Angle value
+- **Example:** **Hand_SetJointAngle (14,1,100)**, if successfully called, will receive: **Hand_SetJointAngle: "1"**
+
+### **4.7 Obtaining Joint Movement**
+Socket string format: ` Hand_GetJointAngle (ID, joint)`
+- **Function:** Obtain single joint movements of three fingers
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - joint [1-6] joint ID
+- **Example:** **Hand_GetJointAngle (14,1)**, if successfully called, will receive: **Hand_GetJointAngle: "Joint Angle"**
+
+### **4.8 Initialization Three Fingers**
+Socket string format: ` Hand_SetJointCalibrate(ID, joint)`
+- **Function:** Calibrate three finger zero position
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - joint [1-6] joint ID
+- **Example:** **Hand_SetJointCalibrate (14,1)**, if successfully called, will receive: **Hand_SetJointCalibrate: "1"**
+
+### **4.9 Obtaining Three Finger Status**
+Socket string format: Hand_CetHand (ID)`
+- **Function:** Calibrate three finger zero position
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:**  **Hand_GetHand (14)**, if successfully called, will receive: **Hand_GetHand: "1"**, 0-in motion, 1-in place, 2-gripping object, 3 gripping object falling off
+
+### **4.10 Set Three Finger Torque**
+Socket string format: ` Hand_SetTorque (ID, joint, value)`
+- **Function:** Set three finger joint torque
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - joint [1-6] joint ID
+  - Value [0-100] torque value
+- **Example:** **Hand_SetTorque (14,100)**, if successfully called, will receive: **Hand_SetTorque: "1"**
+
+### **4.11 Reading Three Finger Torque**
+Socket string format: Hand_GetTorque (ID, joint)`
+- **Function:** Read torque of three finger joints
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - joint [1-6] joint ID
+- **Example:** **Hand_CetTorque (14,1)**, if successfully called, will receive: **Hand_CetTorque: "Torque Value"**
+
+### **4.12 Setting Three Finger Speed**
+Socket string format: ` Hand_SetSpeed (ID, Jiont, value)`
+- **Function:** Set the speed of three finger joint movement
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - Jiont [1-6] joint ID
+  - Value [0-100] Speed value
+-**Example:**  **Hand_SetSpeed (14,1,100)**, if successfully called, will receive: **Hand_SetSpeed: "1"**
+
+### **4.12 Obtaining Three Finger Speed**
+Socket string format: ` Hand_SetSpeed (ID, joint)`
+- **Function:** Obtain the speed of three finger joint movement
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - Jiunt [1-6] joint ID
+- **Example:** **Hand_GetSpeed (14,1)**, if successfully called, will receive: **Hand_GetSpeed: "Speed value"**
+
+### **4.13 Setting Three Finger Joint**
+Socket string format: ` Hand_SetFullAngles (ID, value, speed)`
+- **Function:** Set three finger total joint angle movement
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - Jiunt [1-6] joint ID
+  - value[1,2,3,4,5,6]
+    - Joint 1: Range 0~60°
+    - Joint 2: Range 0~100°
+    - Joint 3: Range 0~100°
+    - Joint 4: Range 0~100°
+    - Joint 5: Range 0~37°
+    - Joint 6: Range 0~37°
+  - speed[0-100]   
+- **Example:** **Hand_SetFullAngles (14,0,0,0,0,0,100)**, if successfully called, will receive: **Hand_SetFullAngles: "1"**
+
+### **4.14 Hand Force Action**
+Socket string format: Hand_SetCatch (ID, pose, value, num)`
+- **Function:** Set three finger gesture actions
+- **Parameter Description:**
+  - ID range [1-254] default 14
+  - pose[0-4]
+  - value[0-5], When pose is 4, the value range is [0-20]
+  - Num: (Invalid/01) By default, there is no such byte. When the byte is 01, idle fingers can freely manipulate it
+- **Example:** **Hand_SetCatch (14,1,3,0)**, if successfully called, will receive: **Hand_SetCatch: "1"**
+
+### **4.15 Get Type**
+Socket string format: ` hand_get-model (ID) '`
+- **Function:** Feedback three fingers left or right hand
+- **Parameter Description:** ID Range [1-254] Default 14
+- **Example:** **Hand_SetCatch (14)**, if successfully called, will receive: **Hand_SetCatch: "1"**, 0-Left Hand, 1-Right Hand
+
+## **5 Socket string controls the end of ATOM**
+### **5.1 Get Version**
+Socket string format: ` GetFirmwareEnd() '`
+- **Function:** Obtain the end version number of the machine's ATOM
+- **Example:** **GetFirmwareEnd()**, if successfully called, will receive: **GetFirmwareEnd: "version number"**
+
+### **5.2 Obtain updated versions**
+Socket string format: ` GetModifyEnd() '`
+- **Function:** Obtain the updated version number of the machine's ATOM terminal
+- **Example:** **GetModifyEnd()**, if successfully called, will receive: **GetModifyEnd(): "Update version number"**
+
+### **5.3 Color Setting**
+Socket string format: ` SetLedColor (red, green, blue)`
+- **Function:** Obtain the color of the ATOM terminal button on the machine
+- **Parameter Description:**
+  - red[0-255]
+  - green[0-255]
+  - blue[0-255]
+- **Example:** **SetLedColor (255,0,0)**, if successfully called, will receive: **SetLedColor: "1"**
+
+### **5.4 Obtaining Key Status**
+Socket string format: ` SetEndBtStatus() '`
+- **Function:** Obtain the status of the ATOM terminal button on the machine
+- **Example:** **SetEndBtStatus()**, if successfully called, will receive: **SetEndBtStatus: "1"**, 0-release, 1-press
+
+
 Variable names are quoted in double quotation marks (""); If the value is an integer or floating point type, you can write the value directly without using the serial number. If the value is a Boolean type, you can write 0/1 directly using True/False, and the variable is changed to an integer type
 
 The return string is formatted as a key-value pair, where the key is the function name and the value is the value received from the robot，If the call was successful and will receive **assign_variable:[ok]**。If any error occurs,  will receive **assign_variable:[wrong request format]**。
