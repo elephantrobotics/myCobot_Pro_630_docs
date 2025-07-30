@@ -451,8 +451,8 @@ Socket string format: ` Hand_SetJointAngle (ID, joint, value)`
   - ID range [1-254] default 14
   - joint [1-6] joint ID
     - Joint 1: Range 0~60°
-    - Joint 2: Range 0~100°
-    - Joint 3: Range 0~100°
+    - Joint 2: Range 0~95°
+    - Joint 3: Range 0~95°
     - Joint 4: Range 0~100°
     - Joint 5: Range 0~37°
     - Joint 6: Range 0~37°
@@ -522,8 +522,8 @@ Socket string format: ` Hand_SetFullAngles (ID, value, speed)`
   - Jiunt [1-6] joint ID
   - value[1,2,3,4,5,6]
     - Joint 1: Range 0~60°
-    - Joint 2: Range 0~100°
-    - Joint 3: Range 0~100°
+    - Joint 2: Range 0~95°
+    - Joint 3: Range 0~95°
     - Joint 4: Range 0~100°
     - Joint 5: Range 0~37°
     - Joint 6: Range 0~37°

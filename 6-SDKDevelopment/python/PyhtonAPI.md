@@ -345,8 +345,8 @@ elephant_client.start_client()
   - Joint [1-6]
   - Angle:    
     - Joint 1: Range 0~60°
-    - Joint 2: Range 0~100°
-    - Joint 3: Range 0~100°
+    - Joint 2: Range 0~95°
+    - Joint 3: Range 0~95°
     - Joint 4: Range 0~100°
     - Joint 5: Range 0~37°
     - Joint 6: Range 0~37°
