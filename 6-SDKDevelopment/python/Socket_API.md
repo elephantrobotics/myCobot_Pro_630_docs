@@ -298,6 +298,7 @@ Socket字符串格式：`assign_variable("variable_name",value)`
 - **示例：** **assign_variable("A",10)** ，**assign_variable("A",10.20202)** 或**assign_variable("B",”ABC”)** 或 **assign_variable("C",True)**，**assign_variable("C",False)**
 
 ## **3 Socket字符串控制力控夹爪**
+**注意：如需控制三指与力控夹爪版本需要以630 v1.2.25.07.30版本系统，搭配v1.2.8末端固件才能正常使用v1.2的力控,v1.1版本的三指。在2025-09-15后出厂的机器可支持控制三指与力控的功能**
 ### **3.1 获取版本**
 Socket字符串格式：`force_GetFirmware("ID")`
 
