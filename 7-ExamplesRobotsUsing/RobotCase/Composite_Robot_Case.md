@@ -55,13 +55,19 @@ SWB为控制模式选择拨杆，拨至最上方为指令控制模式，拨至�
 
 **注意：使用遥控器摇杆进行操作时，需缓慢轻推摇杆，避免速度过快。当小车顶部有载重时，速度过快容易出现重心不稳，影响运动控制的平稳性。**
 
-## 小车CAN总线连接
+## 硬件连接
+
+### 小车CAN总线连接
 
 - 将顶部航空插头或者尾部插头CAN线引出，将CAN线中的CAN_H和CAN_L分别与CAN_TO_USB适配器相连；
 - 打开移动机器人底盘旋钮开关，检查来两侧的急停开关是否释放； 
 - 将CAN_TO_USB连接至笔记本的usb口。连接示意如图所示。
 
 ![](../../resources/7-ExamplesRobotsUsing/RobotCase/can.png)
+
+### 整体连接说明
+
+![](../../resources/7-ExamplesRobotsUsing/RobotCase/hard_connect.png)
 
 ## 安装依赖包
 
