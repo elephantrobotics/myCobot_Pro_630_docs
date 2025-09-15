@@ -121,6 +121,7 @@ pip install pymycobot --upgrade
 
 ## 3 **Python API接口说明**
 ### 3.1 ElephantRobot类实列化
+**注意：如需控制三指与力控夹爪版本需要以630 v1.2.25.07.30版本系统，搭配v1.2.8末端固件才能正常使用v1.2的力控,v1.1版本的三指。在2025-09-15后出厂的机器可支持控制三指与力控的功能**
 ```
 "从pymycobot库导入ElephantRobot类"
 from pymycobot import ElephantRobot
@@ -303,6 +304,171 @@ elephant_client.start_client()
 **def get_joint_current(joint)**:
 - **功能**：获取各个关节的电流
 - **参数**：关节[0-5]
+
+**def force_get_firmware(ID)**:
+- **功能**：获取力控夹爪固件版本
+- **参数**: 夹爪ID[1-254]
+
+**def force_get_modified(ID)**:
+- **功能**：获取力控夹爪固件更新版本
+- **参数**：夹爪ID[1-254]
+
+**def force_set_id(ID, value)**:
+- **功能**：设置力控夹爪id
+- **参数**：夹爪ID[1-254]，修改值[1-254]
+
+**def force_get_id(ID)**:
+- **功能**：获取力控夹爪id
+- **参数**：夹爪ID[1-254]
+
+**def force_set_enabled(ID, value)**:
+- **功能**：设置力控夹爪使能
+- **参数**：夹爪ID[1-254]，使能值[0或1，0代表不使能，1代表上使能]
+
+**def force_set_angle(ID, value)**:
+- **功能**：设置力控夹爪运动角度
+- **参数**：
+  - 夹爪ID[1-254]
+  - 角度：[0-100]
+
+**def force_get_angle(ID)**:
+- **功能**：获取力控夹爪运动角度
+- **参数**：夹爪ID[1-254]
+
+**def force_set_calibrate(ID)**:
+- **功能**：力控夹爪校准
+- **参数**：夹爪ID[1-254]
+
+**def force_get_gripper(ID)**:
+- **功能**：获取力控夹爪运动状态
+- **参数**：夹爪ID[1-254]
+  
+**def force_set_torque(ID，value)**:
+- **功能**：设置力控夹爪扭矩
+- **参数**：夹爪ID[1-254]，扭矩[0-100]
+
+**def force_get_torque(ID)**:
+- **功能**：获取力控夹爪扭矩
+- **参数**：夹爪ID[1-254]
+
+**def force_set_open(ID，value)**:
+- **功能**：设置力控夹爪IO张开角度
+- **参数**：夹爪ID[1-254]，角度[0-100]
+
+**def force_set_close(ID，value)**:
+- **功能**：设置力控夹爪IO闭合角度
+- **参数**：夹爪ID[1-254]，角度[0-100]
+
+**def force_set_speed(ID，value)**:
+- **功能**：设置力控夹爪运动速度
+- **参数**：夹爪ID[1-254]，速度[0-100]
+
+**def force_get_speed(ID)**:
+- **功能**：设置力控夹爪运动速度
+- **参数**：夹爪ID[1-254]
+
+**def force_get_open(ID)**:
+- **功能**：获取力控夹爪IO张开角度
+- **参数**：夹爪ID[1-254]
+
+**def force_get_close(ID)**:
+- **功能**：获取力控夹爪IO闭合角度
+- **参数**：夹爪ID[1-254]
+
+**def force_set_absangle(ID，value)**:
+- **功能**：设置力控夹爪绝对角度
+- **参数**：夹爪ID[1-254]，角度[0-100]
+
+**def hand_get_firmware(ID)**:
+- **功能**：获取三指灵巧手版本
+- **参数**：夹爪ID[1-254]
+
+**def hand_get_modified(ID)**:
+- **功能**：获取三指灵巧手更新版本
+- **参数**：夹爪ID[1-254]
+
+**def hand_set_id(ID，value)**:
+- **功能**：设置三指灵巧手ID
+- **参数**：夹爪ID[1-254]，修改值[1-254]
+
+**def hand_get_id(ID)**:
+- **功能**：读取三指灵巧手ID
+- **参数**：夹爪ID[1-254]
+
+**def hand_set_enabled(ID，value)**:
+- **功能**：设置三指使能
+- **参数**：夹爪ID[1-254]，使能[0或者1，0不使能，1上使能]
+
+**def hand_set_joint_angle(ID，jiont，value)**:
+- **功能**：设置三指灵巧手单关节运动
+- **参数**：夹爪ID[1-254]，关节[1-6]，角度[0-100]
+
+**def hand_get_joint_angle(ID，jiont，value)**:
+- **功能**：读取三指灵巧手关节角度
+- **参数**：夹爪ID[1-254]，关节[1-6]
+
+**def hand_set_joint_calibrate(ID，jiont)**:
+- **功能**：设置三指灵巧手关节校准
+- **参数**：夹爪ID[1-254]，关节[1-6]
+
+**def hand_get_state(ID)**:
+- **功能**：获取三指灵巧手运动状态
+- **参数**：夹爪ID[1-254]
+
+**def hand_set_torque(ID，jiont，value)**:
+- **功能**：设置三指灵巧手扭矩
+- **参数**：夹爪ID[1-254]，关节[1-6]，扭矩[0-100]
+
+**def hand_get_torque(ID，jiont)**:
+- **功能**：获取三指灵巧手扭矩
+- **参数**：夹爪ID[1-254]，关节[1-6]
+
+**def hand_set_speed(ID，jiont，value)**:
+- **功能**：设置三指灵巧手速度
+- **参数**：夹爪ID[1-254]，关节[1-6]，速度[0-100]
+
+**def hand_get_speed(ID，jiont)**:
+- **功能**：获取三指灵巧手速度
+- **参数**：夹爪ID[1-254]，关节[1-6]
+
+**def hand_set_fullangles(ID，angles, speed)**:
+- **功能**：设置三指灵巧手全关节运动
+- **参数**：
+  - 夹爪ID[1-254]
+  - 角度 :
+      - 关节1：范围0~100°
+      - 关节2：范围0~100°
+      - 关节3：范围0~100°
+      - 关节4：范围0~100°
+      - 关节5：范围0~100°
+      - 关节6：范围0~100°
+  - 速度[0-100]
+
+**def hand_get_fullangles(ID)**:
+- **功能**：获取三指灵巧手全关节角度
+- **参数**：夹爪ID[1-254]
+
+**def hand_set_catch(ID，pose, value, num=0)**:
+- **功能**：设置三指灵巧手手势动作
+- **参数**：夹爪ID[1-254]，模式[0-4]，阈值[0-5, 模式为4时，阈值[0-20]]，空闲标志[函数带上num参数时手势运动的关节与其他关节都会移动，不加上num参数时只运动对应模式的关节]
+
+**def hand_get_model(ID)**:
+- **功能**：获取三指灵巧类型
+- **参数**：夹爪ID[1-254]
+
+**def get_end_firmware()**:
+- **功能**：获取630末端ATOM固件版本
+- **参数**：无
+
+**def get_end_modify()**:
+- **功能**：获取630末端ATOM固件更新版本
+- **参数**：无
+
+**def get_end_bt_status()**:
+- **功能**：获取630末端ATOM固件按键状态
+- **参数**：无
+
+
 
 <!-- **def get_variable(var_name)**:
 - **功能**：获取一个变量的值
