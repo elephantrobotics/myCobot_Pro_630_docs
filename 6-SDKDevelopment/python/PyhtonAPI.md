@@ -1,6 +1,7 @@
 # **Developed based on Python API**
 &ensp;&ensp;Elephant provides Python API to remotely control the robot. We use TCP protocol to communicate between the client and the robot, so before using our API, you need to follow the documentation and operate the following.
 
+**Attention: To control the three finger and force control gripper versions, you need to use the 630 v1.2.25.07.30 system and the v1.2.8 end firmware to use the v1.2 force control and v1.1 three finger versions properly. Machines manufactured after September 15, 2025 can support the functions of controlling three fingers and force control**
 ## **1 Environment setup**
 ### 1.1 Install Python
 
@@ -245,6 +246,161 @@ elephant_client.start_client()
 **def get_joint_current(joint)**:
 - **Function**: Get the current of each joint
 - **Parameter**: Joint [0-5]
+
+**def force_get_firmware(ID)**:
+- **Function**: Obtain the firmware version of the force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_get_modified(ID)**:
+- **Function**: Obtain the updated firmware version of the force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_set_id(ID, value)**:
+- **Function**: Set the ID of the force control gripper
+- **Parameter**: Claw ID [1-254], modify value [1-254]
+
+**def force_get_id(ID)**:
+- **Function**: Obtain the ID of the force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_set_enabled(ID, value)**:
+- **Function**: Set force control gripper enable
+- **Parameter**: Claw ID [1-254], enable value [0 or 1, 0 represents disable, 1 represents enable]
+
+**def force_set_angle(ID, value)**:
+- **Function**: Set the motion angle of the force control gripper
+- **Parameter**: Claw ID [1-254], angle [0-100]
+
+**def force_get_angle(ID)**:
+- **Function**: Obtain the motion angle of the force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_get_angle(ID)**:
+- **Function**: Obtain the motion angle of the force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_get_gripper(ID)**:
+- **Function**: Obtain the motion status of the force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_set_torque(ID，value)**:
+- **Function**: Set the torque of the force control gripper
+- **Parameter**: Claw ID [1-254], torque [0-100]
+
+**def force_get_torque(ID)**:
+- **Function**: Obtain torque of force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_set_open(ID，value)**:
+- **Function**: Set the opening angle of the force control gripper IO
+- **Parameter**: Claw ID [1-254], angle [0-100]
+
+**def force_set_close(ID，value)**:
+- **Function**: Set the closing angle of the force control gripper IO
+- **Parameter**: Claw ID [1-254], angle [0-100]
+
+**def force_set_speed(ID，value)**:
+- **Function**: Set the movement speed of the force control gripper
+- **Parameters**: Claw ID [1-254], Speed [0-100]
+
+**def force_get_speed(ID)**:
+- **Function**: Set the movement speed of the force control gripper
+- **Parameter**: Claw ID [1-254]
+
+**def force_get_open(ID)**:
+- **Functio**: Obtain the opening angle of the force control gripper IO
+- **Paramete**: Claw ID [1-254]
+
+**def force_get_close(ID)**:
+- **Function**: Obtain the closing angle of the force control gripper IO
+- **Parameter**: Claw ID [1-254]
+
+**def force_set_absangle(ID，value)**:
+- **Function**: Set the absolute angle of the force control gripper
+- **Parameter**: Claw ID [1-254], angle [0-100]
+
+**def force_set_absangle(ID，value)**:
+- **Function**: Set the absolute angle of the force control gripper
+- **Parameter**: Claw ID [1-254], angle [0-100]
+
+**def hand_get_modified(ID)**:
+- **Function**: Get updated versions of the three finger dexterous hand
+- **Parameter**: Claw ID [1-254]
+
+**def hand_set_id(ID，value)**:
+- **Function**: Set three finger dexterous hand ID
+- **Parameter**: Claw ID [1-254], modify value [1-254]
+
+**def hand_get_id(ID)**:
+- **Function**: Read the ID of a three finger dexterous hand
+- **Parameter**: Claw ID [1-254]
+
+**def hand_set_enabled(ID，value)**:
+- **Function**: Set three commands to enable
+- **Parameter**: Claw ID [1-254], enable [0 or 1, 0 not enabled, 1 enabled]
+
+**def hand_set_joint_angle(ID，jiont，value)**:
+- **Function**: Set single joint movement of three finger dexterous hand
+- **Parameters**: 
+  - Claw ID [1-254]
+  - Joint [1-6]
+  - value [0-100]
+
+**def hand_get_joint_angle(ID，jiont，value)**:
+- **Function**: Read the joint angle of a three finger dexterous hand
+- **Parameters**: Claw ID [1-254], Joint [1-6]
+
+**def hand_set_joint_calibrate(ID，jiont)**:
+- **Function**: Set three finger dexterous hand joint calibration
+- **Parameters**: Claw ID [1-254], Joint [1-6]
+
+**def hand_get_state(ID)**:
+- **Function**: Obtain the movement status of the three finger dexterous hand
+- **Parameter**: Claw ID [1-254]
+
+**def hand_set_torque(ID，jiont，value)**:
+- **Function**: Set three finger dexterous hand torque
+- **Parameters**: Claw ID [1-254], Joint [1-6], Torque [0-100]
+
+**def hand_get_torque(ID，jiont)**:
+- **Functio**: Obtain three finger dexterous hand torque
+- **Parameter**: Claw ID [1-254], Joint [1-6]
+
+**def hand_set_speed(ID，jiont，value)**:
+- **Function**: Set the speed of the three finger dexterous hand
+- **Parameters**: Claw ID [1-254], Joint [1-6], Speed [0-100]
+
+**def hand_get_speed(ID，jiont)**:
+- **Function**: Obtain the speed of a three finger dexterous hand
+- **Parameters**: Claw ID [1-254], Joint [1-6]
+
+**def hand_set_fullangles(ID，angles, speed)**:
+- **Function**: Set the full joint movement of the three finger dexterous hand
+- **Parameters**: Claw ID [1-254], angle [{0,0,0,0,0,0}, range 0-100], velocity [0-100]
+
+**def hand_get_fullangles(ID)**:
+- **Function**: Obtain the total joint angle of a three finger dexterous hand
+- **Parameter**: Claw ID [1-254]
+
+**def hand_set_catch(ID，pose, value, num=0)**:
+- **Function**: Set three finger dexterous hand gesture movements
+- **Parameters**: Claw ID [1-254], mode [0-4], threshold [0-5, threshold [0-20]] when mode is 4, idle flag [When the num parameter is added to the function, the joint of the gesture motion will move along with other joints, and only the joint of the corresponding mode will move without the num parameter]
+
+**def hand_get_model(ID)**:
+- **Function**: Obtain three finger dexterity type
+- **Parameter**: Claw ID [1-254]
+
+**def get_end_firmware()**:
+- **Function**: Obtain the firmware version of the 630 terminal ATOM
+- **Parameter**: None
+
+**def get_end_modify()**:
+- **Function**: Obtain the updated firmware version of the 630 terminal ATOM
+- **Parameter**: None
+
+**def get_end_bt_status()**:
+- **Function**: Retrieve the button status of the 630 terminal ATOM firmware
+- **Parameter**: None
 
 ---
 [← Previous page](../6-SDKDevelopment.md) | [Next page →](./python_demo.md)
