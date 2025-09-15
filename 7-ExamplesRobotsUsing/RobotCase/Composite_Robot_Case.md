@@ -54,7 +54,9 @@ Before starting, you need to **make sure that the wheels and chassis of RANGERMI
 
 **Note: When using the remote control joystick for operation, you need to push the joystick slowly and gently to avoid too fast speed. When there is a load on the top of the car, it is easy to cause unstable center of gravity when the speed is too fast, affecting the stability of motion control.**
 
-## Car CAN bus connection
+## Hardware Connection
+
+### Car CAN bus connection
 
 - Lead out the CAN line of the top aviation plug or the tail plug, and connect CAN_H and CAN_L in the CAN line to the CAN_TO_USB adapter respectively;
 
@@ -63,6 +65,10 @@ Before starting, you need to **make sure that the wheels and chassis of RANGERMI
 - Connect CAN_TO_USB to the USB port of the laptop. The connection diagram is shown in the figure.
 
 ![](../../resources/7-ExamplesRobotsUsing/RobotCase/can.png)
+
+### Overall connection instructions
+
+![](../../resources/7-ExamplesRobotsUsing/RobotCase/hard_connect.png)
 
 ## Install dependent packages
 
