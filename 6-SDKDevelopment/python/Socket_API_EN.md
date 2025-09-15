@@ -303,6 +303,8 @@ Socket string format：`assign_variable("variable_name",value)`
 ## **3 Socket string control force control gripper**
 
 ### **3.1 Get Version**
+**Attention: To control the three finger and force control gripper versions, you need to use the 630 v1.2.25.07.30 system and the v1.2.8 end firmware to use the v1.2 force control and v1.1 three finger versions properly. Machines manufactured after September 15, 2025 can support the functions of controlling three fingers and force control**
+## **1 Environment setup**
 Socket string format: ` force_getFirmware ("ID")`
 - **Function:** Read the version number of the force control gripper
 - **Parameter Description:** ID Range [1-254] Default 14
@@ -515,8 +517,13 @@ Socket string format: ` Hand_SetFullAngles (ID, value, speed)`
 - **Function:** Set three finger total joint angle movement
 - **Parameter Description:**
   - ID range [1-254] default 14
-  - Jiunt [1-6] joint ID
   - value[angle1,angle2,angle3,angle4,angle5,angle6]
+    - angle1:0-100
+    - angle2:0-100
+    - angle3:0-100
+    - angle4:0-100
+    - angle5:0-100
+    - angle6:0-100
   - speed[0-100]   
 - **Example:** **Hand_SetFullAngles (14,0,0,0,0,0,100)**, if successfully called, will receive: **Hand_SetFullAngles: "1"**
 

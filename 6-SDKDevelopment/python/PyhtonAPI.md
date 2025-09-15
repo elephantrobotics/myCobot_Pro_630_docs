@@ -1,6 +1,7 @@
 # **Developed based on Python API**
 &ensp;&ensp;Elephant provides Python API to remotely control the robot. We use TCP protocol to communicate between the client and the robot, so before using our API, you need to follow the documentation and operate the following.
 
+**Attention: To control the three finger and force control gripper versions, you need to use the 630 v1.2.25.07.30 system and the v1.2.8 end firmware to use the v1.2 force control and v1.1 three finger versions properly. Machines manufactured after September 15, 2025 can support the functions of controlling three fingers and force control**
 ## **1 Environment setup**
 ### 1.1 Install Python
 
