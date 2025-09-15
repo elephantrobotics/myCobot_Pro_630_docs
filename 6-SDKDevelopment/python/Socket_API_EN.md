@@ -450,12 +450,8 @@ Socket string format: ` Hand_SetJointAngle (ID, joint, value)`
 - **Parameter Description:**
   - ID range [1-254] default 14
   - joint [1-6] joint ID
-    - Joint 1: Range 0~60°
-    - Joint 2: Range 0~95°
-    - Joint 3: Range 0~95°
-    - Joint 4: Range 0~100°
-    - Joint 5: Range 0~37°
-    - Joint 6: Range 0~37°
+  - value[0-100] Angle Value
+  
 - **Example:** **Hand_SetJointAngle (14,1,100)**, if successfully called, will receive: **Hand_SetJointAngle: "1"**
 
 ### **4.7 Obtaining Joint Movement**
@@ -520,13 +516,7 @@ Socket string format: ` Hand_SetFullAngles (ID, value, speed)`
 - **Parameter Description:**
   - ID range [1-254] default 14
   - Jiunt [1-6] joint ID
-  - value[1,2,3,4,5,6]
-    - Joint 1: Range 0~60°
-    - Joint 2: Range 0~95°
-    - Joint 3: Range 0~95°
-    - Joint 4: Range 0~100°
-    - Joint 5: Range 0~37°
-    - Joint 6: Range 0~37°
+  - value[angle1,angle2,angle3,angle4,angle5,angle6]
   - speed[0-100]   
 - **Example:** **Hand_SetFullAngles (14,0,0,0,0,0,100)**, if successfully called, will receive: **Hand_SetFullAngles: "1"**
 

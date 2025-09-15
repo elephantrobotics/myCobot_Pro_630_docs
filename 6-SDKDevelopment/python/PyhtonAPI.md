@@ -343,13 +343,7 @@ elephant_client.start_client()
 - **Parameters**: 
   - Claw ID [1-254]
   - Joint [1-6]
-  - Angle:    
-    - Joint 1: Range 0~60°
-    - Joint 2: Range 0~95°
-    - Joint 3: Range 0~95°
-    - Joint 4: Range 0~100°
-    - Joint 5: Range 0~37°
-    - Joint 6: Range 0~37°
+  - value [0-100]
 
 **def hand_get_joint_angle(ID，jiont，value)**:
 - **Function**: Read the joint angle of a three finger dexterous hand
