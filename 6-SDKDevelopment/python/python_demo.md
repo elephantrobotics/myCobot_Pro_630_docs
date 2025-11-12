@@ -316,7 +316,34 @@ if __name__=='__main__':
     elephant_client.set_gripper_value(50,100)
     time.sleep(2)
 ```
-## 6 相对运动
+
+## 6 电动夹爪
+
+```python
+from pymycobot import ElephantRobot
+import time
+
+if __name__ == '__main__':
+    "将ip更改成Pro 630的实际ip"
+    elephant_client = ElephantRobot("192.168.10.158", 5001)
+
+    "启动机器人必要指令"
+    elephant_client.start_client()
+    time.sleep(1)
+
+    "初始化电动夹爪"
+    elephant_client.init_ele_gripper()
+    time.sleep(1)
+
+    "张开"
+    elephant_client.set_ele_gripper_open()
+    time.sleep(2)
+
+    "闭合"
+    elephant_client.set_ele_gripper_close()
+```
+
+## 7 相对运动
 
 ```python
 from pymycobot import ElephantRobot
@@ -343,7 +370,7 @@ if __name__=='__main__':
 
 ```
 
-## 7 机器人夹爪搬运木块案例
+## 8 机器人夹爪搬运木块案例
 ```python
 from pymycobot import ElephantRobot
 import time
