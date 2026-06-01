@@ -5,7 +5,7 @@
 
 ## Product Pictures
 
-<img src="./resources/2-serialproduct/myCobot_Pro_600/English/0.jpg" alt="" width="60%" height="60%" />
+<img src="/resources/2-serialproduct/myCobot%20Pro%20600/English/0.jpg" alt="" width="60%" height="60%" />
 
 
 
