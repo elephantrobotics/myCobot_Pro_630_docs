@@ -1,53 +1,60 @@
-# Elephant Gitbook
-
-## Introduce
+# User Manual for MyCobot Pro630
 * [1 Product Introduction](1-ProductIntroduction/1-ProductIntroduction.md)
-   * [1.1 Design Philosophy](./1-ProductIntroduction/1.1-DesignPhilosophy.md)
-   * [1.2 Suitable Users](./1-ProductIntroduction/1.2-SuitableUsers.md)
-   * [1.3 Application Scenario](./1-ProductIntroduction/1.3-ApplicationScenario.md)
-   * [1.4 Peripheral Accessories](./1-ProductIntroduction/1.4-AccessoriesTools/README.md)
-       * [1 Adaptive Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/1-AdaptiveGripper.md)
-       * [2 Electric Grippers](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/2-ElectricGripper.md)
-       * [3 Pneumatic Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/3-PneumaticGripper.md)
-       * [4 Flexible Grippers](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/4-FlexibleGripper.md)
-       * [5 Suction Cup Modules](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/1-ModuleSuctionCup.md)
-       * [6 Camera Module](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
-       * [7 Pen Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
-       * [8 Phone Holders](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
-       * [9 myGripper F100 force-controlled gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_630_en.md)
-       * [10 Proud five-fingered dexterous hand](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.5-Smarthand/1-SmartHand.md)
-       * [11 Single head suction pump](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.6-Single-SuctionPump/1-Single-SuctionPump.md)
-       * [12 Nimble three fingers](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.7-ThreeFingers/ThreeFingers.md)
-       
+  * [1.1 Design Philosophy](./1-ProductIntroduction/1.1-DesignPhilosophy.md)
+  * [1.2 Applicable Users](./1-ProductIntroduction/1.2-SuitableUsers.md)
+  * [1.3 Application Scenario](./1-ProductIntroduction/1.3-ApplicationScenario.md)
+  * [1.4 Peripheral Accessories](./1-ProductIntroduction/1.4-AccessoriesTools/README.md)
+      * [1 Adaptive Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/1-AdaptiveGripper.md)
+      * [2 Electric Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/2-ElectricGripper.md)
+      * [3 Pneumatic gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/3-PneumaticGripper.md)
+      * [4 Flexible Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/4-FlexibleGripper.md)
+      * [5 Suction Cup Module](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.2-PumpCup/1-ModuleSuctionCup.md)
+      * [6 Camera Module](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
+      * [7 Pen Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
+      * [8 Phone Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
+      * [9 myGripper F100 Force Control Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_630.md)
+      * [10 Smart Hand with Five Fingers] (./1-ProductIntroduction/1.4-AccessoriesTools/1.4.5-Smarthand/1-SmartHand.md)
+      * [11 Single-Suction Pump](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.6-Single-SuctionPump/1-Single-SuctionPump.md)
+      * [12 Smart Three Fingers](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.7-ThreeFingers/ThreeFingers.md)
   
-
+  
 * [2 Product Features](./2-ProductFeature/2-ProductFeature.md)
-   * [2.1 Machine Specification Parameters](./2-ProductFeature/2.1-MachineSpecification.md)
-   * [2.2 Control Core Parameter](./2-ProductFeature/2.2-ControlCoreParameter.md)
-   * [2.3 Mechanical Structure Parameter](./2-ProductFeature/2.3-MechanicalStructureParameter.md)
-   * [2.4 Electrical Characteristic Parameter](./2-ProductFeature/2.4-ElectricalCharacteristicParameter.md)
-   * [2.5 Cartesian Coordinate System](./2-ProductFeature/2.5-CoordinateSystem.md)
+  * [2.1 Machine Specification Parameters](./2-ProductFeature/2.1-MachineSpecification.md)
+  * [2.2 Control Core Parameter](./2-ProductFeature/2.2-ControlCoreParameter.md)
+  * [2.3 Mechanical Structure Parameters](./2-ProductFeature/2.3-MechanicalStructureParameter.md)
+  * [2.4 Electrical Characteristic Parameters](./2-ProductFeature/2.4-ElectricalCharacteristicParameter.md)
+  * [2.5 Cartesian Coordinate System](./2-ProductFeature/2.5-CoordinateSystem.md)
+  
+  <!-- * [2.1 Machine Specification](./2-ProductFeature/2.1-MachineSpecification.md)
+  * [2.2 Control Core Parameters](./2-ProductFeature/2.2-ControlCoreParameter.md)
+  * [2.3 Electrical Characteristic Parameters](./2-ProductFeature/2.4-ElectricalCharacteristicParameter.md) -->
+
 
 
 * [3 User Notes](3-UserNotes/3-UserNotes.md)
-   * [3.1 Safety Instructions](./3-UserNotes/3.1-SafetyInstruction.md)
-   * [3.2 Transport and Storage](./3-UserNotes/3.2-TransportandStorage.md)
-   * [3.3 Maintenance and Care](./3-UserNotes/3.3-MaintenanceandCare.md)
-   * [3.4 Frequently Asked Questions](./14-IssueFAQ/FAQ.md)
-     * [1 Software](./14-IssueFAQ/2_software.md)
-     * [2 Hardware](./14-IssueFAQ/3_hardware.md)
-     * [3 Accessories](./14-IssueFAQ/1_accessories.md)
-     * [4 Others](./14-IssueFAQ/0_other.md)
+  * [3.1 Safety Instructions](./3-UserNotes/3.1-SafetyInstruction.md)
+  * [3.2 Transport and Storage](./3-UserNotes/3.2-TransportandStorage.md)
+  * [3.3 Maintenance and Care](./3-UserNotes/3.3-MaintenanceandCare.md)
+  * [3.4 Solving Common Problems](./4-FAQ/FAQ.md)
+    * [1 Software](./4-FAQ/2_software.md)
+    * [2 Hardware](./4-FAQ/3_hardware.md)
+    * [3 Accessories](./4-FAQ/1_accessories.md)
+    * [4 Other](./4-FAQ/0_other.md)
+  <!-- * [3.4 Common Problem Solutions](./3-UserNotes/3.4-FAQsandSolutions/3.4.3-software.md) -->
   
   
+* [4 First Install and Use](4-FirstInstallAndUse/4-FirstInstallAndUse.md)
+  * [4.1 Product Standard List](./4-FirstInstallAndUse/4.1-ProductStandardList.md)
+  * [4.2 Product Unboxing Guide](./4-FirstInstallAndUse/4.2-ProductUnboxingGuide.md)
+  * [4.3 Power-on Test Guide](./4-FirstInstallAndUse/4.3-Power-onTestGuide.md)
   
-* [4 First Installation and Use](4-FirstInstallAndUse/4-FirstInstallAndUse.md)
-   * [4.1 Product Standard List](./4-FirstInstallAndUse/4.1-ProductStandardList.md)
-   * [4.2 Product Unboxing Guide](./4-FirstInstallAndUse/4.2-ProductUnboxingGuide.md)
-   * [4.3 Power-on Test Guide](./4-FirstInstallAndUse/4.3-Power-onTestGuide.md)
+* [5 Basic Function Usage](5-BasicApplication/5-BasicApplication.md)
+  * [5.1 System Usage Instructions](./5-BasicApplication/5.1-SystemUsageInstructions.md)
+  * [5.2 Application Usage Instructions](./5-BasicApplication/5.2-ApplicationUse.md)
+  * [5.3 IO Usage Instructions](./5-BasicApplication/5.3-io.md)
+  * [5.4 Instructions for Using the Gripper](./5-BasicApplication/5.4-gripper.md)
+  * [5.5 Modbus Usage Instructions](./5-BasicApplication/5.5-modbus.md)
   
-* [5 Use of basic functions](5-BasicApplication/5-BasicApplication.md)
-   * [5.1 RoboFlow](./5-BasicApplication/5.2-ApplicationUse.md)
 
   
 * [6 SDK Development Guide](6-SDKDevelopment/6-SDKDevelopment.md)
