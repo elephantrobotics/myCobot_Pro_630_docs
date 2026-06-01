@@ -32,9 +32,7 @@ To ensure the safe operation of the dexterous hand device, please strictly follo
 | Core parameters | 240MHz dual core. 600 DMIPS, 520KB SRAM. Wi-Fi, dual mode Bluetooth |
 | Flash  | 4MB                                  |
 
-## 3 Structural Parameters
-
-## 4 Python Development
+## 3 Python Development
 
 **Wiring of USB-485 module**:
 
@@ -76,7 +74,6 @@ pip install pyserial
 
 
 ### get_gripper_gripper_baud()
-
 - **Function:** Get gripper baud rate
 - **Parameters:** None
 - **Return:** `(int)` 0-5
