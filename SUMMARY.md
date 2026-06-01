@@ -15,6 +15,9 @@
        * [7 Pen Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
        * [8 Phone Holders](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
        * [9 myGripper F100 force-controlled gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_630_en.md)
+       * [10 Proud five-fingered dexterous hand](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.5-Smarthand/1-SmartHand.md)
+       * [11 Single head suction pump](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.6-Single-SuctionPump/1-Single-SuctionPump.md)
+       * [12 Nimble three fingers](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.7-ThreeFingers/ThreeFingers.md)
        
   
 
