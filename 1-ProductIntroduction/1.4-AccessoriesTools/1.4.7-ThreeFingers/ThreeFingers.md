@@ -16,9 +16,7 @@
 
 **Pin sequence description**
 
-<img src="../img/IO1.png" width="50%" >
-
-<img src="../img/IO2.png" width="50%" >
+<img src="resources/2-serialproduct/myCobot%20Pro%20600/English/new485.png" width="50%" >
 
 Pins 1 and 5 connect GND to 24V, Pins 2 and 3 are for controlling IO input, Pins 6 and 7 are for IO output, and Pins
 No. 4,8 is for 485 communication, which is used for receiving and sending instructions with the dexterous hand
@@ -44,7 +42,6 @@ To ensure the safe operation of the dexterous hand device, please strictly follo
 
 Connect four wires: 24V, GND, 485_A (T/R+, 485+), and 485_B (T/R-, 485-) to the dexterous hand end. The power supply is a 24V DC regulated power supply. Plug the USB port of the module into the USB interface of the computer
 
-<img src="../img/new485.png" width="50%" >
 
 485A connected to 485 to USB converter module A+;<br>
 485B connected to 485 to USB converter module B-;<br>
@@ -53,8 +50,6 @@ GND is connected to the negative terminal of a 24V DC regulated power supply
 
 **Driver library installation**
 [Click to download the driver library](https://github.com/elephantrobotics/Myhand)
-
-<img src="../img/git.png" width="50%" >
 
 ##### Installation of serial port dependency libraries
 Execute the following command on the computer terminal to install the dependent libraries
