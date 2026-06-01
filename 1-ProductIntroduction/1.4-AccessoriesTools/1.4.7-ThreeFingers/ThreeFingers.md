@@ -16,9 +16,7 @@
 
 **引脚线序说明**
 
-<img src="../img/IO1.png" width="50%" >
-
-<img src="../img/IO2.png" width="50%" >
+<img src="/resources/2-serialproduct/myCobot%20Pro%20600/Chinese/new485.png" width="50%" >
 
 编号1,5 连接GND与24V，编号2,3 为控制 IO 输入，编号6,7 为 IO 输出，编
 号4,8为485 通信，是与灵巧手接收与发送指令
@@ -34,11 +32,8 @@
 | 核心参数     | 240MHz dual core. 600 DMIPS, 520KB SRAM. Wi-Fi, dual mode Bluetooth                               |
 | Flash  | 4MB                                  |
 
-## 3 结构参数
 
-<img src="../img/3D.png" width="100%" >
-
-## 4 python开发
+## 3 python开发
 
 **USB-485模块接线**：
 
@@ -53,8 +48,6 @@ GND 接入 24V 直流稳压电源负极<br>
 
 **驱动库安装**
 [点击下载驱动库](https://github.com/elephantrobotics/Myhand)
-
-<img src="../img/git.png" width="50%" >
 
 ##### 串口依赖库安装
 在电脑终端执行下面命令，安装依赖库
