@@ -48,15 +48,12 @@
   * [4.2 产品开箱指南](./4-FirstInstallAndUse/4.2-ProductUnboxingGuide.md)
   * [4.3 开机检测指南](./4-FirstInstallAndUse/4.3-Power-onTestGuide.md)
   
-  * [5 基础功能使用](5-BasicApplication/5-BasicApplication.md)
+* [5 基础功能使用](5-BasicApplication/5-BasicApplication.md)
   * [5.1 系统使用说明](./5-BasicApplication/5.1-SystemUsageInstructions.md)
   * [5.2 应用使用说明](./5-BasicApplication/5.2-ApplicationUse.md)
   * [5.3 IO使用说明](./5-BasicApplication/5.3-io.md)
   * [5.4 夹爪使用说明](./5-BasicApplication/5.4-gripper.md)
   * [5.5 modbus使用说明](./5-BasicApplication/5.5-modbus.md)
-  <!-- 
-  * [5.2 软件使用说明](./5-BasicApplication/5.2-ApplicationUse.md)
-  * [5.3 固件功能说明](./5-BasicApplication/5.3-FirmwareUse.md) -->
   
 * [6 SDK 开发指南](6-SDKDevelopment/6-SDKDevelopment.md)
   * [6.1 基于python开发使用](./6-SDKDevelopment/python/PyhtonAPI.md)
