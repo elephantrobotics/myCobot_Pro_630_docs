@@ -12,7 +12,7 @@
       * [6 Camera Module](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.3-Camera/1-CameraModulePro.md)
       * [7 Pen Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/1-PenHolderPro.md)
       * [8 Phone Holder](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.4-Holder/2-PhoneHolderPro.md)
-      * [9 myGripper F100 Force Control Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_630.md)
+      * [9 myGripper F100 Force Control Gripper](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.1-Gripper/jiazhua_630_en.md)
       * [10 Smart Hand with Five Fingers](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.5-Smarthand/1-SmartHand.md)
       * [11 Single-Suction Pump](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.6-Single-SuctionPump/1-Single-SuctionPump.md)
       * [12 Smart Three Fingers](./1-ProductIntroduction/1.4-AccessoriesTools/1.4.7-ThreeFingers/ThreeFingers.md)
