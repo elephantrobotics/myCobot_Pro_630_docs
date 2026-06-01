@@ -1,7 +1,4 @@
 # Five-Finger Dexterous Hand
-
-<img src="./img/five_finger_hand.jpg" alt="Five-finger hand" width="60%" height="60%" />
-
 ## Introduction
 The five-fingered dexterous hand relies on the end of the robotic arm to complete power supply and data communication, and automatically performs self-checking actions after powering on. Through the Python interface, you can accurately read and write 6 joint angles and customize finger postures, which is suitable for gesture demonstrations, scientific research experiments, flexible grasping and other scenarios.
 
