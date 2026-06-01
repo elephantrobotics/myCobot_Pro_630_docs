@@ -16,7 +16,7 @@
 
 **Pin sequence description**
 
-<img src="resources/2-serialproduct/myCobot%20Pro%20600/English/new485.png" width="50%" >
+<img src="/resources/2-serialproduct/myCobot%20Pro%20600/English/new485.png" width="50%" >
 
 Pins 1 and 5 connect GND to 24V, Pins 2 and 3 are for controlling IO input, Pins 6 and 7 are for IO output, and Pins
 No. 4,8 is for 485 communication, which is used for receiving and sending instructions with the dexterous hand
@@ -33,8 +33,6 @@ To ensure the safe operation of the dexterous hand device, please strictly follo
 | Flash  | 4MB                                  |
 
 ## 3 Structural Parameters
-
-<img src="../img/3D.png" width="100%" >
 
 ## 4 Python Development
 
