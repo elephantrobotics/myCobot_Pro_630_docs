@@ -5,7 +5,7 @@
 
 ## 产品图片
 
-<img src="./img/0.jpg" alt="" width="60%" height="60%" />
+<img src="/resources/2-serialproduct/myCobot%20Pro%20600/Chinese/0.jpg" alt="" width="60%" height="60%" />
 
 
 
