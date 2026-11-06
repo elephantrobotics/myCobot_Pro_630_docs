@@ -67,7 +67,8 @@
     * [1 环境搭建](11-ApplicationBaseROS/11.2-ROS2/11.2.1-EnvironmentBuilding.md)
     * [2 ROS2基础知识](11-ApplicationBaseROS/11.2-ROS2/11.2.2-ROS2_Basics.md)
     * [3 Rviz2使用](11-ApplicationBaseROS/11.2-ROS2/11.2.3-Rviz2Introduction.md)
-    * [4 基本功能案例](11-ApplicationBaseROS/11.2-ROS2/11.2.4-BasicFunction.md)
+    * [4 RViz2 控制](11-ApplicationBaseROS/11.2-ROS2/11.2.4-RViz2_Control.md)
+    * [5 Gazebo 仿真与控制](11-ApplicationBaseROS/11.2-ROS2/11.2.5-Gazebo_Simulation_Control.md)
   * [6.4 socket API](./6-SDKDevelopment/python/Socket_API.md)
   
 
