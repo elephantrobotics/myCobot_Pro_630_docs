@@ -64,7 +64,8 @@
      * [1 Environment Building](11-ApplicationBaseROS/11.1-ROS1/11.1.1-EnvironmentBuilding.md)
      * [2 ROS basic knowledge](11-ApplicationBaseROS/11.1-ROS1/11.1.2-ROS_Basics.md)
      * [3 Rviz use](11-ApplicationBaseROS/11.1-ROS1/11.1.3-RvizIntroduction.md)
-     * [4 Basic function cases](11-ApplicationBaseROS/11.1-ROS1/11.1.4-BasicFunction.md)
+     * [4 RViz and MoveIt Control](11-ApplicationBaseROS/11.1-ROS1/11.1.4-RViz_MoveIt_Control.md)
+     * [5 Gazebo Simulation and Control](11-ApplicationBaseROS/11.1-ROS1/11.1.5-Gazebo_Simulation_Control.md)
   
    * [6.3 Robot Operating System 2 (ROS2)](11-ApplicationBaseROS/11.2-ROS2/README.md)
      * [1 Environment Building](11-ApplicationBaseROS/11.2-ROS2/11.2.1-EnvironmentBuilding.md)
